@@ -1,0 +1,22 @@
+{
+    "name": "apex",
+    "version": "1.0.0",
+    "description": "Site Apex",
+    "main": "index.php",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass assets/scss/style.scss:assets/css/style.css --style compressed",
+        "sass:watch": "sass --watch assets/scss/style.scss:assets/css/style.css --style compressed",
+        "uglify": "uglifyjs assets/js/script.js --compress --mangle --output assets/js/script.min.js",
+        "prod": "npm run sass && npm run uglify"
+    },
+    "author": "Dna for marketing",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^5.0.1"
+    },
+    "devDependencies": {
+        "uglify-js": "^3.13.10",
+        "sass": "^1.32.13"
+    }
+}
