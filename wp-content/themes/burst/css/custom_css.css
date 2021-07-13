@@ -1,0 +1,29 @@
+
+
+.blog_holder .post_date_title_holder h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+#vc_row wpb_row section grid_section pattern_background {
+display:block;
+position: fixed;
+width: 100%;
+z-index:1000;
+bottom:0 ; color: white; margin:0 auto;
+}
+@media only screen and (max-width: 480px)
+span.tab-title {
+    padding: 0 0 0 0 !important;
+}
+.comment_form{
+display: none;
+}
+.comment_holder{
+display: none;
+}
+.post_comments{
+display: none;
+}

@@ -1,0 +1,1821 @@
+
+
+    h6, h6 a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,a,p a,
+    header:not(.with_hover_bg_color) nav.main_menu > ul > li:hover > a,
+    nav.main_menu>ul>li.active > a,
+    .drop_down .second .inner > ul > li:hover > a,
+    .drop_down .second .inner ul li.sub ul li:hover > a,
+    .drop_down .second .inner ul li a .featured_icon,
+	.drop_down .second .inner ul li h4 .featured_icon,
+	.drop_down .wide.icons .second ul li a span.featured_icon,
+	.vertical_menu .second ul li a span.featured_icon,
+	.vertical_menu .second ul li h4 span.featured_icon,
+    nav.mobile_menu ul li a:hover,
+    nav.mobile_menu ul li.active > a,
+	nav.mobile_menu ul li.active > h4,
+	nav.mobile_menu ul li a .featured_icon,
+	nav.mobile_menu ul li h4 .featured_icon,
+    .side_menu_button > a:hover,
+	.side_menu_button > a:hover > span:not(.popup_menu_inner).search_icon_text,
+	.header_top .inner .header_top_side_button > a:hover > span.search_icon_text,
+	.header_top .inner a.search_covers_header:hover,
+	.header_top .inner a.search_slides_from_header_bottom:hover,
+	.header_top .inner a.search_slides_from_window_top:hover,
+	.header_top .inner a.fullscreen_search:hover,
+    .mobile_menu_button span:hover,
+    .vertical_menu ul li a:hover,
+    .vertical_menu_toggle .second .inner ul li a:hover,
+    nav.popup_menu ul li a:hover,
+    nav.popup_menu ul li ul li a,
+    div.comment_form form p.logged-in-as a,
+    .pagination_prev_and_next_only ul li a:hover,
+    .latest_post_holder .latest_post_title a:hover,
+    .latest_post_holder.minimal .latest_post_title a,
+    .latest_post_holder .post_info_section:before,
+    .latest_post_holder .post_info_section span,
+    .latest_post_holder .post_info_section a,
+    .latest_post_holder .post_author a.post_author_link:hover,
+    .projects_holder article .portfolio_title a:hover,
+    .projects_masonry_holder article .portfolio_title a:hover,
+    .filter_holder ul li.current span,
+    .filter_holder ul li:not(.filter_title):hover span,
+    blockquote h3,
+    .mkd_dropcap,
+    .price_in_table .value,
+    .price_in_table .price,
+    .price_in_table .mark,
+    .mkd_font_elegant_holder.mkd_icon_shortcode:hover,
+    .mkd_icon_shade.mkd_icon_shortcode:hover,
+    .mkd_font_awsome_icon_holder.mkd_icon_shortcode:hover,
+    .box_holder_icon_inner .mkd_icon_stack,
+    .box_holder_icon_inner .mkd_font_elegant_holder,
+    .mkd_icon_with_title .icon_holder .mkd_icon_stack,
+    .mkd_icon_with_title .mkd_font_elegant_holder,
+    .mkd_icon_with_title .icon_with_title_link:hover .icon_title,
+    .mkd_progress_bars_icons_inner.square .bar.active i,
+    .mkd_progress_bars_icons_inner.circle .bar.active i,
+    .mkd_progress_bars_icons_inner.normal .bar.active i,
+    .mkd_progress_bars_icons_inner .bar.active i.fa-circle,
+    .mkd_progress_bars_icons_inner.square .bar.active .mkd_font_elegant_icon,
+    .mkd_progress_bars_icons_inner.circle .bar.active .mkd_font_elegant_icon,
+    .mkd_progress_bars_icons_inner.normal .bar.active .mkd_font_elegant_icon,
+    .mkd_team_social .mkd_icon_shortcode.normal .simple_social,
+    .mkd_list.number ul>li:before,
+    .social_share_list_holder ul li i:hover,
+    .woocommerce.single-product.single .social_share_list_holder ul li i:hover,
+    .mkd_progress_bar .progress_number_wrapper.static .progress_number,
+    .qbutton:hover,
+    .load_more a:hover,
+    #submit_comment:hover,
+    .post-password-form input[type='submit']:hover,
+    .drop_down .wide .second ul li .qbutton:hover,
+    .drop_down .wide .second ul li ul li .qbutton:hover,
+    nav.content_menu ul li.active:hover i,
+    nav.content_menu ul li:hover i,
+    nav.content_menu ul li.active:hover a,
+    nav.content_menu ul li:hover a,
+    aside.sidebar .widget:not(.woocommerce) li,
+    .header-widget.widget_nav_menu ul.menu li a:hover,
+    input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover,
+    .latest_post_holder .post_info_section .latest_post_categories a,
+    .latest_post_holder .post_info_section .post_author_link,
+    .latest_post_holder.boxes .date,
+    .latest_post_holder.image_in_box .date,
+    .latest_post_holder.minimal .date,
+    .qbutton.white,
+    .qbutton.top_and_bottom_border,
+    .blog_load_more_button a:hover,
+    .mkd_progress_bars_vertical .progress_number,
+    .mkd_counter_holder span.counter,
+	.mkd_counter_holder span.counter_icon,
+	.mkd_counter_holder .counter_number_holder,
+    .mkd_icon_shortcode span,
+    .mkd_icon_shortcode i,
+    .mkd_separator_with_icon .mkd_icon_holder .mkd_icon_shade i,
+    .mkd_separator_with_icon .mkd_icon_holder .mkd_icon_shade span,
+    .mkd_pricing_list .mkd_pricing_item_price span,
+    .service_table_inner li.service_icon .service_table_icon,
+    .mkd_search_form_3 .mkd_search_close a:hover,
+    .mkd_search_form_2 .mkd_search_submit:hover,
+    .projects_holder article .item_holder.image_text_zoom_hover .portfolio_title a,
+    .projects_masonry_holder article .item_holder.image_text_zoom_hover .portfolio_title a,
+    .portfolio_slider li.item .item_holder.image_text_zoom_hover .portfolio_title a,
+    .projects_holder article .item_holder.upward_hover .icons_holder a:hover,
+    .projects_masonry_holder article .item_holder.upward_hover .icons_holder a:hover,
+    .portfolio_slider li.item .item_holder.upward_hover .icons_holder a:hover,
+    .shopping_cart_dropdown ul li .item_info_holder .item_left a:hover,
+    .portfolio_detail .info ul li:before,
+    .shopping_cart_header .header_cart i,
+    .shopping_cart_header .header_cart:hover i,
+    .mkd_tabs .tabs-nav li a,
+	.mkd_tabs.border_arround_element .tabs-nav li a,
+	.mkd_tabs.border_arround_active_tab .tabs-nav li a,
+	.mkd_tabs.border_arround_active_tab .tabs-nav li:hover a,
+    .blog_holder article .post_text h2 .date,
+    .blog_holder article .post_info a,
+    .blog_holder article .post_info a:hover,
+    .blog_holder article.format-link .post_text .link_image .post_text_inner .post_title a,
+    .blog_holder article.format-quote .post_text .quote_image .post_text_inner .post_title a,
+    .blog_holder article.format-quote h3 .date,
+    .blog_holder article.format-link h3 .date,
+    .blog_holder article.sticky h2 a,
+    .blog_holder article h2 a:hover,
+    .blog_holder .post_date_title .date span:first-child,
+	.blog_holder .post_date_holder .post_date_day,
+    .blog_holder article.format-quote .post_text .quote_author,
+    .blog_holder.blog_standard_type .post_info div a:hover,
+    .blog_holder.blog_standard_type .blog_like .liked,
+    .post_info_link_mark, .post_info_quote_mark,
+    ul.mkd_pricing_list_holder .new_item i,
+    .comment-list .post_author_comment .post-author-comment-icon,
+	.mkd_team.below_image .mkd_team_info .mkd_team_position,
+    .social_share_dropdown ul li:hover a span.social_network_icon,
+    .social_share_dropdown ul li:hover,
+    .social_share_dropdown ul li a:hover span.social_network_icon,
+    .qbutton.masonry_read_more_button:hover,
+    .mkd_team.below_image .mkd_team_social_holder_between .social_share_icon_shape .social_share_icon,
+	.testimonials.with_icon .testimonial_with_icon_holder .testimonial_icon_holder i,
+	.testimonials.with_icon .testimonial_with_icon_holder .testimonial_icon_holder span,
+	.vc_grid-container .vc_grid-filter.vc_grid-filter-color-grey > .vc_grid-filter-item:hover span,
+	.vc_grid-container .vc_grid-filter.vc_grid-filter-color-grey > .vc_grid-filter-item.vc_active span,
+    .icon_slider_controls_holder span.icon_slider_nav_icon .icon_slider_icon.flex-active,
+    .woocommerce-account .woocommerce-MyAccount-navigation ul li.is-active a,
+    .woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover{
+		color: #f9b217;
+    }
+
+    .title,
+    .popup_menu:hover .line,
+    .popup_menu:hover .line:after,
+    .popup_menu:hover .line:before,
+    .mkd_dropcap.circle,
+    .mkd_dropcap.square,
+    .gallery_holder ul li .gallery_hover i.fa-search,
+    .highlight,
+    .testimonials_holder.light .flex-direction-nav a:hover,
+    .mkd_tabs.with_borders .tabs-nav li.active a,
+    .mkd_tabs.with_borders .tabs-nav li.active:hover a,
+    .mkd_tabs.border_arround_element .tabs-nav li:hover a,
+    .mkd_tabs.with_lines .tabs-nav li.active a,
+    .mkd_tabs.with_lines .tabs-nav li:hover a,
+    .mkd_message,
+    .price_table_inner .price_button a,
+    .price_table_inner .button_on_bottom_wrapper a,
+    .mkd_price_table.active .active_text,
+    .footer_top .mkd_team_social .mkd_icon_shortcode.circle:hover,
+    .footer_top .mkd_team_social .mkd_icon_shortcode.square:hover,
+    .mkd_list.circle ul>li:before,
+    .mkd_list.number.circle_number ul>li:before,
+    .mkd_pie_graf_legend ul li .color_holder,
+    .mkd_line_graf_legend ul li .color_holder,
+    .mkd_progress_bar .progress_content,
+    .mkd_progress_bars_vertical .progress_content_outer .progress_content,
+    .mkd_progress_bar .floating.floating_outside .progress_number,
+    .qbutton,
+    .load_more a,
+    .blog_load_more_button a,
+    #submit_comment,
+    .post-password-form input[type='submit'],
+    #wp-calendar td#today,
+    input.wpcf7-form-control.wpcf7-submit,
+    div.wpcf7-response-output.wpcf7-mail-sent-ok,
+    .qbutton.white:hover,
+    .qbutton.top_and_bottom_border:hover,
+    .pagination ul li a:hover,
+    .single_links_pages span:hover,
+    .comment_pager .page-numbers:hover,
+    .comment_pager a:hover,
+    .comment_pager .current:hover,
+    .pagination ul li.active span,
+    .single_links_pages > span,
+    .comment_pager .current,
+    .comment_pager .page-numbers.dots:hover,
+    .read_more_button_holder a,
+    .read_more_button_holder a.white:hover,
+    .projects_holder article .item_holder.upward_hover .text_holder,
+    .projects_masonry_holder article .item_holder.upward_hover .text_holder,
+    .portfolio_slider li.item .item_holder.upward_hover .text_holder,
+    .projects_holder article .item_holder.image_text_zoom_hover .text_holder .separator,
+    .projects_masonry_holder article .item_holder.image_text_zoom_hover .text_holder .separator,
+    .portfolio_slider li.item .item_holder.image_text_zoom_hover .text_holder .separator,
+    .projects_holder article .item_holder.image_text_zoom_hover .text_holder .separator.animate,
+    .projects_masonry_holder article .item_holder.image_text_zoom_hover .text_holder .separator.animate,
+    .portfolio_slider li.item .item_holder.image_text_zoom_hover .text_holder .separator.animate,
+    .projects_holder article .item_holder.image_text_zoom_hover .icons_holder a,
+    .projects_masonry_holder article .item_holder.image_text_zoom_hover .icons_holder a,
+    .portfolio_slider li.item .item_holder.image_text_zoom_hover .icons_holder a,
+    .vertical_menu_hidden_button_line,
+    .vertical_menu_hidden_button_line:after,.vertical_menu_hidden_button_line:before,
+    .popup_menu.opened:hover .line:after,
+    .popup_menu.opened:hover .line:before,
+    .shopping_cart_dropdown .cart_bottom .checkout:hover,
+    .shopping_cart_dropdown .cart_bottom .view-cart,
+    .shopping_cart_dropdown ul li .item_info_holder .item_right .remove:hover,
+    .popup_menu.opened:hover .line:before,
+    .single_tags  a:hover,
+    aside.sidebar .widget .tagcloud a:hover,
+    .widget .tagcloud a:hover,
+    .blog_holder article.format-link .post_text .post_text_inner:hover,
+    .blog_holder article.format-quote .post_text .post_text_inner:hover,
+    .blog_holder article .post_social .post_comments i,
+    .blog_holder article .post_social .blog_like i,
+    .wpb_gallery .flexslider_slide .flex-control-paging li a.flex-active,
+    .wpb_gallery .flexslider_fade .flex-control-paging li a.flex-active,
+    ul.mkd_pricing_list_holder .highlighted_item span.highlighted_text,
+    .mkd_team.below_image:hover .social_share_icon_shape,
+    .text_slider_container .flex-control-nav li a.flex-active,
+    .testimonials.testimonials_carousel.testimonial_type_carousel .slides >li .top_color_holder,
+    .testimonials_holder .testimonial_type_carousel .testimonial_slider_pager a.selected,
+    .testimonials_holder .testimonial_type_carousel .testimonial_slider_pager.button_with_border a.selected,
+    .image_number_holder    {
+        background-color: #f9b217;
+    }
+
+    
+    .portfolio_main_holder .item_holder.cursor_change_hover .portfolio_shader,
+    .latest_post_holder .boxes_image a .latest_post_overlay{
+    background-color: rgba(249,178,23,0.7);
+    }
+
+    .qbutton.mid_transparent:hover{
+    border-color: rgba(249,178,23,0.25);
+    background-color: rgba(249,178,23,0.5);
+    }
+    .mkd_circles_holder a .mkd_circle_inner:hover .mkd_circle_inner2,
+    .mkd_team_social_holder .mkd_team_social .mkd_icon_shortcode.circle:hover,
+    .mkd_team_social_holder .mkd_team_social .mkd_icon_shortcode.square:hover,
+    .mkd_icon_shade.circle:hover,
+    .mkd_icon_shade.square:hover,
+    #social_icons_widget .mkd_icon_shade.circle:hover,
+    #social_icons_widget .mkd_icon_shade.square:hover,
+    .mkd_team_social_holder .mkd_team_social .mkd_icon_shortcode.circle:hover,
+    .mkd_team_social_holder .mkd_team_social .mkd_icon_shortcode.square:hover,
+    .mkd_circles_holder a .mkd_circle_inner:hover .mkd_circle_inner2{
+    background-color: #f9b217 !important;
+    }
+
+    #respond textarea:focus,
+    #respond input[type='text']:focus,
+    .post-password-form input[type='password']:focus,
+    .testimonials_holder.light .flex-direction-nav a:hover,
+    .mkd_progress_bars_icons_inner.circle .bar .bar_noactive,
+    .mkd_progress_bars_icons_inner.square .bar .bar_noactive,
+    .qbutton,
+    .load_more a,
+    .blog_load_more_button a,
+    #submit_comment,
+    .post-password-form input[type='submit'],
+    .qbutton:hover,
+    .load_more a:hover,
+    .blog_load_more_button a:hover,
+    #submit_comment:hover,
+    .drop_down .wide .second ul li .qbutton:hover,
+    .drop_down .wide .second ul li ul li .qbutton:hover,
+    .post-password-form input[type='submit']:hover,
+    .call_to_action .to_action_column2.button_wrapper .qbutton:hover,
+    .header-widget.widget_nav_menu ul ul,
+    input.wpcf7-form-control.wpcf7-text:focus,
+    input.wpcf7-form-control.wpcf7-number:focus,
+    input.wpcf7-form-control.wpcf7-date:focus,
+    textarea.wpcf7-form-control.wpcf7-textarea:focus,
+    select.wpcf7-form-control.wpcf7-select:focus,
+    input.wpcf7-form-control.wpcf7-quiz:focus,
+    input.wpcf7-form-control.wpcf7-submit,
+    input.wpcf7-form-control.wpcf7-submit[disabled],
+    input.wpcf7-form-control.wpcf7-submit:not([disabled]),
+    input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover,
+    .qbutton.white,
+    .qbutton.white:hover,
+    .qbutton.top_and_bottom_border,
+    .qbutton.top_and_bottom_border:hover,
+    .mkd_counter_holder .separator.medium,
+    .mkd_icon_shade.circle,
+    .mkd_icon_shade.square,
+    .mkd_pricing_border,
+    .price_table_inner .price_button a,
+    .price_table_inner .button_on_bottom_wrapper a,
+    .mkd_tabs.border_arround_element.horizontal.enable_margin .tabs-nav li:hover,
+    .mkd_tabs.border_arround_element.horizontal.enable_margin .tabs-nav li.active,
+    .mkd_tabs.border_arround_active_tab.horizontal .tabs-nav li.active,
+    .mkd_tabs.border_arround_active_tab.horizontal .tabs-nav li.active:hover,
+    .mkd_tabs.border_arround_element.horizontal.disable_margin .tabs-nav li a,
+    .single_tags  a:hover,
+    aside.sidebar .widget .tagcloud a:hover,
+    .widget .tagcloud a:hover,
+    .box_holder_icon_inner:not(.normal_icon) .mkd_icon_stack,
+    .mkd_icon_with_title:not(.normal_icon) .icon_holder .mkd_icon_stack,
+    .mkd_icon_with_title:not(.normal_icon) .mkd_font_elegant_holder,
+    .mkd_team.below_image:hover .social_share_icon_shape,
+    .box_holder_icon_inner:not(.normal_icon) .mkd_font_elegant_holder,
+    ul.mkd_pricing_list_holder .highlighted_item ul,
+    .pagination ul li a:hover,
+    .single_links_pages span:hover,
+    .comment_pager a:hover,
+    .comment_pager .current:hover,
+    .pagination ul li.active span,
+    .single_links_pages > span,
+    .comment_pager .current,
+    .comment_pager .page-numbers.dots:hover,
+    .text_slider_container .flex-control-nav li a.flex-active,
+    .ordered.show_separator ol>li:not(:last-child):after,
+    .mkd_list.show_separator ul>li:not(:last-child):after,
+    .mkd_icon_list p.show_separator:after{
+        border-color: #f9b217;
+    }
+
+    .drop_down .second,
+    .mkd_progress_bar .progress_number_wrapper.floating .down_arrow,
+    .mkd_pricing_tables .mkd_price_table{
+        border-top-color: #f9b217;
+    }
+
+    .mkd_circles_holder a .mkd_circle_inner:hover .mkd_circle_inner2,
+    .mkd_circles_holder a .mkd_circle_inner:hover,
+    .mkd_team_social_holder .mkd_team_social .mkd_icon_shortcode.circle:hover,
+    .mkd_team_social_holder .mkd_team_social .mkd_icon_shortcode.square:hover{
+    border-color: #f9b217 !important;
+    }
+
+    
+
+
+    body{
+                    font-family: 'Exo 2', sans-serif;
+                    }
+            body,
+        .wrapper,
+        .content,
+        .full_width,
+        .content .container,
+                .overlapping_content .content > .container,
+        .more_facts_holder,
+        ul.mkd_pricing_list_holder.with_leaders .mkd_pricing_item_text,
+        ul.mkd_pricing_list_holder.with_leaders .mkd_pricing_item_price{
+        background-color:#ffffff;
+        }
+        .oblique-section polygon{
+        fill: #ffffff;
+        }
+    
+
+
+
+    h3, h6,
+    .pagination ul li.active span,
+    .single_links_pages span,
+    .comment_pager .page-numbers,
+    .pagination ul li > a.inactive,
+    .subtitle,
+    .blog_holder article .post_info,
+    .comment_holder .comment .text .comment_date,
+    .latest_post_holder .post_info_section,
+    .projects_holder article .project_category,
+    .portfolio_slides .project_category,
+    .projects_masonry_holder .project_category,
+    .testimonials .testimonial_text_inner p:not(.testimonial_author),
+    .price_in_table .mark,
+    body div.pp_default .pp_description,
+    .side_menu .widget li,
+    aside.sidebar .widget:not(.woocommerce) li,
+    aside .widget #lang_sel ul li a,
+    aside .widget #lang_sel_click ul li a,
+    section.side_menu #lang_sel ul li a,
+    section.side_menu #lang_sel_click ul li a,
+    footer #lang_sel ul li a,
+    footer #lang_sel_click ul li a,
+    .header_bottom #lang_sel ul li a,
+    .header_bottom #lang_sel_click > ul > li a {
+        font-family: 'Exo 2', sans-serif;
+    }
+    
+
+
+
+    .header_bottom,
+	.fixed_top_header .bottom_header{
+    background-color: rgba(11,59,81,1);
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+    .content .content_inner > .container > .container_inner,
+    .content .content_inner > .full_width > .full_width_inner,
+	.content .content_inner .overlapping_content > .overlapping_content_inner > .container_inner,
+	.content .content_inner .overlapping_content > .overlapping_content_inner > .full_width_inner
+	{
+    padding-top: 0px;
+    }
+
+    .content .content_inner > .container > .container_inner.default_template_holder,
+	.content .content_inner .overlapping_content > .overlapping_content_inner > .container_inner.default_template_holder{
+		padding-top: 100px;
+    }
+
+    @media only screen and (max-width: 1000px){
+    .content .content_inner > .container > .container_inner,
+    .content .content_inner > .full_width > .full_width_inner,
+    .content .content_inner > .container > .container_inner.default_template_holder,
+	.content .content_inner .overlapping_content > .overlapping_content_inner > .container_inner,
+    .content .content_inner .overlapping_content > .overlapping_content_inner > .full_width_inner,
+    .content .content_inner .overlapping_content > .overlapping_content_inner > .container_inner.default_template_holder{
+		padding-top: 0px !important;
+    }
+    }
+
+
+
+
+
+
+
+
+    header.fixed.scrolled .header_bottom,
+    header.fixed.scrolled .header_top,
+    header.fixed_hiding.scrolled .header_bottom,
+    header.fixed_hiding.scrolled .header_top{
+    background-color: rgba(11,59,81,1) !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .content{
+        margin-top: 0;
+    }
+
+
+
+header .header_bottom.left_menu_position .logo_wrapper{
+    width: 57.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+
+
+    .content.content_top_margin{
+        margin-top: 83px !important;
+    }
+
+            .content.content_top_margin_negative{
+            top: -83px !important;
+        }
+    
+    .vertical_menu_enabled .content.content_top_margin{
+    margin-top: 0px !important;
+    }
+
+    
+
+
+
+@media only screen and (max-width: 1000px) {
+    body.enable_full_screen_sections_on_small_screens.page-template-full_screen .content{
+        top: -83px !important;
+    }
+}
+
+
+
+
+    header.sticky .logo_wrapper,
+    header.sticky .side_menu_button,
+    header.sticky .header_bottom_right_widget_holder,
+    .side_menu.sticky .close_side_menu_holder{
+        height: 70px !important;
+    }
+
+    header.sticky .side_menu_button_wrapper .side_menu_button a.search_icon_bckg_full{
+        line-height: 70px !important;
+    }
+
+    header.sticky .header_bottom,
+    header.fixed.scrolled .header_bottom,
+    header.fixed_hiding.scrolled .header_bottom{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    }
+
+
+
+
+
+
+
+        @media only screen and (min-width: 1000px){
+            header.fixed_hiding .mkd_logo a,
+            header.fixed_hiding .mkd_logo{
+                max-height: 57px;
+            }
+        }
+
+
+
+
+
+
+
+    .touch section.parallax_section_holder{
+    height: auto !important;
+    min-height: 300px;
+    }
+
+    .touch section.parallax_section_holder .parallax_section_holder_background{
+    background-position: center top !important;
+    background-attachment: scroll;
+    background-size: cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .drop_down li:not(.wide_background) .second{
+    border-top: 0 !important;
+    }
+
+    .drop_down li.wide_background .second{
+    border-top: 0 !important;
+    }
+
+
+
+    nav.main_menu > ul > li > a{
+     color: #ffffff;             font-family: 'Exo 2', sans-serif;
+         font-size: 18px;          font-weight: 500;             }
+
+    .header_bottom #lang_sel > ul > li > a,
+    .header_bottom #lang_sel_click > ul > li > a,
+    .header_bottom #lang_sel ul > li:hover > a{
+     color: #ffffff !important;             font-family: 'Exo 2', sans-serif;
+         font-size: 18px !important;          font-weight: 500;             }
+
+            .header_bottom #lang_sel_list{
+            font-family: 'Exo 2', sans-serif !important;
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    nav.main_menu > ul > li > a{
+    
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .drop_down .second .inner>ul,
+    li.narrow .second .inner ul,
+    .drop_down .narrow .second .inner ul li ul,
+    .shopping_cart_dropdown_inner1{
+        border: none;
+    }
+
+        .drop_down .second .inner ul.right li ul{
+        margin-left: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    nav.mobile_menu ul li a,
+    nav.mobile_menu ul li h4{
+     color: #ffffff;                                 }
+            nav.mobile_menu ul > li.has_sub > span.mobile_arrow{
+        color: #ffffff;
+        }
+    
+
+
+
+    @media only screen and (max-width: 1000px){
+    .header_bottom,
+    nav.mobile_menu{
+    background-color: #0b3b51 !important;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    h2{
+            font-family: 'Exo 2', sans-serif;
+        font-size: 78px;     line-height: 90px;     font-style: normal;     font-weight: 600;         text-transform: none;     }
+    h2, h2 a{
+    color: #f6b236;     }
+
+
+    p{
+    margin-top: 20pxpx;margin-bottom: 20pxpx    }
+
+
+
+
+
+
+
+
+
+    .title.title_size_small h1, .title.title_size_small h1.title_like_separator .vc_text_separator.full .separator_content{
+    color: #f6b236;             font-family: 'Exo 2', sans-serif;
+        font-size: 78px;         font-style: normal;     font-weight: 600;             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .blog_holder.masonry .post_text .post_text_inner,
+    .blog_holder.masonry_full_width .post_text .post_text_inner,
+    .blog_holder.masonry article.format-link .post_text .post_info,
+    .blog_holder.masonry_full_width article.format-link .post_text .post_info,
+    .blog_holder.masonry article.format-quote .post_text .post_info,
+    .blog_holder.masonry_full_width article.format-quote .post_text .post_info{
+    text-align: left    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .blog_holder.masonry article,
+    .blog_holder.masonry_full_width article,
+    .blog_holder.blog_masonry_meta_info_featured_on_side article,
+    .blog_holder.masonry.blog_masonry_meta_info_featured_on_side article.format-link,
+    .blog_holder.masonry.blog_masonry_meta_info_featured_on_side article.format-quote,
+    .blog_holder.masonry_full_width.blog_masonry_meta_info_featured_on_side article.format-link,
+    .blog_holder.masonry_full_width.blog_masonry_meta_info_featured_on_side article.format-quote{
+    border-width: 1px    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+    
+    #back_to_top > span{
+    font-size: 14px;    }
+
+
+
+
+.no_interactive_info_card_button { top: calc(100% + 2px); }
+.no_interactive_info_card_button .a_overlay { height: calc(100% + 1px); }
+.undraw .border_2 { height: calc(100% + 1px); }
+.undraw .border_4 { height: calc(100% + 1px); }
+.vertical_menu_to_content .menu-item .second { left: calc(100% + 40px); }
+
+.carousel-control .prev_nav .numbers,
+.carousel-control .next_nav .numbers{
+    top: calc(100% + 1px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mkd_team.below_image.social_style_between .mkd_team_social_holder_between.center{
+    right: calc(50% - 23px);
+}
+
+.mkd_pricing_tables .price_table_inner ul a.button_on_bottom{
+    left: calc(50% - 24px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+    @media only screen and (min-width: 600px){
+        .footer_top .mkd_column{
+        text-align:  left        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+
+
+
+    
+  
+    
+
+
+
+
+
+
+
+
+
+    .side_menu_button > a,
+    .mobile_menu_button span,
+    .side_menu_button > a.search_covers_header,
+    .side_menu_button > a.side_menu_button_link:not(.popup_menu),
+    .side_menu_button > a.search_slides_from_header_bottom,
+    .side_menu_button > a.search_slides_from_window_top,
+    .side_menu_button > a.fade_push_text_right:not(.popup_menu),
+    .header_top .inner .header_top_side_button > a.search_covers_header,
+    .header_top .inner .header_top_side_button > a.fullscreen_search,
+    .header_top .inner .header_top_side_button > a.search_slides_from_header_bottom,
+    .header_top .inner .header_top_side_button > a.search_slides_from_window_top,
+    .fixed_top_header .side_menu_button > a,
+    .fixed_top_header .popup_menu .line,
+    .fixed_top_header .mobile_menu_button span{ color: #ffffff; }
+
+    .popup_menu .line,
+    .popup_menu .line:after, .popup_menu .line:before,
+    .popup_menu.opened .line:after, .popup_menu.opened .line:before{
+    background-color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 1000px){
+        .mobile_menu_button span,
+        .side_menu_button > a,
+        a.search_covers_header:not(.popup_menu),
+        .side_menu_button > a.side_menu_button_link:not(.popup_menu),
+        .side_menu_button > a.search_slides_from_header_bottom:not(.popup_menu),
+        .side_menu_button > a.fade_push_text_right:not(.popup_menu),
+        .fixed_top_header .side_menu_button > a,
+        .fixed_top_header .popup_menu .line,
+        .fixed_top_header .mobile_menu_button span,
+        .dark .mobile_menu_button span,
+        .light .mobile_menu_button span,
+        header.light .side_menu_button_wrapper .side_menu_button > a{
+            color: #ffffff;
+        }
+
+        .popup_menu .line,
+        .popup_menu .line:after,
+        .popup_menu .line:before{
+            background-color: #ffffff;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+.vertical_menu_to_content .menu-item .second{
+    left: calc(100% + 40px); /*because of the padding*/
+}
+.vertical_menu_right .vertical_menu_to_content .menu-item .second{
+    right: calc(100% + 40px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .projects_holder article .portfolio_description{
+    background-color: transparent;
+    }
+
+    .projects_holder.standard article .portfolio_description,
+    .projects_holder.standard_no_space article .portfolio_description {
+    padding-left: 0;
+    padding-right: 0;
+    }
+
+    .masonry_with_space .projects_holder article .portfolio_description {
+    padding: 35px 0 43px;
+    }
+
+
+
+
+    .portfolio_single.big-slider .portfolio_container, .portfolio_single.big-images .portfolio_container, .portfolio_single.gallery .portfolio_container{
+            }
+    @media only screen and (min-width: 1100px){
+        .portfolio_single.big-slider .two_columns_75_25 > .column2,
+        .portfolio_single.big-images .two_columns_75_25 > .column2,
+        .portfolio_single.gallery .two_columns_75_25 > .column2{
+            float:right;
+        }
+    }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1000px){
+}
+
+    
+
+
+        .header_top .header-widget.widget_nav_menu ul.menu li:hover > a{
+            text-decoration: none;
+        }
+                        .header_top .header-widget.widget_nav_menu ul.menu li.current-menu-item > a,
+        .header_top .header-widget.widget_nav_menu ul.menu li.current-menu-item:hover > a{
+            text-decoration: none;
+        }
+                    
+
+
+
+
+
+
+
+
+
+
+
+    .filter_outer.filter_blog{
+    text-align: left;    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text,
+    .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number,
+    .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date,
+    .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea,
+    .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select,
+    .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz{
+        border-color: #000000;color: #000000;font-family: Exo 2;font-size: 16px;line-height: 24px;font-style: normal;font-weight: 400;    }
+
+    .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text:focus,
+    .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number:focus,
+    .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date:focus,
+    .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea:focus,
+    .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select:focus,
+    .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz:focus{
+        border-color: #f9b217;    }
+
+    .cf7_custom_style_1 p,
+    .cf7_custom_style_1 .animate_input_holder .animate_input_text:after {
+        color: #000000;font-family: Exo 2;font-size: 16px;line-height: 24px;font-style: normal;font-weight: 400;    }
+
+    .cf7_custom_style_1 .animate_input_holder .animate_input_text {
+        color: #000000;font-family: Exo 2;font-size: 16px;line-height: 24px;font-style: normal;font-weight: 400;    }
+
+
+
+    
+    
+
+    .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text,
+    .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number,
+    .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date,
+    .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea,
+    .cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select,
+    .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz{
+        border-color: #ffffff;color: #000000;font-family: Exo 2;font-size: 16px;line-height: 24px;font-style: normal;font-weight: 400;    }
+
+    .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text:focus,
+    .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number:focus,
+    .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date:focus,
+    .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea:focus,
+    .cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select:focus,
+    .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz:focus{
+        border-color: #f9b217;    }
+
+    .cf7_custom_style_2 p,
+    .cf7_custom_style_2 .animate_input_holder .animate_input_text:after{
+        color: #ffffff;font-family: Exo 2;font-size: 16px;line-height: 36px;font-style: normal;font-weight: 400;    }
+
+    .cf7_custom_style_2 .animate_input_holder .animate_input_text {
+        color: #000000;font-family: Exo 2;font-size: 16px;line-height: 24px;font-style: normal;font-weight: 400;    }
+
+
+
+
+
+
+
+
+
+
+    .cf7_custom_style_1 ::-webkit-input-placeholder{
+        color: #000000;opacity:1;    }
+    .cf7_custom_style_1 :-moz-placeholder{
+        color: #000000;opacity:1;    }
+    .cf7_custom_style_1 ::-moz-placeholder{
+        color: #000000;opacity:1;    }
+    .cf7_custom_style_1 :-ms-input-placeholder{
+        color: #000000;opacity:1;    }
+    .cf7_custom_style_2 ::-webkit-input-placeholder{
+    color: #000000;opacity:1;    }
+    .cf7_custom_style_2 :-moz-placeholder{
+    color: #000000;opacity:1;    }
+    .cf7_custom_style_2 ::-moz-placeholder{
+    color: #000000;opacity:1;    }
+    .cf7_custom_style_2 :-ms-input-placeholder{
+    color: #000000;opacity:1;    }
+                                                    
+    
+
+    
+
+        .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea{
+            height: 120px;
+    }
+    .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea{
+    height: 120px;
+    }
+    .cf7_custom_style_3 textarea.wpcf7-form-control.wpcf7-textarea{
+    height: 120px;
+    }
+
+
+
+
+
+
+
+    .page_not_found h4{
+    font-weight: 400    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.preload_background,
+.preload_parallax_layers{
+    background-image: url("http://rupptura.com.br/apex/wp-content/themes/burst/img/preload_pattern.png") !important;
+}
+
+
+
+
+    .masonry_gallery_item.square_big.with_button .separator.medium {
+    margin-left:0;    }
+
+
+    .masonry_gallery_item.square_big .masonry_gallery_item_inner .masonry_gallery_item_content{
+    text-align: center    }
+
+
+
+
+    .masonry_gallery_item.square_small .masonry_gallery_item_inner .masonry_gallery_item_content{
+    text-align: center    }
+
+
+    .masonry_gallery_item.rectangle_portrait .masonry_gallery_item_inner .masonry_gallery_item_content{
+    text-align: center    }
+
+
+
+    .masonry_gallery_item.rectangle_landscape .masonry_gallery_item_inner .masonry_gallery_item_content{
+    text-align: center    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+    
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
