@@ -1,0 +1,19 @@
+.saidoaluguel{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media (min-width: $desktops) {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    h2{
+        font-size: 25px;
+        font-style: italic;
+        color: $blue1;
+    }
+    p{
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 200;
+        color: $blue1;
+    }
+}

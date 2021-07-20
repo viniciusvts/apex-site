@@ -1,4 +1,10 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "fonts";
 @import "variables";
+@import "btn";
 @import "menu";
+@import "header-home";
+@import "imoveis-slide";
+@import "saidoaluguel";
+@import "util";
+@import "footer";

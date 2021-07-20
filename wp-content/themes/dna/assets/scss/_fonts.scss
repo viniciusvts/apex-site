@@ -1,11 +1,61 @@
 @font-face {
     font-family: "Exo";
-    src: url("/wp-content/themes/dna/assets/font/Exo-Light.otf") format("truetype");
-    font-weight: lighter;
+    src: url("/wp-content/themes/dna/assets/font/Exo-Thin.otf") format("truetype");
+    font-weight: 100;
     font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Exo";
+    src: url("/wp-content/themes/dna/assets/font/Exo-Light.otf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Exo";
+    src: url("/wp-content/themes/dna/assets/font/Exo-Regular.otf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Exo";
+    src: url("/wp-content/themes/dna/assets/font/Exo-Medium.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Exo";
+    src: url("/wp-content/themes/dna/assets/font/Exo-Bold.otf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Exo";
+    src: url("/wp-content/themes/dna/assets/font/Exo-Bold-Italic.otf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 body *{
     font-family: Exo, sans-serif;
-    font-weight: lighter;
+    font-weight: 200;
+}
+.thin{
+    font-weight: 100;
+}
+.light{
+    font-weight: 200;
+}
+.medium{
+    font-weight: 300;
+}
+.regular{
+    font-weight: 400;
+}
+.bold{
+    font-weight: bold;
 }

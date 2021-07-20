@@ -1,14 +1,16 @@
 nav.top-menu{
     position: fixed;
-    display: flex;
+    color: white;
     left: 0;
-    top: 0;
     width: 100%;
     height: 100px;
-    // o próximo item, seja lá quem seja
-    // fica com a margem do tamanho da navbar
-    & + *{
-        margin-top: 100px;
+    z-index: 999;
+    transition: all 1s;
+    &.lightbg{
+        background-color: #00233366;
+        // .right{
+        //     background-color: $blue1;
+        // }
     }
     .logo{
         width: 83px;
@@ -17,31 +19,84 @@ nav.top-menu{
     .left{
         background-color: $blue1;
         border-right: 4px solid $yellow1;
-        max-width: 70%;
+        // remove a borda do desktop
+        // fica aparecendo a borda do menu
+        @media (min-width: $desktops) {
+            border-right: none;
+        }
     }
-    .left{
+    .right{
+        @media (min-width: $desktops) {
+            margin-left: auto;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    .main-menu{
+        display: block;
         background-color: $blue1;
+        max-height: 0px;
+        overflow: hidden auto;
+        transition: all 1s;
         border-right: 4px solid $yellow1;
-        max-width: 70%;
+        @media (min-width: $desktops) {
+            display: flex;
+            width: auto;
+            max-height: unset;
+            max-width: 0px;
+            overflow: hidden;
+        }
+        li{
+            text-align: center;
+            padding: 10px 0;
+            @media (min-width: $desktops) {
+                height: fit-content;
+                margin: auto 10px;
+            }
+            &.current-menu-item{
+                a{
+                    color: $yellow1;
+                }
+            }
+            &:last-child{
+                @media (min-width: $desktops) {
+                    margin-right: 30px;
+                }
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
     }
-}
-#hambmenu{
-    width: 40px;
-    height: 18px;
-}
-#main-menu{
-    display: block;
-    background-color: $blue1;
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 1s;
+    .hambmenu{
+        img{
+            width: 40px;
+            height: 18px;
+            &.hamb{
+                display: block;
+            }
+            &.x{
+                display: none;
+            }
+        }
+    }
     &.active{
-        max-height: 200px;
-    }
-    li a{
-        color: white;
-        &.xxx{
-            color: $yellow1;
+        .main-menu{
+            max-height: 350px;
+            @media (min-width: $desktops) {
+                max-width: 100%;
+            }
+        }
+        .hambmenu img{
+            &.hamb{
+                display: none;
+            }
+            &.x{
+                display: block;
+            }
         }
     }
 }

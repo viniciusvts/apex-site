@@ -1,0 +1,98 @@
+header.header-home{
+    height: 100vh;
+    .owl-stage-outer{height: 100%;}
+    .owl-stage{height: 100%;}
+    .owl-item{height: 100%;}
+    .h-content{
+        height: fit-content;
+    }
+    .carrossel1{
+        .item{
+            overflow: hidden;
+            padding-top: 100px;
+            position: relative;
+            color: white;
+            img.fundo{
+                position: absolute;
+                top: 0;
+                object-fit: cover;
+                z-index: -1;
+                filter: brightness(0.6);
+            }
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+            }
+            h3{
+                font-size: 20px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            .details{
+                .detail{
+                    margin-right: 20px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 auto 5px;
+                    }
+                    p{
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .isLancamento{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            margin-left: -45px;
+            width: 130px;
+            height: 90px;
+        }
+        .owl-dots{
+            position: relative;
+            display: flex;
+            bottom: 30px;
+        }
+        .owl-dot{
+            background-color: #FFFFFF66!important;
+            width: 16px;
+            height: 2px;
+            margin: 0 3px;
+            &.active{
+                background-color: #FFF!important;
+            }
+        }
+        .owl-dot:first-child{
+            margin-left: auto;
+        }
+        .owl-dot:last-child{
+            margin-right: auto;
+        }
+        .owl-nav{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            button {
+                display: block;
+                background-color: white;
+                padding: 10px!important;
+                &:focus {
+                    outline: none;
+                }
+                &:first-child{
+                    border-bottom: 1px solid#00233333;
+                }
+                svg{
+                    width: 10px;
+                    height: 18px;
+                    path{
+                        fill: $blue2;
+                    }
+                }
+            }
+        }
+    }
+}

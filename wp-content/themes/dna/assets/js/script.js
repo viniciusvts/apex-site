@@ -11,6 +11,7 @@
      */
     function DOMContentLoaded(evt) {
         initMenuControl();
+        addBgInMenuOnScroll();
     }
 
     /** O evento de carga é disparado quando toda a página é carregada,
@@ -19,11 +20,14 @@
     function load(evt) {
         console.log('load event', evt);
     }
-    
+    /**
+     * inicia o controle de menu
+     * @author Vinicius de Santana
+     */
     function initMenuControl() {
         querySelector('#hambmenu').addEventListener('click', ()=>{
             /** @type HTMLElement */
-            var mainMenu = querySelector('#main-menu');
+            var mainMenu = querySelector('#top-menu');
             // se existe a classe active a remove
             // se não adiciona
             if(mainMenu.classList.contains('active'))
@@ -31,5 +35,18 @@
             else
                 mainMenu.classList.add('active');
         });
+    }
+    /**
+     * adiciona uma classe ao menu quando o usuário scrolla
+     */
+    function addBgInMenuOnScroll(){
+        window.onscroll = function() {
+            var mainMenu = querySelector('#top-menu');
+            if (this.scrollY > 500) {
+                mainMenu.classList.add('lightbg');
+            } else {
+                mainMenu.classList.remove('lightbg');
+            }
+        }
     }
 })(window, document, console, x=>document.querySelector(x), x=>document.querySelectorAll(x));

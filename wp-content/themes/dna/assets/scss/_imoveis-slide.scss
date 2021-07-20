@@ -1,0 +1,166 @@
+.imoveis-slide{
+    // background-color: $blue1;
+    color: white;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media (min-width: $desktops) {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+    img.bg{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .line{
+        background-color: $gold1;
+        width: 15px;
+        height: 1px;
+        margin: auto 0;
+    }
+    ul.cat-list{
+        padding: 15px 0;
+        margin: auto 0;
+        list-style: none;
+        display: flex;
+        overflow-x: auto;
+        li{
+            white-space: nowrap;
+            margin: 0 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+            cursor: pointer;
+            &.active{
+                color: $yellow1;
+            }
+        }
+    }
+    .owl-stage-outer{height: 100%;}
+    .owl-stage{height: 100%;}
+    .owl-item{height: 100%;}
+    .h-content{
+        height: fit-content;
+    }
+    .carrosselimoveis{
+        background-color: black;
+        height: 500px;
+        .item{
+            overflow: hidden;
+            position: relative;
+            color: white;
+            border-top: 4px solid $yellow1;
+            @media (min-width: $desktops) {
+                border-top: 4px solid white;
+            }
+            .text-content{
+                margin: auto 0 30px;
+            }
+            .isLancamento{
+                position: absolute;
+                top: 40px;
+                left: -50px;
+                transform: rotate(-45deg);
+                background-color: $red1;
+                padding: 5px 60px;
+            }
+            img.fundo{
+                position: absolute;
+                top: 0;
+                object-fit: cover;
+                z-index: -1;
+                filter: brightness(0.6);
+            }
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                @media (min-width: $desktops) {
+                    margin-bottom: 20px;
+                }
+            }
+            h3{
+                font-size: 20px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                @media (min-width: $desktops) {
+                    border: 1px solid $yellow1;
+                    width: fit-content;
+                    padding: 5px 15px;
+                }
+            }
+            .details{
+                @media (min-width: $desktops) {
+                    margin-bottom: 15px;
+                }
+                .detail{
+                    margin-right: 30px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 auto 5px;
+                    }
+                    p{
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+            .btn-img{
+                display: block;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+        .owl-dots{
+            position: relative;
+            display: flex;
+            bottom: 30px;
+        }
+        .owl-dot{
+            background-color: #FFFFFF66!important;
+            width: 16px;
+            height: 2px;
+            margin: 0 3px;
+            &.active{
+                background-color: $yellow1!important;
+            }
+        }
+        .owl-dot:first-child{
+            margin-left: auto;
+        }
+        .owl-dot:last-child{
+            margin-right: auto;
+        }
+        .owl-nav{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            button {
+                &.owl-prev, &.owl-next{
+                    display: block;
+                    background-color: white;
+                    padding: 10px!important;
+                }
+                &:focus {
+                    outline: none;
+                }
+                &:first-child{
+                    border-bottom: 1px solid#00233333;
+                }
+                svg{
+                    width: 10px;
+                    height: 18px;
+                    path{
+                        fill: $blue2;
+                    }
+                }
+            }
+        }
+    }
+}
