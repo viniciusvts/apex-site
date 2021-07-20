@@ -1,5 +1,6 @@
 wp-config.php
 .htaccess
+.vscode/
 wp-content/plugins/
 wp-content/uploads/
 **/node_modules
