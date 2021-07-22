@@ -1,0 +1,31 @@
+.float-contato{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    color: white;
+    background-color: $blue3;
+    z-index: 9;
+    padding: 25px 0;
+    @media (min-width: $desktops) {
+        padding: 20px 0;
+    }
+    img{
+        height: 30px;
+        @media (min-width: $desktops) {
+            height: 40px;
+        }
+    }
+    p{
+        text-transform: uppercase;
+        &.top{
+            font-size: 15px;
+            margin-top: auto;
+            margin-bottom: 0;
+        }
+        &.bot{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: auto;
+        }
+    }
+}

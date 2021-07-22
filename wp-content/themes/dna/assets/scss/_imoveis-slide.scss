@@ -163,4 +163,10 @@
             }
         }
     }
+    .carImoSlide{
+        display: none;
+        &.active{
+            display: flex;
+        }
+    }
 }

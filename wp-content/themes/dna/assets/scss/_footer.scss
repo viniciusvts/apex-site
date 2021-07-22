@@ -1,3 +1,48 @@
 footer.f-main{
-    min-height: 500px;
+    background-image: url(../img/bg-rodape.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    color: white;
+    @media (min-width: $tablets) {
+        padding-top: 80px;
+        padding-bottom: 110px;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    h2{
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 20px;
+        color: $yellow1;
+        font-weight: bold;
+        line-height: 35px;
+        text-transform: uppercase;
+    }
+    p{
+        &.tel{
+            margin-bottom: 0;
+            a{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    address{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    ul{
+        li{
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+    }
 }

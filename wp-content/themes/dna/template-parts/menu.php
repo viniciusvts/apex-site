@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="right col-2 col-lg-3 order-1 order-lg-2 d-flex">
-        <div id="buscar" class="buscar m-auto d-lg-flex cursor-pointer">
+        <div data-target="form-buscar" class="buscar m-auto d-lg-flex cursor-pointer">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/loupe.svg" alt="lupa de pesquisa">
             <p class="d-none d-lg-block mx-2 my-auto">Buscar</p>
         </div>

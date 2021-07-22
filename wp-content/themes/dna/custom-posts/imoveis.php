@@ -96,3 +96,47 @@ function categoria_imovel_taxonomy() {
 	register_taxonomy( 'categoria-imovel', array( 'imoveis' ), $args );
 }
 add_action( 'init', 'categoria_imovel_taxonomy', 0 );
+
+// Register Custom Post Type Categoria
+function cidade_imovel_taxonomy() {
+	$labels = array(
+		'name'                       => _x( 'Cidades do Imóvel', 'Taxonomy General Name', 'apextheme' ),
+		'singular_name'              => _x( 'Cidade do Imóvel', 'Taxonomy Singular Name', 'apextheme' ),
+		'menu_name'                  => __( 'Cidades', 'apextheme' ),
+		'all_items'                  => __( 'Todas as Cidades', 'apextheme' ),
+		'parent_item'                => __( 'Cidade Mãe', 'apextheme' ),
+		'parent_item_colon'          => __( 'Cidade mãe:', 'apextheme' ),
+		'new_item_name'              => __( 'Nova Cidade de Imóvel', 'apextheme' ),
+		'add_new_item'               => __( 'Adicionar Cidade de Imóvel', 'apextheme' ),
+		'edit_item'                  => __( 'Editar Cidade de Imóvel', 'apextheme' ),
+		'update_item'                => __( 'Atualizar Cidade de Imóvel', 'apextheme' ),
+		'view_item'                  => __( 'Ver Cidade de Imóvel', 'apextheme' ),
+		'separate_items_with_commas' => __( 'Separar Cidades por vírgula', 'apextheme' ),
+		'add_or_remove_items'        => __( 'Adicionar ou remover Cidade de Imóvel', 'apextheme' ),
+		'choose_from_most_used'      => __( 'Mostrar Cidades mais usadas', 'apextheme' ),
+		'popular_items'              => __( 'Cidades populares', 'apextheme' ),
+		'search_items'               => __( 'Buscar Cidade de Imóvel', 'apextheme' ),
+		'not_found'                  => __( 'Nada encontrado', 'apextheme' ),
+		'no_terms'                   => __( 'Nenhuma Cidade de Imóvel', 'apextheme' ),
+		'items_list'                 => __( 'Lista de Cidades', 'apextheme' ),
+		'items_list_navigation'      => __( 'Navegar por Cidade de Imóvel', 'apextheme' ),
+	);
+	$rewrite = array(
+		'slug'                       => 'cidade-imovel',
+		'with_front'                 => false,
+		'hierarchical'               => false,
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		"show_in_rest"				 => true,
+		'rewrite'                    => $rewrite,
+	);
+	register_taxonomy( 'cidade-imovel', array( 'imoveis' ), $args );
+}
+add_action( 'init', 'cidade_imovel_taxonomy', 0 );

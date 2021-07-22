@@ -1,0 +1,168 @@
+section.form-newsletter{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    h2{
+        font-size: 25px;
+        color: $blue2;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        .input{
+            @media (min-width: $tablets) {
+                width: 40%;
+                padding-right: 15px;
+            }
+            input{
+                width: 100%;
+                height: 50px;
+                margin-bottom: 20px;
+                border: none;
+                border-bottom: 1px solid #343A40;
+                @media (min-width: $tablets) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .submit{
+            @media (min-width: $tablets) {
+                width: 20%;
+            }
+            input{
+                width: 100%;
+                padding: 10px 0;
+                margin-top: 20px;
+                border: none;
+                background-color: $yellow1;
+                color: white;
+                font-weight: bold;
+                @media (min-width: $tablets) {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+section.form-faleComConsultor{
+    margin-top: 60px;
+    margin-bottom: 80px;
+    @media (min-width: $tablets) {
+        margin-top: 120px;
+        margin-bottom: 100px;
+    }
+    h2{
+        font-size: 30px;
+        color: $blue2;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    hr{
+        color: $yellow1;
+        width: 100px;
+        height: 2px;
+        margin: 0 auto 60px;
+        @media (min-width: $tablets) {
+            margin-bottom: 40px;
+        }
+    }
+    .formext{
+        padding: 30px 20px 30px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 16%) 0 30px 40px;    
+        p.preform{
+            font-size: 16px;
+            text-align: center;
+            color: #929292;
+            font-family: Lato, sans-serif;
+            margin-bottom: 20px;
+        }
+        form{
+            .input{
+                label{
+                    color: $yellow1;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: Lato, sans-serif;
+                }
+                input{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    background-color: #F0F2F7;
+                    border: 1px solid #E3E8F0;
+                    padding: 20px 10px;
+                    @media (min-width: $tablets) {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            .submit{
+                input{
+                    width: 100%;
+                    padding: 15px 30px;
+                    margin-top: 10px;
+                    border: none;
+                    background-color: $blue2;
+                    color: white;
+                    font-weight: bold;
+                    @media (min-width: $tablets) {
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .message p{
+                color: #707070;
+                font-style: 160px;
+                font-family: Lato, sans-serif;
+                margin-top: 20px;
+                @media (min-width: $tablets) {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+section.form-buscar{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 70%);
+    z-index: 9999; // nav está com 999
+    display: none;
+    &.active{
+        display: flex;
+    }
+    .intern{
+        margin: auto;
+        padding: 30px;
+        background-image: url(../img/bg-rodape.jpg);
+        label{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        input{
+            background-color: white;
+            padding: 10px 25px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            @media (min-width: $desktops) {
+                width: 65%;
+            }
+            &[type="submit"]{
+                text-transform: uppercase;
+                color: white;
+                background-color: $yellow1;
+                @media (min-width: $desktops) {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
