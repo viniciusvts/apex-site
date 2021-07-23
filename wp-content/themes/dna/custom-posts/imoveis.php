@@ -47,6 +47,7 @@ function custom_imovel() {
 		'exclude_from_search'   => true,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'rewrite'				=> array( 'slug' => 'empreendimentos' ),		
 	);
 	register_post_type( 'imoveis', $args );
 }
