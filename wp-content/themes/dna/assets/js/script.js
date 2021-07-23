@@ -20,6 +20,7 @@
         initGaleriaImoveisSingle();
         initModalImg();
         initModalSimulador();
+        initObraImoveisValues();
     }
 
     /** O evento de carga é disparado quando toda a página é carregada,
@@ -386,6 +387,65 @@
         modalImg.addEventListener('click', (evt)=>{
             if(evt.target == modalImg) return modalImg.classList.remove('active');
         });
+    }
+    function initObraImoveisValues(){
+        const estadosDaObraGraphic = querySelectorAll('#estadosDaObra .internal');
+        const estadosDaObraText = querySelectorAll('#estadosDaObra p span');
+        if(estadosDaObraGraphic.length == 0) return console.warn('Não há gráfico dos estados da obra');
+        if(estadosDaObraText.length == 0) return console.warn('Não há texto dos estados da obra');
+        // adicionar evento ao scroll
+        window.addEventListener('scroll', ()=>{
+            // lanço o width no gráfico, css anima
+            estadosDaObraGraphic.forEach((elem) => {
+                isElementVisibleCompletely(elem) ?
+                    elem.style.width = elem.dataset.width :
+                    elem.style.width = '0%';
+            });
+            // animo o texto com uma contagem
+            estadosDaObraText.forEach((elem) => {
+                if(isElementVisibleCompletely(elem)){
+                    // se está contando ou já contou, nada faz
+                    if(elem.classList.contains('counting') || 
+                        elem.classList.contains('counted')) return;
+                    elem.classList.add('counting');
+                    elem.dataset.actual = 0;
+                    elem.dataset.interval = setInterval(()=>{
+                        elem.dataset.actual =  Number(elem.dataset.actual) + 1;
+                        if(Number(elem.dataset.actual) > Number(elem.dataset.value)){ // acaba
+                            clearInterval(elem.dataset.interval);
+                            elem.innerText = elem.dataset.value;
+                            elem.classList.remove('counting');
+                            elem.classList.add('counted');
+                            delete elem.dataset.actual;
+                            delete elem.dataset.interval;
+                        } else {
+                            elem.innerText = elem.dataset.actual;
+                        }
+                    },10);
+                } else { // se não está visível reset
+                    if(elem.classList.contains('counted')){
+                        elem.innerText = '0';
+                        elem.classList.remove('counted');
+                    }
+                }
+            });
+        });
+    }
+    /**
+     * Verifica se determinado elemento html está visivel
+     * @param {HTMLElement} elem o elemento html para consultar
+     * @author Vinicius de Santana
+     */
+    function isElementVisibleCompletely(elem){
+        const domRect = elem.getBoundingClientRect();
+        const isVisible = (
+            domRect.top >= 0 &&
+            domRect.left >= 0 &&
+            domRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            domRect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    
+        );
+        return isVisible;
     }
     /**
      * Inicia o modal do simulador

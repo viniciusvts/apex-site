@@ -12,15 +12,17 @@ $obraFotos = get_field('andamento_da_obra_fotos');
         <hr>
     </div>
     <div class="row">
-        <div class="col-11 mx-auto <?php echo $obraFotos ? 'col-lg-5' : 'col-lg-12'; ?>">
+        <!-- js procura esse elemento para animar os estados da obra -->
+        <div id="estadosDaObra"
+        class="col-11 mx-auto <?php echo $obraFotos ? 'col-lg-5' : 'col-lg-12'; ?>">
             <?php
             if($obraAndamento['projeto']){
             ?>
             <div class="item">
                 <div class="external">
-                    <div class="internal" data-target="<?php echo $obraAndamento['projeto']; ?>"></div>
+                    <div class="internal" data-width="<?php echo $obraAndamento['projeto']; ?>%"></div>
                 </div>
-                <p>Projeto <span><?php echo $obraAndamento['projeto']; ?></span>%</p>
+                <p>Projeto <span data-value="<?php echo $obraAndamento['projeto']; ?>">0</span>%</p>
             </div>
             <?php
             }
@@ -28,9 +30,9 @@ $obraFotos = get_field('andamento_da_obra_fotos');
             ?>
             <div class="item">
                 <div class="external">
-                    <div class="internal" data-target="<?php echo $obraAndamento['fundacao']; ?>"></div>
+                    <div class="internal" data-width="<?php echo $obraAndamento['fundacao']; ?>%"></div>
                 </div>
-                <p>Fundacao <span><?php echo $obraAndamento['fundacao']; ?></span>%</p>
+                <p>Fundacao <span data-value="<?php echo $obraAndamento['fundacao']; ?>">0</span>%</p>
             </div>
             <?php
             }
@@ -38,9 +40,9 @@ $obraFotos = get_field('andamento_da_obra_fotos');
             ?>
             <div class="item">
                 <div class="external">
-                    <div class="internal" data-target="<?php echo $obraAndamento['estrutura']; ?>"></div>
+                    <div class="internal" data-width="<?php echo $obraAndamento['estrutura']; ?>%"></div>
                 </div>
-                <p>Estrutura <span><?php echo $obraAndamento['estrutura']; ?></span>%</p>
+                <p>Estrutura <span data-value="<?php echo $obraAndamento['estrutura']; ?>">0</span>%</p>
             </div>
             <?php
             }
@@ -48,9 +50,9 @@ $obraFotos = get_field('andamento_da_obra_fotos');
             ?>
             <div class="item">
                 <div class="external">
-                    <div class="internal" data-target="<?php echo $obraAndamento['instalacao']; ?>"></div>
+                    <div class="internal" data-width="<?php echo $obraAndamento['instalacao']; ?>%"></div>
                 </div>
-                <p>Instalacao <span><?php echo $obraAndamento['instalacao']; ?></span>%</p>
+                <p>Instalacao <span data-value="<?php echo $obraAndamento['instalacao']; ?>">0</span>%</p>
             </div>
             <?php
             }
@@ -58,9 +60,9 @@ $obraFotos = get_field('andamento_da_obra_fotos');
             ?>
             <div class="item">
                 <div class="external">
-                    <div class="internal" data-target="<?php echo $obraAndamento['acabamento']; ?>"></div>
+                    <div class="internal" data-width="<?php echo $obraAndamento['acabamento']; ?>%"></div>
                 </div>
-                <p>Acabamento <span><?php echo $obraAndamento['acabamento']; ?></span>%</p>
+                <p>Acabamento <span data-value="<?php echo $obraAndamento['acabamento']; ?>">0</span>%</p>
             </div>
             <?php
             }
