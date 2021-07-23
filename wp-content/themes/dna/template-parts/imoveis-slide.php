@@ -341,9 +341,3 @@
         </div>
     </div>
 </section>
-
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl-carousel.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/carousels.js"></script>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/owl-carousel.min.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/owl-theme-default.min.css">

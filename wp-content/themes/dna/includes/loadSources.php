@@ -17,6 +17,24 @@ function add_css_and_js() {
   $internalPath = $jsInternalPath . $archive;
   $fileVersion = filemtime($internalPath);
   wp_enqueue_script( $archive, $urlPath, array (), $fileVersion, true);
+
+  $archive = 'jquery.min.js';
+  $urlPath = $jsUriPath . $archive;
+  $internalPath = $jsInternalPath . $archive;
+  $fileVersion = filemtime($internalPath);
+  wp_enqueue_script( $archive, $urlPath, array ('script.js'), $fileVersion, true);
+
+  $archive = 'owl-carousel.min.js';
+  $urlPath = $jsUriPath . $archive;
+  $internalPath = $jsInternalPath . $archive;
+  $fileVersion = filemtime($internalPath);
+  wp_enqueue_script( $archive, $urlPath, array ('jquery.min.js'), $fileVersion, true);
+
+  $archive = 'carousels.js';
+  $urlPath = $jsUriPath . $archive;
+  $internalPath = $jsInternalPath . $archive;
+  $fileVersion = filemtime($internalPath);
+  wp_enqueue_script( $archive, $urlPath, array ('jquery.min.js'), $fileVersion, true);
   
   //###############################################################################################
   //styles: wp_enqueue_style( $nome, $origem, $dependencia, $versao, $media );
