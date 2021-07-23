@@ -1,3 +1,5 @@
+// originalmente layout da seção header-home
+// tbm utilizado em header-imoveis-single com modificações
 header.header-home{
     height: 100vh;
     .owl-stage-outer{height: 100%;}
@@ -7,6 +9,7 @@ header.header-home{
         height: fit-content;
     }
     .carrossel1{
+        background-color: #1B1D24;
         .item{
             overflow: hidden;
             padding-top: 100px;
@@ -19,7 +22,7 @@ header.header-home{
                 z-index: -1;
                 filter: brightness(0.6);
             }
-            h2{
+            h1, h2{
                 font-size: 25px;
                 text-transform: uppercase;
             }
@@ -93,6 +96,12 @@ header.header-home{
                     }
                 }
             }
+        }
+    }
+    // modificações para header-imoveis-single
+    &.header-imoveis-single{
+        .carrossel1{
+            background-color: unset;
         }
     }
 }

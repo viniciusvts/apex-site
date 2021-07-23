@@ -1,0 +1,24 @@
+// para ser utilizado nas imagens que serão abertas no modal-img
+img[data-modalImg]{
+    cursor: pointer;
+}
+section.modal-img{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 70%);
+    z-index: 9999; // nav está com 999
+    display: none;
+    &.active{
+        display: flex;
+    }
+    .intern{
+        margin: auto;
+        img{
+            max-width: 95vw;
+            max-height: 90vh;
+        }
+    }
+}

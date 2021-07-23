@@ -1,0 +1,227 @@
+.content-imoveis-single{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    @media (min-width: $desktops) {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    article{
+        font-size: 18px;
+        line-height: 26px;
+        color: #6F727B;
+        margin-bottom: 30px;
+        @media (min-width: $desktops) {
+            margin-bottom: 15px;
+        }
+        a{
+            color: blue3;
+        }
+    }
+}
+// estilo para imoveis-diferenciais.php
+.subsection-diferenciais{
+    color: white;
+    background-color: $blue2;
+    padding: 20px 35px 35px;
+    position: relative;
+    @media (min-width: $desktops) {
+        padding: 20px 45px 35px;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0;
+    }
+    span.line{
+        width: 15px;
+        height: 2px;
+        background-color: $yellow1;
+        margin: auto 0 auto 5px;
+        @media (min-width: $desktops) {
+            width: 150px;
+            margin: auto 0 auto 30px;
+        }
+    }
+    .carrossel-diferenciais{
+        margin: 45px 0 0;
+        position: relative;
+        .owl-stage{
+            display: flex;
+        }
+        .owl-stage-outer{
+            overflow: hidden;
+        }
+        .owl-nav{
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            button{
+                background-color: transparent;
+                border: none;
+                &.owl-prev{
+                    margin-left: -15px;
+                }
+                &.owl-next{
+                    float: right;
+                    margin-right: -15px;
+                }
+                svg{
+                    width: 15px;
+                }
+            }
+        }
+        .item{
+            text-align: center;
+            img{
+                color: white;
+                height: 40px;
+            }
+            svg{
+                fill: white;
+                height: 40px;
+                width: auto;
+            }
+        }
+    }
+}
+.imoveis-single-sidebar{
+    padding-top: 40px;
+    @media (min-width: $desktops) {
+        padding-top: 0;
+    }
+    .actions{
+        border: 1px solid #D5D5D5;
+        padding: 20px;
+        margin-bottom: 30px;
+        a.btn{
+            width: 100%;
+            font-size: 20px;
+            color: white;
+            padding: 10px 20px;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            &.green{
+                background-color: #4AD23C;
+            }
+            &.red{
+                background-color: #ED3E3F;
+            }
+            &.yellow{
+                background-color: $yellow1;
+            }
+        }
+    }
+    .ligamos-para-vc{
+        color: white;
+        background-color: #0080BB;
+        .intern{
+            padding: 10px 30px 20px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 15px;
+            &.aviso{
+                text-align: left;
+            }
+        }
+        .input{
+            margin-bottom: 10px;
+            input{
+                border: none;
+                width: 100%;
+                padding: 10px 20px;
+            }
+        }
+        .submit{
+            input{
+                border: none;
+                width: 100%;
+                padding: 10px 20px;
+                color: white;
+                background-color: $yellow1;
+            }
+        }
+    }
+}
+// estilo para estab-prox-imoveis-single.php
+.estab-prox-imoveis-single{
+    color: white;
+    background-color: $blue2;
+    padding: 20px 35px 35px;
+    position: relative;
+    @media (min-width: $desktops) {
+        padding: 20px 45px 35px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    hr{
+        width: 100%;
+        height: 2px;
+        color: $yellow1;
+        margin-bottom: 10px;
+    }
+    address{
+        font-size: 15px;
+    }
+    .carrossel-estProximos{
+        margin: 45px 0 0;
+        position: relative;
+        .owl-stage{
+            display: flex;
+        }
+        .owl-stage-outer{
+            overflow: hidden;
+        }
+        .owl-nav{
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            &.disabled{
+                display: none;
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                &.owl-prev{
+                    margin-left: -15px;
+                }
+                &.owl-next{
+                    float: right;
+                    margin-right: -15px;
+                }
+                svg{
+                    width: 15px;
+                }
+            }
+        }
+        .item{
+            text-align: center;
+            img{
+                color: white;
+                height: 40px;
+            }
+            svg{
+                fill: white;
+                height: 40px;
+                width: auto;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+.map-imoveis-single{
+    iframe{
+        width: 100%;
+    }
+}

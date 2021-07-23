@@ -16,6 +16,8 @@
         initSimulador();
         initWebMaks();
         initFormBuscar();
+        initGaleriaImoveisSingle();
+        initModalImg();
     }
 
     /** O evento de carga é disparado quando toda a página é carregada,
@@ -42,6 +44,7 @@
     }
     /**
      * adiciona uma classe ao menu quando o usuário scrolla
+     * @author Vinicius de Santana
      */
     function addBgInMenuOnScroll(){
         window.onscroll = function() {
@@ -55,6 +58,7 @@
     }
     /**
      * Controla qual slide será exibido
+     * @author Vinicius de Santana
      */
     function initImoveisSlideChooser(){
         var filtros = querySelectorAll('.cat-list li');
@@ -74,6 +78,7 @@
     /**
      * Inicia a aquisição de dados de rastreio
      * melhor lançar em load para esperar rd preencher __trf
+     * @author Vinicius de Santana
      */
     function initTraficSource(){
         // inicia todos os traffic_source
@@ -99,6 +104,7 @@
     }
     /**
      * Inicia o simulador
+     * @author Vinicius de Santana
      */
     function initSimulador(){
         var pagination = querySelectorAll('#simulador .page-numbers li');
@@ -125,6 +131,7 @@
     /**
      * Verifica se os campos da página atual estão válidos
      * @param {String|Number} pageAtual página atual do simulador
+     * @author Vinicius de Santana
      */
     function isFormPageValid(pageAtual){
         if(pageAtual == 1 ){
@@ -188,6 +195,7 @@
     /**
      * Exibe a página e a páginação no simulador
      * @param {String|Number} pageAtual página atual do simulador
+     * @author Vinicius de Santana
      */
     function setSimuladorPage(pageAtual){
         var pagination = querySelectorAll('#simulador .page-numbers li');
@@ -223,6 +231,10 @@
             buttonNext.innerText = 'Próximo';
         }
     }
+    /**
+     * Inicia todas as web masks
+     * @author Vinicius de Santana
+     */
     function initWebMaks(){
         var tels = querySelectorAll('.telMask');
         tels.forEach((item)=>{
@@ -298,6 +310,7 @@
     /**
      * Buscar por todos os itemcom data-target="form-buscar"
      * E insere o evento para abrir a busca
+     * @author Vinicius de Santana
      */
     function initFormBuscar(){
         var divsBuscar = querySelectorAll('[data-target="form-buscar"]');
@@ -313,6 +326,61 @@
         // adiciona o evento para esconder o form de busca
         formBuscar.addEventListener('click', (evt)=>{
             if(evt.target == formBuscar) return formBuscar.classList.remove('active');
+        });
+    }
+    /**
+     * Inicia a galeria de imoveis na single
+     * @author Vinicius de Santana
+     */
+    function initGaleriaImoveisSingle(){
+        // botões de seleção filtram o conteúdo
+        var selection = querySelectorAll('.selection li');
+        var allItens = querySelectorAll('.galeria .item');
+        if(selection.length == 0) return console.warn('não foi encontrado os seletores');
+        if(allItens.length == 0) return console.warn('não foi encontrado os itens');
+        // evento nos seletores
+        selection.forEach((item)=>{
+            item.addEventListener('click', (evt)=>{
+                // primeiro removo active de todos os seletores
+                selection.forEach((item)=>{
+                    item.classList.remove('active');
+                });
+                // depois adiciono active apenas ao atual
+                item.classList.add('active');
+                // agora mostro ou escondo dependendo do valor de target
+                var target = evt.target.dataset.target;
+                allItens.forEach((item) => {
+                    if(item.classList.contains(target) || target == 'all'){
+                        item.classList.remove('disabled');
+                    } else {
+                        item.classList.add('disabled');
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * Busca todas as imagens com data-modalImg="path/to/img.jpg"
+     * e adiciona o evento de click que abrirá o modal
+     * o objetivo é mostrar a imagem em tela cheia
+     * @author Vinicius de Santana
+     */
+    function initModalImg(){
+        var divsImgs = querySelectorAll('img[data-modalImg]');
+        var modalImg = querySelector('#modal-img');
+        var internalImg = querySelector('#modal-img img');
+        if(divsImgs.length == 0) return console.warn('Não há img para o modal-img');
+        if(!modalImg) return console.warn('Foi encontrada img mas não o modal-img, adicioneo a página');
+        // adiciona evento para exibir o formulário de busca
+        divsImgs.forEach((item)=>{
+            item.addEventListener('click', ()=>{
+                internalImg.src = item.dataset.modalimg;
+                modalImg.classList.add('active');
+            });
+        });
+        // adiciona o evento para esconder o form de busca
+        modalImg.addEventListener('click', (evt)=>{
+            if(evt.target == modalImg) return modalImg.classList.remove('active');
         });
     }
 })(window, document, console, x=>document.querySelector(x), x=>document.querySelectorAll(x));

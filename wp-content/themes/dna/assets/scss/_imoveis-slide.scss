@@ -1,3 +1,5 @@
+// originalmente layout da seção imoveis-slide
+// tbm utilizado em header-imoveis com modificações
 .imoveis-slide{
     // background-color: $blue1;
     color: white;
@@ -167,6 +169,29 @@
         display: none;
         &.active{
             display: flex;
+        }
+    }
+    // modificações para header-imoveis
+    &.headerImoveis{
+        padding: 0;
+        .item{
+            border: none;
+        }
+        .carrosselimoveis{
+            height: 85vh;
+        }
+        // a tag de lançamento muda para a flag
+        .lancamento{
+            img{
+                width: 100%;
+            }
+        }
+        .carrosselimoveis .item .btn-img{
+            right: 50px;
+            @media (min-width: $tablets) {
+                width: 50px;
+                height: 50px;
+            }
         }
     }
 }

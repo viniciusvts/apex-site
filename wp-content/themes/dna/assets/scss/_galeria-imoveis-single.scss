@@ -1,0 +1,64 @@
+.galeria-imoveis-single{
+    background-image: url(../img/bg-rodape.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px 50px;
+    color: white;
+    @media (min-width: $desktops) {
+        padding: 70px 140px 100px;
+    }
+    h2{
+        font-size: 40px;
+        color: $yellow1;
+        margin-bottom: 10px;
+    }
+    hr{
+        color: $yellow1;
+        width: 100px;
+        height: 2px;
+        margin-bottom: 30px;
+    }
+    .line {
+        background-color: $yellow1;
+        width: 15px;
+        height: 1px;
+        margin: auto 0;
+    }
+    ul{
+        list-style: none;
+        padding: 15px 0;
+        margin: auto 0;
+        display: flex;
+        overflow-x: auto;
+        li{
+            white-space: nowrap;
+            margin: 0 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all .3s;
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+            &.active{
+                color: $yellow1;
+            }
+        }
+    }
+    .galeria{
+        .item{
+            margin-bottom: 24px;
+            &.disabled{
+                display: none;
+            }
+            iframe, img{
+                width: 100%;
+                @media (min-width: $desktops) {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
