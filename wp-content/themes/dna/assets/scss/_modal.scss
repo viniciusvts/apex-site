@@ -22,3 +22,30 @@ section.modal-img{
         }
     }
 }
+section.modal-simulador{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 70%);
+    z-index: 9999; // nav está com 999
+    display: none;
+    &.active{
+        display: flex;
+    }
+    .intern{
+        margin: auto;
+        width: 95vw;
+        height: 90vh;
+        padding: 30px 0;
+        overflow-y: auto;
+        @media (min-width: $tablets) {
+            height: 75vh;
+        }
+        @media (min-width: $desktops) {
+            height: 90vh;
+            width: 70vw;
+        }
+    }
+}

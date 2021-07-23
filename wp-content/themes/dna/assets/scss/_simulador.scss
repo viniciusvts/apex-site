@@ -1,10 +1,15 @@
-.simulador{
+
+/* ATENÇÂO: o simulador é utilizado na section-simulador e section-simulador-modal
+Tenha atenção ao alterar */
+section.simulador{
     padding-top: 100px;
     padding-bottom: 100px;
     @media (min-width: $tablets) {
         padding-top: 140px;
         padding-bottom: 140px;
     }
+}
+.simulador{
     background-image: url(../img/bg-simulador.jpg);
     background-position: center center;
     background-repeat: no-repeat;

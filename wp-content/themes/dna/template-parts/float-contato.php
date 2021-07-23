@@ -3,7 +3,7 @@
         <div class="row">
             <!-- item -->
             <div class="col-3">
-                <a href="tel:+55 61 3361.4455">
+                <a href="#_" data-modalSimula>
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/telephone.svg"

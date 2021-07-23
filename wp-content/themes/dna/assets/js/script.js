@@ -13,11 +13,13 @@
         initMenuControl();
         addBgInMenuOnScroll();
         initImoveisSlideChooser();
-        initSimulador();
+        initSimulador('#modal-simulador');
+        initSimulador('#simulador');
         initWebMaks();
         initFormBuscar();
         initGaleriaImoveisSingle();
         initModalImg();
+        initModalSimulador();
     }
 
     /** O evento de carga é disparado quando toda a página é carregada,
@@ -106,13 +108,13 @@
      * Inicia o simulador
      * @author Vinicius de Santana
      */
-    function initSimulador(){
-        var pagination = querySelectorAll('#simulador .page-numbers li');
-        var pages = querySelectorAll('#simulador form fieldset');
-        var buttonPrev = querySelector('#simulador .prev');
-        var buttonNext = querySelector('#simulador .next');
+    function initSimulador(id){
+        const pagination = querySelectorAll(id + ' .page-numbers li');
+        const pages = querySelectorAll(id + ' form fieldset');
+        const buttonPrev = querySelector(id + ' .prev');
+        const buttonNext = querySelector(id + ' .next');
         // tenho todos os componentes?
-        if(pagination.length == 0) return console.warn('paginação não encontrada');
+        if(pagination.length == 0) return console.warn(id + ' paginação não encontrada');
         if(pages.length == 0) return console.warn('páginas não encontradas');
         if(!buttonPrev) return console.warn('botão prev não encontrado');
         if(!buttonNext) return console.warn('botão next não encontrado');
@@ -120,12 +122,12 @@
         var pageAtual = 1;
         buttonPrev.addEventListener('click', ()=>{
             pageAtual -= 1;
-            setSimuladorPage(pageAtual);
+            setSimuladorPage(id, pageAtual);
         });
         buttonNext.addEventListener('click', ()=>{
-            if(!isFormPageValid(pageAtual)) return;
+            if(!isFormPageValid(id, pageAtual) || pageAtual == 5) return;
             pageAtual += 1;
-            setSimuladorPage(pageAtual);
+            setSimuladorPage(id, pageAtual);
         });
     }
     /**
@@ -133,38 +135,38 @@
      * @param {String|Number} pageAtual página atual do simulador
      * @author Vinicius de Santana
      */
-    function isFormPageValid(pageAtual){
+    function isFormPageValid(id, pageAtual){
         if(pageAtual == 1 ){
-            if( querySelector("#cidade").value == ""){
+            if( querySelector(id + " #cidade").value == ""){
                 alert("Selecione uma cidade");
                 return false;
             }
         }else if( pageAtual == 2 ){
-            if( querySelector("#nome").value == ""){
+            if( querySelector(id + " #nome").value == ""){
                 alert("Digite um nome");
                 return false;
             }
-            if(!isEmail( querySelector("#email").value)){
+            if(!isEmail( querySelector(id + " #email").value)){
                 alert("Email inválido");
                 return false;
             }
         }else if(pageAtual == 3){
-            if( querySelector("#renda").value == ""){
+            if( querySelector(id + " #renda").value == ""){
                 alert("Digite sua renda");
                 return false;
             }
-            if( querySelector("#entrada").value == ""){
+            if( querySelector(id + " #entrada").value == ""){
                 alert("Digite o valor da entrada");
                 return false;
             }
         }else if(pageAtual == 4){
-            var tel = querySelector("#tel").value;
+            var tel = querySelector(id + " #tel").value;
             if( tel == "" || tel.length < 14){
                 alert("Digite um telefone válido");
                 return false;
             }
         }else if( pageAtual == 5){
-            querySelector('#simulador form').submit();
+            querySelector(id + ' form').submit();
         }
         return true;
     }
@@ -194,14 +196,16 @@
     }
     /**
      * Exibe a página e a páginação no simulador
+     * @param {String} id identificador do simulador
      * @param {String|Number} pageAtual página atual do simulador
+     * @example setSimuladorPage('#simulador', 1);
      * @author Vinicius de Santana
      */
-    function setSimuladorPage(pageAtual){
-        var pagination = querySelectorAll('#simulador .page-numbers li');
-        var pages = querySelectorAll('#simulador form fieldset');
-        var buttonPrev = querySelector('#simulador .prev');
-        var buttonNext = querySelector('#simulador .next');
+    function setSimuladorPage(id, pageAtual){
+        const pagination = querySelectorAll(id + ' .page-numbers li');
+        const pages = querySelectorAll(id + ' form fieldset');
+        const buttonPrev = querySelector(id + ' .prev');
+        const buttonNext = querySelector(id + ' .next');
         //  exibir paginação correta
         pagination.forEach((item)=>{
             if(item.dataset.page == pageAtual){
@@ -381,6 +385,26 @@
         // adiciona o evento para esconder o form de busca
         modalImg.addEventListener('click', (evt)=>{
             if(evt.target == modalImg) return modalImg.classList.remove('active');
+        });
+    }
+    /**
+     * Inicia o modal do simulador
+     * @author Vinicius de Santana
+     */
+    function initModalSimulador(){
+        const divsQueChamamOSimulador = querySelectorAll('[data-modalSimula]');
+        const modalSimula = querySelector('#modal-simulador');
+        if(divsQueChamamOSimulador.length == 0) return console.warn('Não há div chamando o modal simulador');
+        if(!modalSimula) return console.warn('Foi encontrado divs mas não o modal-simulador, adicione-o a página');
+        // adiciona evento para exibir o formulário de busca
+        divsQueChamamOSimulador.forEach((item)=>{
+            item.addEventListener('click', ()=>{
+                modalSimula.classList.add('active');
+            });
+        });
+        // adiciona o evento para esconder o form de busca
+        modalSimula.addEventListener('click', (evt)=>{
+            if(evt.target == modalSimula) return modalSimula.classList.remove('active');
         });
     }
 })(window, document, console, x=>document.querySelector(x), x=>document.querySelectorAll(x));
