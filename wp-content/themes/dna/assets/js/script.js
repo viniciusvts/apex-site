@@ -36,7 +36,7 @@
     function initMenuControl() {
         querySelector('#hambmenu').addEventListener('click', ()=>{
             /** @type HTMLElement */
-            var mainMenu = querySelector('#top-menu');
+            const mainMenu = querySelector('#top-menu');
             // se existe a classe active a remove
             // se não adiciona
             if(mainMenu.classList.contains('active'))
@@ -51,7 +51,7 @@
      */
     function addBgInMenuOnScroll(){
         window.onscroll = function() {
-            var mainMenu = querySelector('#top-menu');
+            const mainMenu = querySelector('#top-menu');
             if (this.scrollY > 500) {
                 mainMenu.classList.add('lightbg');
             } else {
@@ -64,8 +64,8 @@
      * @author Vinicius de Santana
      */
     function initImoveisSlideChooser(){
-        var filtros = querySelectorAll('.cat-list li');
-        var slides = querySelectorAll('.carImoSlide');
+        const filtros = querySelectorAll('.cat-list li');
+        const slides = querySelectorAll('.carImoSlide');
         if((filtros.length < 1) || (slides.length < 1)) return console.log('Não foi encontrado filtro');
         filtros.forEach((item)=>{
             item.addEventListener('click', (evt)=>{
@@ -85,22 +85,22 @@
      */
     function initTraficSource(){
         // inicia todos os traffic_source
-        var traffic_source = querySelectorAll('[name="traffic_source"]');
+        const traffic_source = querySelectorAll('[name="traffic_source"]');
         traffic_source.forEach((item)=>{
             item.value = getUriParam('utm_source') ? getUriParam('utm_source') : getCookie('__trf.src');
         });
         // inicia todos os traffic_medium
-        var traffic_medium = querySelectorAll('[name="traffic_medium"]');
+        const traffic_medium = querySelectorAll('[name="traffic_medium"]');
         traffic_medium.forEach((item)=>{
             item.value = getUriParam('utm_medium');
         });
         // inicia todos os traffic_campaign
-        var traffic_campaign = querySelectorAll('[name="traffic_campaign"]');
+        const traffic_campaign = querySelectorAll('[name="traffic_campaign"]');
         traffic_campaign.forEach((item)=>{
             item.value = getUriParam('utm_campaign');
         });
         // inicia todos os traffic_value
-        var traffic_value = querySelectorAll('[name="traffic_value"]');
+        const traffic_value = querySelectorAll('[name="traffic_value"]');
         traffic_value.forEach((item)=>{
             item.value = getUriParam('utm_term');
         });
@@ -241,11 +241,11 @@
      * @author Vinicius de Santana
      */
     function initWebMaks(){
-        var tels = querySelectorAll('.telMask');
+        const tels = querySelectorAll('.telMask');
         tels.forEach((item)=>{
             item.addEventListener('keyup',execMascaraTel);
         });
-        var dinheiros = querySelectorAll('.dinMask');
+        const dinheiros = querySelectorAll('.dinMask');
         dinheiros.forEach((item)=>{
             item.addEventListener('keyup',execMascaraDinheiroBR);
         });
@@ -318,8 +318,8 @@
      * @author Vinicius de Santana
      */
     function initFormBuscar(){
-        var divsBuscar = querySelectorAll('[data-target="form-buscar"]');
-        var formBuscar = querySelector('#form-buscar');
+        const divsBuscar = querySelectorAll('[data-target="form-buscar"]');
+        const formBuscar = querySelector('#form-buscar');
         if(divsBuscar.length == 0) return console.warn('Não há itens para buscar nesta página');
         if(!formBuscar) return console.warn('Não foi encontrado o form de busca');
         // adiciona evento para exibir o formulário de busca
@@ -339,8 +339,8 @@
      */
     function initGaleriaImoveisSingle(){
         // botões de seleção filtram o conteúdo
-        var selection = querySelectorAll('.selection li');
-        var allItens = querySelectorAll('.galeria .item');
+        const selection = querySelectorAll('.selection li');
+        const allItens = querySelectorAll('.galeria .item');
         if(selection.length == 0) return console.warn('não foi encontrado os seletores');
         if(allItens.length == 0) return console.warn('não foi encontrado os itens');
         // evento nos seletores
@@ -371,11 +371,11 @@
      * @author Vinicius de Santana
      */
     function initModalImg(){
-        var divsImgs = querySelectorAll('img[data-modalImg]');
-        var modalImg = querySelector('#modal-img');
-        var internalImg = querySelector('#modal-img img');
+        const divsImgs = querySelectorAll('img[data-modalImg]');
+        const modalImg = querySelector('#modal-img');
+        const internalImg = querySelector('#modal-img img');
         if(divsImgs.length == 0) return console.warn('Não há img para o modal-img');
-        if(!modalImg) return console.warn('Foi encontrada img mas não o modal-img, adicioneo a página');
+        if(!modalImg) return console.warn('Foi encontrada img mas não o modal-img, adicione-o a página');
         // adiciona evento para exibir o formulário de busca
         divsImgs.forEach((item)=>{
             item.addEventListener('click', ()=>{
