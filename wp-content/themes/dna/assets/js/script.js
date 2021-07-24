@@ -21,6 +21,7 @@
         initModalImg();
         initModalSimulador();
         initObraImoveisValues();
+        initModalObraFotos();
     }
 
     /** O evento de carga é disparado quando toda a página é carregada,
@@ -66,7 +67,7 @@
     function initImoveisSlideChooser(){
         const filtros = querySelectorAll('.cat-list li');
         const slides = querySelectorAll('.carImoSlide');
-        if((filtros.length < 1) || (slides.length < 1)) return console.log('Não foi encontrado filtro');
+        if((filtros.length < 1) || (slides.length < 1)) return console.warn('Não foi encontrado filtro');
         filtros.forEach((item)=>{
             item.addEventListener('click', (evt)=>{
                 var dataTarget = evt.target.dataset.target;
@@ -465,6 +466,26 @@
         // adiciona o evento para esconder o form de busca
         modalSimula.addEventListener('click', (evt)=>{
             if(evt.target == modalSimula) return modalSimula.classList.remove('active');
+        });
+    }
+    /**
+     * Inicia o modal das fotos da obra
+     * @author Vinicius de Santana
+     */
+    function initModalObraFotos(){
+        const divsQueChamamOModal = querySelectorAll('[data-show="modalObraFotos"]');
+        const modal = querySelector('#modal-obrafotos');
+        if(divsQueChamamOModal.length == 0) return console.warn('Não há div chamando o modal obra fotos');
+        if(!modal) return console.warn('Foi encontrado divs mas não o obra fotos, adicione-o a página');
+        // adiciona evento para exibir o formulário de busca
+        divsQueChamamOModal.forEach((item)=>{
+            item.addEventListener('click', ()=>{
+                modal.classList.add('active');
+            });
+        });
+        // adiciona o evento para esconder o form de busca
+        modal.addEventListener('click', (evt)=>{
+            if(evt.target == modal) return modal.classList.remove('active');
         });
     }
 })(window, document, console, x=>document.querySelector(x), x=>document.querySelectorAll(x));

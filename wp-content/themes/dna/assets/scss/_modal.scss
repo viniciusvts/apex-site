@@ -9,7 +9,7 @@ section.modal-img{
     height: 100vh;
     color: white;
     background-color: rgba(0, 0, 0, 70%);
-    z-index: 9999; // nav está com 999
+    z-index: 99999; // nav está com 999, outros modais com 9999
     display: none;
     &.active{
         display: flex;
@@ -43,6 +43,33 @@ section.modal-simulador{
         @media (min-width: $tablets) {
             height: 75vh;
         }
+        @media (min-width: $desktops) {
+            height: 90vh;
+            width: 70vw;
+        }
+    }
+}
+// sub_section/obra-imoveis-single-modal.php
+section.modal-obrafotos{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 70%);
+    z-index: 9999; // nav está com 999
+    display: none;
+    &.active{
+        display: flex;
+    }
+    .intern{
+        background-color: white;
+        margin: auto;
+        max-width: 95vw;
+        height: 75vh;
+        overflow-y: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
         @media (min-width: $desktops) {
             height: 90vh;
             width: 70vw;

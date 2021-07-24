@@ -1,6 +1,7 @@
 <?php
 $obraAndamento = get_field('andamento_da_obra');
 $obraFotos = get_field('andamento_da_obra_fotos');
+include get_template_directory().'/template-parts/sub_section/obra-imoveis-single-modal.php';
 ?>
 <section class="obra-imoveis-single container">
     <div class="row">
@@ -73,7 +74,9 @@ $obraFotos = get_field('andamento_da_obra_fotos');
         ?>
         <div class="col-11 col-lg-7 mx-auto">
             <?php
-            foreach ($obraFotos as $obraFoto) {
+            foreach ($obraFotos as $key => $obraFoto) {
+                // só vou exibir dois aqui, vou exibir todos no modal
+                if($key >= 2) break;
             ?>
             <div class="row">
                 <div class="col">
@@ -98,6 +101,11 @@ $obraFotos = get_field('andamento_da_obra_fotos');
             <?php
             }
             ?>
+            <div class="row">
+                <div class="col-10 col-md-6 col lg-3 mx-auto mx-lg-0">
+                    <a href="#_" class="btn btn-y" data-show="modalObraFotos">Ver Mais</a>
+                </div>
+            </div>
         </div>
         <?php
         }
