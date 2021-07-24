@@ -35,7 +35,9 @@
                         <div class="row h-100">
                             <div class="h-content position-relative text-content row">
                                 <div class="<?php echo $contentClass; ?>">
-                                    <h2><?php the_title(); ?></h2>
+                                    <a href="<?php echo $postLink; ?>">
+                                        <h2><?php the_title(); ?></h2>
+                                    </a>
                                     <div class="details d-none d-lg-flex regular">
                                         <?php
                                         if($quartos){

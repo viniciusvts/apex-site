@@ -68,7 +68,9 @@
                         <div class="container h-100">
                             <div class="row h-100">
                                 <div class="h-content position-relative text-content">
-                                    <h2><?php echo $imovel->post_title; ?></h2>
+                                    <a href="<?php echo $postLink; ?>">
+                                        <h2><?php echo $imovel->post_title; ?></h2>
+                                    </a>
                                     <div class="details d-none d-lg-flex regular">
                                         <?php
                                         if($quartos){
