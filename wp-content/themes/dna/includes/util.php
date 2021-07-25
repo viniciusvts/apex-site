@@ -8,3 +8,49 @@ function getNoAcentsString($string){
     $str = strtr( $string, $caracters );
     return strtolower($str); 
 }
+
+/**
+ * Itera o contador de views do post
+ * @author Vinicius de Santana
+ * @param string|int $postID ID do post ao qual deseja iterar
+ */
+function ssw_addViewToPost($postID) {
+    $count = get_post_meta($postID, POST_META_COUNT, true);
+    if($count==''){
+        $count = 1;
+        delete_post_meta($postID, POST_META_COUNT);
+        add_post_meta($postID, POST_META_COUNT, $count);
+    }else{
+        $count++;
+        update_post_meta($postID, POST_META_COUNT, $count);
+    }
+}
+/**
+ * Retorna a quantidade de views do post
+ * @author Vinicius de Santana
+ * @param string|int $postID ID do post
+ */
+function ssw_getPostViewCount($postID) {
+    return get_post_meta($postID, POST_META_COUNT, true);
+}
+/**
+ * Retorna os posts pela quantidade de views
+ * @param string|int $qtd qtd de post, default:10
+ * @author Vinicius de Santana
+ */
+function ssw_getPostByViews($qtd = 10) {
+    //query no banco
+    global $wpdb;
+    $query = "SELECT * FROM {$wpdb->prefix}postmeta";
+    $query .= " WHERE meta_key = '" . POST_META_COUNT . "'";
+    $query .= " ORDER BY meta_value DESC";
+    $query .= " LIMIT 0, ".$qtd.";";
+    $orderedMetaKeys = $wpdb->get_results( $query, ARRAY_A );
+    //monta resposta
+    $resp = array();
+    foreach ($orderedMetaKeys as $key => $value) {
+      $post = get_post($value['post_id']);
+      $resp[] = $post;
+    }
+    return $resp;
+}

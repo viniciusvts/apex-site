@@ -1,4 +1,6 @@
 <?php
+/** use this in post views */
+define('POST_META_COUNT', 'dna_views');
 add_theme_support( 'post-thumbnails' );
 include("custom-posts/imoveis.php");
 include("includes/customizer.php");

@@ -1,0 +1,44 @@
+// regra quando não tem texto a direita do header
+.header-title-sub{
+    color: white;
+    position: relative;
+    .fundo{
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .content{
+        padding-top: 250px;
+        padding-bottom: 200px;
+        @media (min-width: $desktops) {
+            padding-top: 150px;
+            padding-bottom: 100px;
+        }
+        h2{
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p.subtitle{
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+    // regra para quando tem texto a direita do header
+    &.has-header-cont{
+        .content{
+            .title{
+                margin-bottom: 20px;
+                @media (min-width: $tablets) {
+                    height: fit-content;
+                    margin: auto 0;
+                }
+            }
+            padding-top: 150px;
+            padding-bottom: 200px;
+            @media (min-width: $tablets) {
+                padding-bottom: 100px;
+            }
+        }
+    }
+}
