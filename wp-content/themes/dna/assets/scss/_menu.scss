@@ -51,6 +51,7 @@ nav.top-menu{
         li{
             text-align: center;
             padding: 10px 0;
+            white-space: nowrap;
             @media (min-width: $desktops) {
                 height: fit-content;
                 margin: auto 10px;
