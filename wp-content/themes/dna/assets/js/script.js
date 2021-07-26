@@ -327,6 +327,7 @@
         divsBuscar.forEach((item)=>{
             item.addEventListener('click', ()=>{
                 formBuscar.classList.add('active');
+                querySelector('#s').select();
             });
         });
         // adiciona o evento para esconder o form de busca
