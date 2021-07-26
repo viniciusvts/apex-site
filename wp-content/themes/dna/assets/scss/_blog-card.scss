@@ -6,6 +6,19 @@
     @media (min-width: $desktops) {
         margin-bottom: 40px;
     }
+    // se o post não tem thumbnail...
+    &.no-thumb{
+        .post-col{
+            background-image: url(../img/apex-blog-card-bg-1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        // .post-col{
+        //     color: #636363;
+        //     border: 2px solid #768791;
+        // }
+    }
     a{
         width: 100%;
         text-decoration: none;

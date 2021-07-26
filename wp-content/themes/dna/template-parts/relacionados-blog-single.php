@@ -1,11 +1,23 @@
 <?php
+$catList = get_the_terms(get_the_ID(), 'category');
+$catIds = array_map(function($item){
+    return $item->term_id;
+}, $catList);
 $blogPosts = get_posts(
     array(
-        'posts_per_page'=>'5',
+        'posts_per_page'=>'3',
+        'category' => $catIds,
     )
 );
 ?>
 <section class="container blog-feed">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center mb-5">
+                Posts relacionados
+            </h1>
+        </div>
+    </div>
     <div class="row">
         <?php
         foreach ($blogPosts as $key => $blogPost) {

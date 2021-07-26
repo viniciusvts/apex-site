@@ -6,7 +6,7 @@ $thumb = get_the_post_thumbnail(get_the_ID(),
 );
 $categorias = get_the_category();
 ?>
-<div class="blog-card d-flex">
+<div class="blog-card d-flex <?php echo strlen($thumb)?'':'no-thumb' ?>">
     <a href="<?php echo $permalink; ?>">
         <div class="post-col">
             <?php echo $thumb; ?>

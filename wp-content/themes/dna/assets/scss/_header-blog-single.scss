@@ -1,0 +1,16 @@
+header.blog-single{
+    padding-top: 100px!important;
+    padding-bottom: 0px!important;
+    background-color: #768791;
+    @media (min-width: $desktops) {
+        padding-top: 0px!important;
+    }
+    img.fundo{
+        width: 100vw;
+        height: auto;
+        @media (min-width: $desktops) {
+            height: 100vh;
+        }
+        object-fit: cover;
+    }
+}

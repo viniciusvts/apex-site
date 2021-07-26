@@ -28,3 +28,37 @@
         }
     }
 }
+// estilos para content-blog-single.php
+.blog-single{
+    padding-top: 30px;
+    padding-bottom: 80px;
+    @media (min-width: $desktops) {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .redes-sociais{
+        margin-bottom: 30px;
+    }
+    .cat-list{
+        margin-bottom: 30px;
+        font-weight: 100;
+        @media (min-width: $desktops) {
+            text-align: right;
+        }
+    }
+    .crumbs{
+        font-weight: bold;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: normal;
+        @media (min-width: $desktops) {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
