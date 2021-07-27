@@ -1,0 +1,90 @@
+.diferenciais{
+    background-image: url(../img/bg-section-diferenciais.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    @media (min-width: $tablets) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    h2{
+        color: $yellow1;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        text-align: center;
+        @media (min-width: $desktops) {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+    }
+    h3{
+        font-size: 20px;
+        font-weight: 200;
+        margin-bottom: 20px;
+        text-align: center;
+        @media (min-width: $desktops) {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    hr{
+        color: $yellow1;
+        width: 150px;
+        height: 3px;
+        margin: 0 auto 30px;
+        @media (min-width: $desktops) {
+            margin: 0 auto 50px;
+        }
+    }
+}
+// carrossel
+#section-diferenciais{
+    img{
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        margin: 0 auto 30px;
+        @media (min-width: $desktops) {
+            width: 340px;
+            height: 340px;
+        }
+    }
+    h4{
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        @media (min-width: $desktops) {
+            font-size: 30px;
+        }
+    }
+    .text{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+        @media (min-width: $desktops) {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    .owl-nav{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        button{
+            &.disabled svg{
+                display: none;
+            }
+            &.owl-next{
+                float: right;
+            }
+        }
+    }
+}
