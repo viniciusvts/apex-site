@@ -1,7 +1,7 @@
+<!-- stilos em content-blog.scss -->
 <section class="blog-single container">
     <div class="row">
         <div class="col-lg-10 col-xxl-8 mx-auto">
-            </div>
             <div class="row crumbs">
                 <div class="col-12 mb-3 mb-lg-5">
                 <?php
