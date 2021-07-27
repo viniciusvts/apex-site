@@ -1,9 +1,12 @@
 <?php
 // Atenção: stilos em content-blog.scss
 $catList = get_the_terms(get_the_ID(), 'category');
-$catNames = array_map(function($item){
-    return $item->name;
-}, $catList);
+// get the terms pode retornar false, nesse caso retorno um array vazio
+$catNames = $catList ?
+            array_map(function($item){
+                return $item->name;
+            }, $catList) :
+            array();
 ?>
 <section class="blog-single container">
     <div class="row">
