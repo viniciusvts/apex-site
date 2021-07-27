@@ -489,4 +489,24 @@
             if(evt.target == modal) return modal.classList.remove('active');
         });
     }
+    /**
+     * Inicia o modal dos depoimentos
+     * @author Vinicius de Santana
+     */
+    function initModalObraFotos(){
+        const divsQueChamamOModal = querySelectorAll('[data-show="modalDepoimentos"]');
+        const modal = querySelector('#modal-depoimentos');
+        if(divsQueChamamOModal.length == 0) return console.warn('Não há div chamando o modal depoimentos');
+        if(!modal) return console.warn('Foi encontrado divs mas não o depoimentos, adicione-o a página');
+        // adiciona evento para exibir o formulário de busca
+        divsQueChamamOModal.forEach((item)=>{
+            item.addEventListener('click', ()=>{
+                modal.classList.add('active');
+            });
+        });
+        // adiciona o evento para esconder o form de busca
+        modal.addEventListener('click', (evt)=>{
+            if(evt.target == modal) return modal.classList.remove('active');
+        });
+    }
 })(window, document, console, x=>document.querySelector(x), x=>document.querySelectorAll(x));

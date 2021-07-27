@@ -1,0 +1,49 @@
+.content-depoimentos{
+    padding-top: 70px;
+    padding-bottom: 120px;
+    @media (min-width: $tablets) {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    h2{
+        color: $blue3;
+        font-size: 20px;
+        font-weight: 100;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 0;
+        @media (min-width: $tablets) {
+            margin-bottom: 5px;
+        }
+    }
+    h3{
+        color: $blue2;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .videos{
+        iframe{
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+            &::after{
+                position: absolute;
+                width: 80%;
+                height: 100%;
+                border: 3px solid #BC977F;
+                top: 20px;
+            }
+        }
+        h4{
+            color: #444444;
+            font-size: 25px;
+            font-weight: 200;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}
