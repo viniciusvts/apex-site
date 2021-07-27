@@ -66,3 +66,77 @@
         word-break: break-word;
     }
 }
+// estilos para content-contato
+.content-contato{
+    .form-contato{
+        form{
+            .input{
+                label{
+                    display: block;
+                }
+                &.tel, &.assunto{
+                    width: 50%;
+                }
+                &.tel{
+                    padding-right: 10px;
+                }
+                &.assunto{
+                    padding-left: 10px;
+                }
+                input, select, textarea{
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 20px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #000964;
+                    &::placeholder{
+                        color: #060606;
+                    }
+                }
+                textarea{
+                    height: unset;
+                }
+            }
+            .submit{
+                @media (min-width: $tablets) {
+                    width: 40%;
+                }
+                input{
+                    width: 100%;
+                    padding: 10px 20px;
+                    margin-top: 20px;
+                    border: none;
+                    background-color: $yellow1;
+                    color: white;
+                    font-weight: bold;
+                    @media (min-width: $tablets) {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .contato-data{
+        h3{
+            font-size: 20px;
+            color: $yellow1;
+            font-weight: bold;
+            line-height: 35px;
+            text-transform: uppercase;
+        }
+        p{
+            &.tel{
+                margin-bottom: 0;
+                a{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+        address{
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+}
