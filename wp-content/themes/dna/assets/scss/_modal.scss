@@ -76,3 +76,43 @@ section.modal-obrafotos{
         }
     }
 }
+// modal-buscar.php
+section.modal-buscar{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 70%);
+    z-index: 9999; // nav está com 999
+    display: none;
+    &.active{
+        display: flex;
+    }
+    .intern{
+        margin: auto;
+        padding: 30px;
+        background-image: url(../img/bg-rodape.jpg);
+        label{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        input{
+            background-color: white;
+            padding: 10px 25px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            @media (min-width: $desktops) {
+                width: 65%;
+            }
+            &[type="submit"]{
+                text-transform: uppercase;
+                color: white;
+                background-color: $yellow1;
+                @media (min-width: $desktops) {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

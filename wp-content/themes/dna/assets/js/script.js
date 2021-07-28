@@ -319,8 +319,8 @@
      * @author Vinicius de Santana
      */
     function initFormBuscar(){
-        const divsBuscar = querySelectorAll('[data-target="form-buscar"]');
-        const formBuscar = querySelector('#form-buscar');
+        const divsBuscar = querySelectorAll('[data-target="modal-buscar"]');
+        const formBuscar = querySelector('#modal-buscar');
         if(divsBuscar.length == 0) return console.warn('Não há itens para buscar nesta página');
         if(!formBuscar) return console.warn('Não foi encontrado o form de busca');
         // adiciona evento para exibir o formulário de busca
