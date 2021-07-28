@@ -6,6 +6,7 @@ include("custom-posts/imoveis.php");
 include("custom-posts/depoimentos.php");
 include("includes/breadcrumbs.php");
 include("includes/customizer.php");
+include("includes/customizer-login.php");
 include("includes/endpoints.php");
 include("includes/gCaptchaVerify.php");
 include("includes/loadSources.php");
