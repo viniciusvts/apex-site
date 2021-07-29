@@ -12,7 +12,7 @@ section.modal-img{
     z-index: 99999; // nav está com 999, outros modais com 9999
     display: none;
     &::before{
-        content: 'X';
+        content: 'x';
         position: absolute;
         top: 50px;
         right: 50px;
@@ -44,7 +44,7 @@ section.modal-simulador{
     z-index: 9999; // nav está com 999
     display: none;
     &::before{
-        content: 'X';
+        content: 'x';
         position: absolute;
         top: 50px;
         right: 50px;
@@ -108,7 +108,7 @@ section.modal-obrafotos{
     z-index: 9999; // nav está com 999
     display: none;
     &::before{
-        content: 'X';
+        content: 'x';
         position: absolute;
         top: 50px;
         right: 50px;
@@ -146,7 +146,7 @@ section.modal-buscar{
     z-index: 9999; // nav está com 999
     display: none;
     &::before{
-        content: 'X';
+        content: 'x';
         position: absolute;
         top: 50px;
         right: 50px;
