@@ -19,7 +19,7 @@
             </div>
             <!-- item -->
             <div class="col-3">
-                <a href="#_">
+                <a href="#_" data-popup="pop-email">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg"
@@ -51,7 +51,7 @@
             </div>
             <!-- item -->
             <div class="col-3">
-                <a href="#_">
+                <a href="#_" data-popup="pop-whats">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/whatsapp.svg"

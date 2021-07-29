@@ -1,9 +1,9 @@
 <!-- stilo em content-imoveis-single -->
 <div class="imoveis-single-sidebar">
     <div class="actions">
-        <a href="#_" class="btn green">Fale pelo WhatsApp</a>
-        <a href="#_" class="btn red">Faça sua simulação</a>
-        <a href="#_" class="btn yellow">Falar por email</a>
+        <a href="#_" class="btn green" data-popup="pop-whats">Fale pelo WhatsApp</a>
+        <a href="#_" class="btn red" data-modalSimula>Faça sua simulação</a>
+        <a href="#_" class="btn yellow" data-popup="pop-email">Falar por email</a>
     </div>
     <div class="ligamos-para-vc">
         <img class="w-100"
