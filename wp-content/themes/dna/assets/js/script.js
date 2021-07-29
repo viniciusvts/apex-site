@@ -544,5 +544,20 @@
         popupWhats.addEventListener('click', (evt)=>{
             if(evt.target == popupWhats) return popupWhats.classList.remove('active');
         });
+        //  popup atendimento online
+        const divsQueChamamPopupAttOnline = querySelectorAll('[data-popup="pop-attonline"]');
+        const popupAttOnline = querySelector('#pop-attonline');
+        if(divsQueChamamPopupAttOnline.length == 0) return console.warn('Não há div chamando o popupAttOnline');
+        if(!popupAttOnline) return console.warn('Foi encontrado divs mas não o popupAttOnline, adicione-o a página');
+        // adiciona evento para exibir o formulário de busca
+        divsQueChamamPopupAttOnline.forEach((item)=>{
+            item.addEventListener('click', ()=>{
+                popupAttOnline.classList.add('active');
+            });
+        });
+        // adiciona o evento para esconder o form de busca
+        popupAttOnline.addEventListener('click', (evt)=>{
+            if(evt.target == popupAttOnline) return popupAttOnline.classList.remove('active');
+        });
     }
 })(window, document, console, x=>document.querySelector(x), x=>document.querySelectorAll(x));
