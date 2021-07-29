@@ -60,7 +60,9 @@
                 border-top: 4px solid white;
             }
             .text-content{
-                margin: auto 0 30px;
+                margin: auto 0 0;
+                padding-bottom: 30px;
+                background-image: linear-gradient(0deg, #0B0B0E, transparent);
             }
             .isLancamento{
                 position: absolute;
@@ -104,6 +106,10 @@
                         width: 30px;
                         height: 30px;
                         margin: 0 auto 5px;
+                        // o carro fica pequeno com largura igual
+                        &[src="http://apex.localhost/wp-content/themes/dna/assets/img/car.svg"]{
+                            width: 50px;
+                        }
                     }
                     p{
                         font-size: 14px;

@@ -5,7 +5,7 @@
             alt="logo casa verde e amarela"
             class="mx-auto mb-3 d-lg-none">
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 col-xxl-5 ml-auto">
             <h2 class="text-center bold italic d-lg-none">
                 MILHARES DE FAMÍLIAS JÁ REALIZARAM SEUS SONHOS
             </h2>
@@ -13,7 +13,7 @@
             alt="familia feliz com a apex"
             class="w-100 mb-5">
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 col-xxl-4 mr-auto">
             <h2 class="bold italic d-none d-lg-block mt-5">
                 MILHARES DE FAMÍLIAS JÁ REALIZARAM SEUS SONHOS
             </h2>
@@ -32,7 +32,7 @@
             </p>
             <div class="row">
                 <div class="col d-flex">
-                    <a href="#" class="btn btn-b mx-auto mt-4">
+                    <a href="#simulador" class="btn btn-b mx-auto mt-4">
                         Fale com um consultor
                     </a>
                 </div>

@@ -95,16 +95,27 @@ section.simulador{
             font-size: 16px;
             font-weight: bold;
             margin-bottom: 10px;
+            &[for^="fgts-"]{
+                font-size: 25px;
+            }
+            &[for="communicationsconsent"]{
+                @media (min-width: $tablets) {
+                    margin-left: 20px;
+                }
+            }
         }
         select, input{
             background-color: white;
             width: 100%;
             padding: 20px 25px;
+            &[name^="fgts"]{
+                height: 25px;
+            }
         }
         input#communicationsconsent{
+            width: 30px;
             @media (min-width: $tablets) {
                 width: fit-content;
-                margin-left: 20px;
             }
         }
         .g-recaptcha{
@@ -126,7 +137,7 @@ section.simulador{
         &.next{
             color: white;
             background-color: $blue3;
-            margin-left: auto;
+            margin: auto;
             @media (min-width: $desktops) {
                 background-color: $yellow1;
             }

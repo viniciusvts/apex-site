@@ -22,6 +22,7 @@
         initModalSimulador();
         initObraImoveisValues();
         initModalObraFotos();
+        initModalDepoimentos();
         initPopups();
     }
 
@@ -54,7 +55,7 @@
     function addBgInMenuOnScroll(){
         window.onscroll = function() {
             const mainMenu = querySelector('#top-menu');
-            if (this.scrollY > 500) {
+            if (this.scrollY > 200) {
                 mainMenu.classList.add('lightbg');
             } else {
                 mainMenu.classList.remove('lightbg');
@@ -494,7 +495,7 @@
      * Inicia o modal dos depoimentos
      * @author Vinicius de Santana
      */
-    function initModalObraFotos(){
+    function initModalDepoimentos(){
         const divsQueChamamOModal = querySelectorAll('[data-show="modalDepoimentos"]');
         const modal = querySelector('#modal-depoimentos');
         if(divsQueChamamOModal.length == 0) return console.warn('Não há div chamando o modal depoimentos');

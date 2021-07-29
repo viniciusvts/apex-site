@@ -17,4 +17,12 @@
         font-weight: 200;
         color: $blue1;
     }
+    .right{
+        img{
+            width: 100%;
+            @media (min-width: $desktops) {
+                width: 75%;
+            }
+        }
+    }
 }

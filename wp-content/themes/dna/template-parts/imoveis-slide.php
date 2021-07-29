@@ -65,7 +65,7 @@
                         if($isLancamento) echo '<p class="isLancamento">Lançamento</p>';
                         echo $thumb;
                         ?>
-                        <div class="container h-100">
+                        <div class="container h-100 px-2">
                             <div class="row h-100">
                                 <div class="h-content position-relative text-content">
                                     <a href="<?php echo $postLink; ?>">
@@ -171,7 +171,7 @@
                         if($isLancamento) echo '<p class="isLancamento">Lançamento</p>';
                         echo $thumb;
                         ?>
-                        <div class="container h-100">
+                        <div class="container h-100 px-2">
                             <div class="row h-100">
                                 <div class="h-content position-relative text-content">
                                     <h2><?php echo $imovel->post_title; ?></h2>
@@ -275,7 +275,7 @@
                         if($isLancamento) echo '<p class="isLancamento">Lançamento</p>';
                         echo $thumb;
                         ?>
-                        <div class="container h-100">
+                        <div class="container h-100 px-2">
                             <div class="row h-100">
                                 <div class="h-content position-relative text-content">
                                     <h2><?php echo $imovel->post_title; ?></h2>
@@ -336,7 +336,7 @@
         <!-- /carrosseis imoveis slide -->
         <div class="row">
             <div class="col d-flex">
-                <a href="/imoveis/" class="btn btn-y mx-auto mt-3">
+                <a href="/empreendimentos/" class="btn btn-y mx-auto mt-3">
                     Ver todos os imóveis
                 </a>
             </div>

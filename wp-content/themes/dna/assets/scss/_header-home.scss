@@ -38,6 +38,10 @@ header.header-home{
                         width: 30px;
                         height: 30px;
                         margin: 0 auto 5px;
+                        // o carro fica pequeno com largura igual
+                        &[src="http://apex.localhost/wp-content/themes/dna/assets/img/car.svg"]{
+                            width: 50px;
+                        }
                     }
                     p{
                         font-size: 14px;

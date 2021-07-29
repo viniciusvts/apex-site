@@ -11,6 +11,18 @@ section.modal-img{
     background-color: rgba(0, 0, 0, 70%);
     z-index: 99999; // nav está com 999, outros modais com 9999
     display: none;
+    &::before{
+        content: 'X';
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        font-size: 30px;
+        @media (min-width: $desktops) {
+            top: 100px;
+            right: 100px;
+            font-size: 50px;
+        }
+    }
     &.active{
         display: flex;
     }
@@ -31,6 +43,18 @@ section.modal-simulador{
     background-color: rgba(0, 0, 0, 70%);
     z-index: 9999; // nav está com 999
     display: none;
+    &::before{
+        content: 'X';
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        font-size: 30px;
+        @media (min-width: $desktops) {
+            top: 100px;
+            right: 100px;
+            font-size: 50px;
+        }
+    }
     &.active{
         display: flex;
     }
@@ -47,6 +71,30 @@ section.modal-simulador{
             height: 90vh;
             width: 70vw;
         }
+        &.simulador{
+            background-image: none;
+            background-color: #fff;//$blue1;
+            color: $blue1;
+            .title p{
+                color: $blue1;
+            }
+            fieldset{
+                label{
+                    color: $blue1;
+                }
+                input{
+                    color: $blue1;
+                }
+            }
+            .page-numbers ul{
+                &::before{
+                    background-color: $blue3;
+                }
+                li.page{
+                    border: 1px solid $blue3;
+                }
+            }
+        }
     }
 }
 // sub_section/obra-imoveis-single-modal.php
@@ -59,6 +107,18 @@ section.modal-obrafotos{
     background-color: rgba(0, 0, 0, 70%);
     z-index: 9999; // nav está com 999
     display: none;
+    &::before{
+        content: 'X';
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        font-size: 30px;
+        @media (min-width: $desktops) {
+            top: 100px;
+            right: 100px;
+            font-size: 50px;
+        }
+    }
     &.active{
         display: flex;
     }
@@ -85,6 +145,18 @@ section.modal-buscar{
     background-color: rgba(0, 0, 0, 70%);
     z-index: 9999; // nav está com 999
     display: none;
+    &::before{
+        content: 'X';
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        font-size: 30px;
+        @media (min-width: $desktops) {
+            top: 100px;
+            right: 100px;
+            font-size: 50px;
+        }
+    }
     &.active{
         display: flex;
     }

@@ -7,11 +7,11 @@
         </div>
         <div class="col-12 col-lg-6">
             <h2 class="text-center bold italic d-lg-none">Saia do aluguel com a Apex</h2>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/familia-feliz.jpg"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/familia-feliz-2x.jpg"
             alt="familia feliz com a apex"
             class="w-100 mb-5">
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 right">
             <h2 class="text-center bold italic d-none d-lg-block">Saia do aluguel com a Apex</h2>
             <p class="mb-5">É uma iniciativa do Governo Federal que oferece
                 condições atrativas para o financiamento de moradias 
@@ -26,7 +26,7 @@
                 <div class="col-2 d-flex">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/money-bag.svg"
                     alt="bolsa de dinheiro"
-                    class="w-100 my-auto">
+                    class="my-auto">
                 </div>
                 <div class="col-10">
                     <p class="mb-0">O Programa do Governo Federal oferece condições de pagamento e 
@@ -38,7 +38,7 @@
                 <div class="col-2 d-flex">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home-blue.svg"
                     alt="uma casa"
-                    class="w-100 my-auto">
+                    class="my-auto">
                 </div>
                 <div class="col-10">
                     <p class="mb-0">Você pode financiar a compra de imóvel novo em área urbana 
@@ -50,7 +50,7 @@
                 <div class="col-2 d-flex">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/piggybank.svg"
                     alt="porquinho de dinheiro"
-                    class="w-100 my-auto">
+                    class="my-auto">
                 </div>
                 <div class="col-10">
                     <p class="mb-0">Ainda assim se sua renda pessoal não for suficiente, você 
@@ -60,7 +60,7 @@
             </div>
             <div class="row">
                 <div class="col d-flex">
-                    <a href="#" class="btn btn-b mx-auto mt-4">
+                    <a href="#simulador" class="btn btn-b mx-auto mt-4">
                         Fale com um consultor
                     </a>
                 </div>

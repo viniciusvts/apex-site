@@ -65,7 +65,7 @@ $termsCity = get_terms([
                 <fieldset data-page="4">
                     <label for="tel">Qual seu telefone com DDD?</label>
                     <input type="tel" name="tel" id="tel" class="mb-4 telMask">
-                    <label for="fgts">Usará seu FGTS?</label>
+                    <label for="fgts" class="mb-4">Usará seu FGTS?</label>
                     <div class="row">
                         <div class="col-6">
                             <input type="radio" name="fgts" required id="fgts-y" value="sim">
@@ -78,9 +78,13 @@ $termsCity = get_terms([
                     </div>
                 </fieldset>
                 <fieldset data-page="5">
-                    <label for="communicationsconsent">Eu concordo em receber comunicações.</label>
-                    <input type="checkbox" name="communicationsconsent"
-                    id="communicationsconsent" class="mb-4">
+                    <div class="d-flex">
+                        <input type="checkbox" name="communicationsconsent"
+                        id="communicationsconsent" class="ml-auto">
+                        <label for="communicationsconsent" class="mb-4 mr-auto">
+                            Eu concordo em receber comunicações.
+                        </label>
+                    </div>
                     
                     <div class="g-recaptcha mx-auto"
                         data-sitekey="6Lepfa0bAAAAAOqIu6RdY3S0xE9EkyEEmUdltXgK"></div>
