@@ -23,7 +23,7 @@
             </p>
             <p>A empresa atua no desenvolvimento do mercado voltado para a habitação, 
                 oferecendo à cidade empreendimentos práticos, funcionais e sustentáveis. 
-                Já entregou mais de 100 empreendimentos.
+                Já entregou mais de <b>100 empreendimentos.</b>
             </p>
             <p class="mb-5">Satisfazer o cliente é a principal meta da Apex, cujos 
                 trabalhos partem da realização de estudos e rigoroso planejamento 
@@ -32,7 +32,7 @@
             </p>
             <div class="row">
                 <div class="col d-flex">
-                    <a href="#simulador" class="btn btn-b mx-auto mt-4">
+                    <a href="#simulador" class="btn btn-sda mx-auto mx-lg-0 mt-4">
                         Fale com um consultor
                     </a>
                 </div>

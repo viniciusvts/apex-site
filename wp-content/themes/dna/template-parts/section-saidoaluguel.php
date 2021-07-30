@@ -60,7 +60,7 @@
             </div>
             <div class="row">
                 <div class="col d-flex">
-                    <a href="#simulador" class="btn btn-b mx-auto mt-4">
+                    <a href="#simulador" class="btn btn-sda mx-auto mx-lg-0 mt-4">
                         Fale com um consultor
                     </a>
                 </div>
