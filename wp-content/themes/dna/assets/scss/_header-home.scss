@@ -39,7 +39,7 @@ header.header-home{
                         height: 30px;
                         margin: 0 auto 5px;
                         // o carro fica pequeno com largura igual
-                        &[src="http://apex.localhost/wp-content/themes/dna/assets/img/car.svg"]{
+                        &[src$="car.svg"]{
                             width: 50px;
                         }
                     }
