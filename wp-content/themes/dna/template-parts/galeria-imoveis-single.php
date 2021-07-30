@@ -70,7 +70,7 @@ $planta = get_field('planta');
     </div>
     <div class="row">
         <div class="col">
-            <a href="#_" class="btn btn-y d-none d-lg-block mx-auto mt-5 w-25">
+            <a href="#fale-com-consultor" class="btn btn-y d-none d-lg-block mx-auto mt-5 w-25">
                 Fale com um consultor
             </a>
         </div>
