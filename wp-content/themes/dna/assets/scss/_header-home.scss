@@ -20,11 +20,14 @@ header.header-home{
                 top: 0;
                 object-fit: cover;
                 z-index: -1;
-                filter: brightness(0.6);
+                filter: brightness(0.5);
             }
             h1, h2{
                 font-size: 25px;
                 text-transform: uppercase;
+                @media (min-width: $fullHdDesktops) {
+                    font-size: 50px;
+                }
             }
             h3{
                 font-size: 20px;

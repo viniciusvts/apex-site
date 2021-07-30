@@ -31,7 +31,11 @@
         iframe{
             position: relative;
             width: 100%;
+            height: 200px;
             margin-bottom: 20px;
+            @media (min-width: $desktops) {
+                height: 300px;
+            }
             &::after{
                 position: absolute;
                 width: 80%;
@@ -47,6 +51,19 @@
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 40px;
+        }
+    }
+    .btn-sda{
+        color: white;
+        background-color: $blue3;
+        border-color: $blue3;
+        font-weight: 200;
+        padding: .5rem 2rem;
+        text-transform: uppercase;
+        transition: all .3s;
+        &:hover{
+            transform: scale(1.05);
+            color: white;
         }
     }
 }

@@ -1,7 +1,7 @@
 <?php
 $blogPosts = get_posts(
     array(
-        'posts_per_page'=>'5',
+        'posts_per_page'=>'3',
     )
 );
 ?>

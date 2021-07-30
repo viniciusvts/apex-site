@@ -23,7 +23,7 @@ $catNames = $catList ?
                 </div>
             </div>
             <div class="row crumbs">
-                <div class="col-12 mb-3 mb-lg-5">
+                <div class="col-12 mb-5">
                 <?php
                 wp_custom_breadcrumbs();
                 ?>

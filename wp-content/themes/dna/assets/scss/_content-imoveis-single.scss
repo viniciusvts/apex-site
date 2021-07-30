@@ -135,9 +135,14 @@
         .input{
             margin-bottom: 10px;
             input{
-                border: none;
+                border: 1px solid white;
+                color: white;
+                background-color: $blue3;
                 width: 100%;
                 padding: 10px 20px;
+                &::placeholder{
+                    color: #B7DBEC;
+                }
             }
         }
         .submit{
@@ -155,10 +160,10 @@
 .estab-prox-imoveis-single{
     color: white;
     background-color: $blue2;
-    padding: 20px 35px 35px;
+    padding: 35px 35px 20px;
     position: relative;
     @media (min-width: $desktops) {
-        padding: 20px 45px 35px;
+        padding: 35px 45px 20px;
     }
     h2{
         font-size: 30px;

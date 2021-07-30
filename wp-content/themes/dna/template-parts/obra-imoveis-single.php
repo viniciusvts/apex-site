@@ -102,8 +102,8 @@ include get_template_directory().'/template-parts/sub_section/obra-imoveis-singl
             }
             ?>
             <div class="row">
-                <div class="col-10 col-md-6 col lg-3 mx-auto mx-lg-0">
-                    <a href="#_" class="btn btn-y" data-show="modalObraFotos">Ver Mais</a>
+                <div class="col-10 col-md-6 col lg-3 mx-auto d-flex">
+                    <a href="#_" class="btn btn-y mx-auto" data-show="modalObraFotos">Ver Mais</a>
                 </div>
             </div>
         </div>

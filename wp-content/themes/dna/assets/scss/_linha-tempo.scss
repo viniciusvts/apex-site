@@ -15,6 +15,12 @@
         @media (min-width: $tablets) {
             min-height: 300px;
         }
+        .mxAuto-mlLgAuto{
+            margin: 0 auto;
+            @media (min-width: $desktops) {
+                margin: 0 20px 0 auto;
+            }
+        }
         h2{
             color: white;
             font-size: 40px;

@@ -12,7 +12,7 @@
             class="w-100 mb-5">
         </div>
         <div class="col-12 col-lg-6 right">
-            <h2 class="text-center bold italic d-none d-lg-block">Saia do aluguel com a Apex</h2>
+            <h2 class="text-left bold italic d-none d-lg-block">Saia do aluguel com a Apex</h2>
             <p class="mb-5">É uma iniciativa do Governo Federal que oferece
                 condições atrativas para o financiamento de moradias 
                 nas áreas urbanas para famílias de baixa renda. 

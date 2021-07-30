@@ -29,7 +29,7 @@ include get_template_directory().'/template-parts/sub_section/depoimentos-modal.
     </div>
     <div class="row">
         <div class="d-flex">
-            <a href="#_" class="btn btn-y mx-auto" data-show="modalDepoimentos">Ver Mais</a>
+            <a href="#_" class="btn btn-sda mx-auto" data-show="modalDepoimentos">Veja mais depoimentos</a>
         </div>
     </div>
 </section>
