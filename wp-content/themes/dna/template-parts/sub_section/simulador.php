@@ -26,7 +26,7 @@ $termsCity = get_terms([
             </ul>
         </div>
     </div>
-    <div class="row">
+    <div class="row form">
         <div class="col-11 col-md-8 col-lg-5 mx-auto">
             <form action="<?php echo bloginfo( "url" ) ?>/wp-json/dna_theme/v1/simulador"
             method="post">

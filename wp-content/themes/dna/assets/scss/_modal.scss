@@ -62,38 +62,62 @@ section.modal-simulador{
     }
     .intern{
         margin: auto;
-        width: 95vw;
-        height: 90vh;
+        max-width: 95vw;
+        max-height: 90vh;
         padding: 30px 0;
         overflow-y: auto;
-        @media (min-width: $tablets) {
-            height: 75vh;
-        }
         @media (min-width: $desktops) {
-            height: 90vh;
-            width: 70vw;
+            padding: 30px 30px 60px;
         }
         &.simulador{
             background-image: none;
             background-color: #fff;//$blue1;
             color: $blue1;
-            .title p{
-                color: $blue1;
-            }
-            fieldset{
-                label{
+            .title{
+                p{
                     color: $blue1;
                 }
-                input{
-                    color: $blue1;
+                hr{
+                    @media (min-width: $desktops) {
+                        margin-bottom: 40px;
+                    }
+                }
+                
+            }
+            .form{
+                // problema especifico na col-lg-5, dentro do modal fica pequeno
+                div.col-lg-5{
+                    @media (min-width: $desktops) {
+                        width: 60%;
+                    }
+                }
+                fieldset{
+                    label{
+                        color: $blue1;
+                    }
+                    input, select{
+                        color: $blue1;
+                        background-color: #f1f2f7;
+                    }
                 }
             }
-            .page-numbers ul{
-                &::before{
-                    background-color: $blue3;
+            .page-numbers{
+                // problema especifico na col-lg-4, dentro do modal fica pequeno
+                div.col-lg-4{
+                    @media (min-width: $desktops) {
+                        width: 50%;
+                    }
                 }
-                li.page{
-                    border: 1px solid $blue3;
+                ul{
+                    @media (min-width: $desktops) {
+                        margin-bottom: 40px;
+                    }
+                    &::before{
+                        background-color: $blue3;
+                    }
+                    li.page{
+                        border: 1px solid $blue3;
+                    }
                 }
             }
         }
