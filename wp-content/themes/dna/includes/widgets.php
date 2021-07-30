@@ -207,10 +207,10 @@ class ssw_listaMaisVisitados_widget extends WP_Widget {
         ?>
         <a href="<?php echo $permalink; ?>">
             <div class="row item">
-                <div class="col-4">
+                <div class="col-3 offset-1 offset-lg-0 d-flex">
                     <?php echo $thumb; ?>
                 </div>
-                <div class="col-8 row">
+                <div class="col-8 col-lg-9 row">
                     <p class="title col-12 mt-auto"><?php echo $blogPost->post_title ?></p>
                     <p class="date col-12 mb-auto"><?php echo $postDate ?></p>
                 </div>
@@ -225,9 +225,10 @@ class ssw_listaMaisVisitados_widget extends WP_Widget {
         margin-bottom: 30px;
     }
     .mais-visitados .item img{
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         border-radius: 50%;
+        margin: auto
     }
     .mais-visitados .item p.title{
         font-size: 14px;
