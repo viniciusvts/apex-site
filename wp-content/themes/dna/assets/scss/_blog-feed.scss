@@ -41,11 +41,12 @@
             filter: brightness(0.6);
         }
         .intern{
-            height: fit-content;
+            width: 100%;
             margin: auto 0 0;
-            padding: 15px;
+            padding: 50px 15px 15px;
+            background-image: linear-gradient(0deg, #0B0B0E, transparent);
             @media (min-width: $tablets) {
-                padding: 40px;
+                padding: 70px 40px 40px;
             }
             h3{
                 font-size: 20px;

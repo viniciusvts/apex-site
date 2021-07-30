@@ -61,8 +61,11 @@
             }
             .text-content{
                 margin: auto 0 0;
-                padding-bottom: 30px;
+                padding: 70px 30px 30px;
                 background-image: linear-gradient(0deg, #0B0B0E, transparent);
+                @media (min-width: $desktops) {
+                    padding: 70px 40px 30px;
+                }
             }
             .isLancamento{
                 position: absolute;
