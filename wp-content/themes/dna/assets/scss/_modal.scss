@@ -13,6 +13,7 @@ section.modal-img{
     display: none;
     &::before{
         content: 'x';
+        cursor: pointer;
         position: absolute;
         top: 50px;
         right: 50px;
@@ -45,6 +46,7 @@ section.modal-simulador{
     display: none;
     &::before{
         content: 'x';
+        cursor: pointer;
         position: absolute;
         top: 50px;
         right: 50px;
@@ -109,6 +111,7 @@ section.modal-obrafotos{
     display: none;
     &::before{
         content: 'x';
+        cursor: pointer;
         position: absolute;
         top: 50px;
         right: 50px;
@@ -147,6 +150,7 @@ section.modal-buscar{
     display: none;
     &::before{
         content: 'x';
+        cursor: pointer;
         position: absolute;
         top: 50px;
         right: 50px;
