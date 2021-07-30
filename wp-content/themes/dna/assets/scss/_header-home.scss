@@ -30,6 +30,11 @@ header.header-home{
                 font-size: 20px;
                 text-transform: uppercase;
                 margin-bottom: 20px;
+                @media (min-width: $largeDesktops) {
+                    border: 1px solid $yellow1;
+                    width: fit-content;
+                    padding: 5px 15px;
+                }
             }
             .details{
                 .detail{

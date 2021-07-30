@@ -42,8 +42,10 @@
                 <div class="container h-100">
                     <div class="row h-100">
                         <div class="h-content my-auto">
-                            <h1 class="bold"><?php echo the_title(); ?></h1>
-                            <h3 class="thin"><?php echo $categoriaImovel[0]->name; ?></h3>
+                            <div class="row">
+                                <h1 class="bold col-12 order-lg-2"><?php echo the_title(); ?></h1>
+                                <h3 class="thin col-12 order-lg-1"><?php echo $categoriaImovel[0]->name; ?></h3>
+                            </div>
                             <div class="details d-flex regular">
                                 <?php
                                 if($quartos){
