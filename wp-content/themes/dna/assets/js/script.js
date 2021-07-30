@@ -72,6 +72,13 @@
         if((filtros.length < 1) || (slides.length < 1)) return console.warn('Não foi encontrado filtro');
         filtros.forEach((item)=>{
             item.addEventListener('click', (evt)=>{
+                // remove active de todos os filtros
+                filtros.forEach((item)=>{
+                    item.classList.remove('active');
+                });
+                // adiciono active ao filtro clicado
+                evt.target.classList.add('active');
+                /** O alvo do filtro clicado */
                 var dataTarget = evt.target.dataset.target;
                 // faço um for nos slides para procurar o id correto
                 slides.forEach((item)=>{
