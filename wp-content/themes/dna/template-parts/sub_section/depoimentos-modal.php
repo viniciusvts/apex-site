@@ -9,7 +9,7 @@ $depoimentosModal = get_posts(
     )
 );
 ?>
-<section class="modal-obrafotos" id="modal-depoimentos">
+<section class="ssw-modal modal-depoimentos" id="modal-depoimentos">
     <div class="content-depoimentos container intern">
         <div class="row videos">
             <?php

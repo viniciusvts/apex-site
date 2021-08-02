@@ -43,6 +43,20 @@ section.modal-img{
         }
     }
 }
+section.modal-depoimentos{
+    .intern{
+        background-color: white;
+        max-width: 95vw;
+        height: 75vh;
+        overflow-y: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @media (min-width: $desktops) {
+            height: 90vh;
+            width: 70vw;
+        }
+    }
+}
 section.modal-simulador{
     .intern{
         max-width: 95vw;
@@ -107,34 +121,17 @@ section.modal-simulador{
     }
 }
 // sub_section/obra-imoveis-single-modal.php
+// depoimentos-modal.php
+// na obra fotos iniciar com height e with 0 dá problema com o carrossel
 section.modal-obrafotos{
-    position: fixed;
-    top: 0;
     width: 100vw;
     height: 100vh;
-    color: white;
-    background-color: rgba(0, 0, 0, 70%);
-    z-index: 9999; // nav está com 999
     display: none;
-    &::before{
-        content: 'x';
-        cursor: pointer;
-        position: absolute;
-        top: 50px;
-        right: 50px;
-        font-size: 30px;
-        @media (min-width: $desktops) {
-            top: 100px;
-            right: 100px;
-            font-size: 50px;
-        }
-    }
     &.active{
         display: flex;
     }
     .intern{
         background-color: white;
-        margin: auto;
         max-width: 95vw;
         height: 75vh;
         overflow-y: auto;
