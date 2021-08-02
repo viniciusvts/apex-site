@@ -44,31 +44,7 @@ section.modal-img{
     }
 }
 section.modal-simulador{
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    background-color: rgba(0, 0, 0, 70%);
-    display: none;
-    &::before{
-        content: 'x';
-        cursor: pointer;
-        position: absolute;
-        top: 50px;
-        right: 50px;
-        font-size: 30px;
-        @media (min-width: $desktops) {
-            top: 100px;
-            right: 100px;
-            font-size: 50px;
-        }
-    }
-    &.active{
-        display: flex;
-    }
     .intern{
-        margin: auto;
         max-width: 95vw;
         max-height: 90vh;
         padding: 30px 0;
