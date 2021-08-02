@@ -1,7 +1,7 @@
 <!-- stilos em content-blog.scss -->
 <section class="blog-single content-contato container">
     <div class="row">
-        <div class="col-lg-10 col-xxl-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
             <div class="row">
                 <div class="col-lg-7 form-contato">
                     <?php echo do_shortcode('[contact-form-7 id="16338"]'); ?>
