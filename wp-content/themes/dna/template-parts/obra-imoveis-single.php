@@ -33,7 +33,7 @@ include get_template_directory().'/template-parts/sub_section/obra-imoveis-singl
                 <div class="external">
                     <div class="internal" data-width="<?php echo $obraAndamento['fundacao']; ?>%"></div>
                 </div>
-                <p>Fundacao <span data-value="<?php echo $obraAndamento['fundacao']; ?>">0</span>%</p>
+                <p>Fundação <span data-value="<?php echo $obraAndamento['fundacao']; ?>">0</span>%</p>
             </div>
             <?php
             }
@@ -53,7 +53,7 @@ include get_template_directory().'/template-parts/sub_section/obra-imoveis-singl
                 <div class="external">
                     <div class="internal" data-width="<?php echo $obraAndamento['instalacao']; ?>%"></div>
                 </div>
-                <p>Instalacao <span data-value="<?php echo $obraAndamento['instalacao']; ?>">0</span>%</p>
+                <p>Instalação <span data-value="<?php echo $obraAndamento['instalacao']; ?>">0</span>%</p>
             </div>
             <?php
             }
