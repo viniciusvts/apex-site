@@ -9,7 +9,7 @@
                     while(have_posts()) {
                         the_post();
                         $thumb = get_the_post_thumbnail(get_the_ID(),
-                                            'post-thumbnail',
+                                            'full',
                                             array( 'class' => 'fundo w-100 h-100' )
                         );
                         $postLink = get_post_permalink(get_the_ID());

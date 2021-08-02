@@ -13,7 +13,7 @@
                 foreach ($imoveis as $imovel) {
                     setup_postdata( $imovel );
                     $thumb = get_the_post_thumbnail($imovel->ID,
-                                        'post-thumbnail',
+                                        'full',
                                         array( 'class' => 'fundo w-100 h-100' )
                     );
                     $categoriaImovel = get_the_terms($imovel->ID, 'categoria-imovel');
