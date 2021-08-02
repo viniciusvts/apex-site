@@ -145,31 +145,7 @@ section.modal-obrafotos{
 }
 // modal-buscar.php
 section.modal-buscar{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    background-color: rgba(0, 0, 0, 70%);
-    z-index: 9999; // nav está com 999
-    display: none;
-    &::before{
-        content: 'x';
-        cursor: pointer;
-        position: absolute;
-        top: 50px;
-        right: 50px;
-        font-size: 30px;
-        @media (min-width: $desktops) {
-            top: 100px;
-            right: 100px;
-            font-size: 50px;
-        }
-    }
-    &.active{
-        display: flex;
-    }
     .intern{
-        margin: auto;
         padding: 30px;
         background-image: url(../img/bg-rodape.jpg);
         label{
