@@ -10,7 +10,7 @@ class ssw_face_widget extends WP_Widget {
       // widget ID
       'ssw_face_widget',
       // widget name
-      "Face Widget SSW",
+      "SSW Face Widget",
       // widget description
       array( 'description' => __( 'Face widget SSW', 'ssw_widget_domain' ), )
     );
@@ -79,9 +79,9 @@ class ssw_listaCategoriasBlog_widget extends WP_Widget {
   public function __construct(){
     parent::__construct(
       // widget ID
-      'ssw_listaCategorias_widget',
+      'ssw_listaCategoriasBlog_widget',
       // widget name
-      "Lista categorias de Imóveis SSW",
+      "SSW Lista categorias de Imóveis",
       // widget description
       array( 'description' => __( 'SSWForMarketing  blog categorias', 'ssw_widget_domain' ), )
     );
@@ -165,7 +165,7 @@ class ssw_listaMaisVisitados_widget extends WP_Widget {
       // widget ID
       'ssw_listaMaisVisitados_widget',
       // widget name
-      "Lista os posts mais visitados do blog SSW",
+      "SSW Lista os posts mais visitados do blog",
       // widget description
       array( 'description' => __( 'Mais visitados SSW', 'ssw_widget_domain' ), )
     );
