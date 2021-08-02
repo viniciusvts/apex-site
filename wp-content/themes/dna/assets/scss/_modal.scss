@@ -2,15 +2,17 @@
 img[data-modalImg]{
     cursor: pointer;
 }
-section.modal-img{
+.ssw-modal{
     position: fixed;
+    display: flex;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
     color: white;
     background-color: rgba(0, 0, 0, 70%);
-    z-index: 99999; // nav está com 999, outros modais com 9999
-    display: none;
+    z-index: 9999; // nav está com 999
     &::before{
         content: 'x';
         cursor: pointer;
@@ -25,10 +27,16 @@ section.modal-img{
         }
     }
     &.active{
-        display: flex;
+        width: 100vw;
+        height: 100vh;
     }
     .intern{
         margin: auto;
+    }
+}
+section.modal-img{
+    z-index: 99999; // nav está com 999, outros modais com 9999
+    .intern{
         img{
             max-width: 95vw;
             max-height: 90vh;
@@ -42,7 +50,6 @@ section.modal-simulador{
     height: 100vh;
     color: white;
     background-color: rgba(0, 0, 0, 70%);
-    z-index: 9999; // nav está com 999
     display: none;
     &::before{
         content: 'x';
