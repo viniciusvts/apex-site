@@ -208,7 +208,11 @@ class ssw_listaMaisVisitados_widget extends WP_Widget {
         <a href="<?php echo $permalink; ?>">
             <div class="row item">
                 <div class="col-3 offset-1 offset-lg-0 d-flex">
-                    <?php echo $thumb; ?>
+                    <?php 
+                        echo strlen($thumb) ?
+                            $thumb:
+                            '<img src="'.get_template_directory_uri().'/assets/img/apex-blog-card-bg-1.jpg" alt="'.get_the_title().'">';
+                    ?>
                 </div>
                 <div class="col-8 col-lg-9 row">
                     <p class="title col-12 mt-auto"><?php echo $blogPost->post_title ?></p>
@@ -228,7 +232,8 @@ class ssw_listaMaisVisitados_widget extends WP_Widget {
         width: 75px;
         height: 75px;
         border-radius: 50%;
-        margin: auto
+        margin: auto;
+        object-fit: cover;
     }
     .mais-visitados .item p.title{
         font-size: 14px;

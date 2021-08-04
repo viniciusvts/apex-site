@@ -12,7 +12,6 @@ $planta = get_field('planta');
         <div class="col-lg-6 offset-lg-3 d-flex mb-5">
             <div class="line ml-auto"></div>
             <ul class="selection">
-                <li class="active" data-target="all">Ver todos</li>
                 <?php
                 if($perspectiva){
                 ?>
@@ -30,6 +29,7 @@ $planta = get_field('planta');
                 <?php
                 }
                 ?>
+                <li class="active" data-target="all">Ver todos</li>
             </ul>
         </div>
     </div>

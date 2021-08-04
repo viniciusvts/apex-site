@@ -188,7 +188,7 @@
             border: none;
         }
         .carrosselimoveis{
-            height: 85vh;
+            height: calc(100vh - 80px);
         }
         // a tag de lançamento muda para a flag
         .lancamento{

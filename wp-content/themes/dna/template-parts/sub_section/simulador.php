@@ -11,7 +11,7 @@ $termsCity = get_terms([
     <div class="title row">
         <div class="col-12">
             <h2>Faça uma simulação</h2>
-            <p>Tenha uma rápida previsão de como pagar seu imóvel</p>
+            <p>Tenha uma previsão de como pagar seu imóvel</p>
             <hr>
         </div>
     </div>

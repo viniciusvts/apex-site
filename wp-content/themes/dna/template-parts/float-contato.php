@@ -55,7 +55,7 @@
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/whatsapp.svg"
-                            class="m-auto"
+                            class="m-auto shakeit"
                             alt="logo twitter">
                         </div>
                         <div class="d-none d-lg-block col-md-6 mr-auto">
