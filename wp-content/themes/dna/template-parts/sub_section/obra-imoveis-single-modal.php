@@ -2,7 +2,7 @@
 // ATENÇÂO para um elemento exibir esse modal adicione data-show="modalObraFotos"
 $obraFotos = get_field('andamento_da_obra_fotos');
 ?>
-<section class="modal-obrafotos" id="modal-obrafotos">
+<section class="ssw-modal modal-obrafotos" id="modal-obrafotos">
     <div class=" obra-imoveis-single container intern">
         <div class="row">
             <?php
