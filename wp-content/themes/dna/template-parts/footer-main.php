@@ -72,7 +72,7 @@
                         </a>
                     </div>
                     <div class="col-2">
-                        <a href="https://www.whatsapp.com/">
+                        <a href="#_" data-popup="pop-whats">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-whatsapp.svg"
                             alt="logo whatsapp">
                         </a>
