@@ -42,31 +42,31 @@
                 <!-- redes sociais -->
                 <div class="row">
                     <div class="col-2">
-                        <a href="https://www.facebook.com/GrupoApex">
+                        <a href="https://www.facebook.com/GrupoApex" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-facebook.svg"
                             alt="logo facebook">
                         </a>
                     </div>
                     <div class="col-2">
-                        <a href="https://www.linkedin.com/">
+                        <a href="https://www.linkedin.com/company/apex-engenharia" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-linkedin.svg"
                             alt="logo linkedin">
                         </a>
                     </div>
                     <div class="col-2">
-                        <a href="https://www.instagram.com/apexoficial">
+                        <a href="https://www.instagram.com/apexoficial" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-instagram.svg"
                             alt="logo instagram">
                         </a>
                     </div>
                     <div class="col-2">
-                        <a href="https://twitter.com/ApexEngenharia">
+                        <a href="https://twitter.com/ApexEngenharia" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-twitter.svg"
                             alt="logo twitter">
                         </a>
                     </div>
                     <div class="col-2">
-                        <a href="https://www.youtube.com/">
+                        <a href="https://www.youtube.com/channel/UC83qef_bpuNesmfaUnhQb_w" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-youtube.svg"
                             alt="logo youtube">
                         </a>
