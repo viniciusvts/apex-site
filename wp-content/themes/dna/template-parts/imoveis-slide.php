@@ -13,14 +13,14 @@
             <div class="col d-flex mb-4">
                 <div class="line"></div>
                 <ul class="cat-list">
-                    <li class="active" data-target="all">
-                        Todos os imóveis
-                    </li>
                     <li data-target="lancamento">
                         Lançamento
                     </li>
                     <li data-target="pronto-para-morar">
                         Pronto para morar
+                    </li>
+                    <li class="active" data-target="all">
+                        Todos os imóveis
                     </li>
                 </ul>
             </div>
