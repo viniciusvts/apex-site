@@ -32,7 +32,7 @@
             <div class="col-10 col-lg-4 mx-auto mb-5">
                 <h2>Contato</h2>
                 <h3>ÁREA ADM. E COMERCIAL</h3>
-                <p class="tel"><a href="tel:+55 61 3361.4455">+55 61 3361.4455</a></p>
+                <p class="tel"><a href="tel:+55 61 3361 4455">+55 61 3361 4455</a></p>
                 <address>Sia Trecho 6, Lote 90/100 <br>
                     Brasília – DF – CEP 71205-060</address>
                 <h3 class="mt-4">ÁREA DE VENDAS</h3>
