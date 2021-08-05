@@ -29,7 +29,7 @@ $termsCity = get_terms([
     <div class="row form">
         <div class="col-11 col-md-8 col-lg-5 mx-auto">
             <form action="<?php echo bloginfo( "url" ) ?>/wp-json/dna_theme/v1/simulador"
-            method="post" name="simulador" id="simulador">
+            method="post" name="form-simulador" id="form-simulador">
                 <!-- itens trafic são preenchidos no js -->
                 <input type="hidden" name="traffic_source">
                 <input type="hidden" name="traffic_medium">
