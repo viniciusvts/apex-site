@@ -53,9 +53,12 @@
             }
             iframe, img{
                 width: 100%;
-                @media (min-width: $desktops) {
-                    height: 100%;
+                @media (min-width: $tablets) {
+                    height: 200px;
                     object-fit: cover;
+                }
+                @media (min-width: $fullHdDesktops) {
+                    height: 300px;
                 }
             }
         }
