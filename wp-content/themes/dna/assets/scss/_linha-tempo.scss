@@ -51,6 +51,9 @@
         .linha{
             margin-bottom: 30px;
             position: relative;
+            @media (min-width: $desktops) {
+                margin-bottom: 100px;
+            }
             // &::before{
             //     content: '';
             //     width: 10px;
