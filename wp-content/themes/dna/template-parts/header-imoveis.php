@@ -10,7 +10,7 @@
                         the_post();
                         $thumb = get_the_post_thumbnail(get_the_ID(),
                                             'full',
-                                            array( 'class' => 'fundo w-100 h-100' )
+                                            array( 'class' => 'fundo' )
                         );
                         $postLink = get_post_permalink(get_the_ID());
                         $quartos = get_field('quartos', get_the_ID());
@@ -26,67 +26,61 @@
                             }
                         }
                 ?>
-                <div class="item h-100">
+                <a href="<?php echo $postLink; ?>"
+                class="item row m-0">
                     <?php
                     echo $thumb;
-                    $contentClass = $isLancamento ? 'col-9' : 'col-12';
+                    $contentClass = $isLancamento ? 'col-10' : 'col-12';
                     ?>
-                    <div class="container h-100">
-                        <a href="<?php echo $postLink; ?>">
-                            <div class="row h-100">
-                                <div class="h-content position-relative text-content row">
-                                    <div class="<?php echo $contentClass; ?>">
-                                        <h2><?php the_title(); ?></h2>
-                                        <div class="details d-none d-lg-flex regular">
-                                            <?php
-                                            if($quartos){
-                                            ?>
-                                                <div class="detail">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bed.svg"
-                                                    alt="indicador de quartos">
-                                                    <p class="regular"><?php echo $quartos; ?></p>
-                                                </div>
-                                            <?php
-                                            }
-                                            if($metragem){
-                                            ?>
-                                                <div class="detail">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home.svg"
-                                                    alt="indicador de metragem">
-                                                    <p class="regular"><?php echo $metragem; ?></p>
-                                                </div>
-                                            <?php
-                                            }
-                                            if($vagas){
-                                            ?>
-                                                <div class="detail">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/car.svg"
-                                                    alt="indicador de vagas">
-                                                    <p class="regular"><?php echo $vagas; ?></p>
-                                                </div>
-                                            <?php
-                                            }
-                                            ?>
-                                        </div>
-                                        <h3 class="thin"><?php echo $categoriaImovel[0]->name; ?></h3>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-sair.svg"
-                                        class="btn-img"/>
+                    <div class="text-content row m-0">
+                        <?php
+                        if($isLancamento){
+                        ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancamento-flag.svg"
+                            alt="flag que indica lançamento"
+                            class="lancamento">
+                        <?php
+                        }
+                        ?>
+                        <div class="<?php echo $contentClass; ?>">
+                            <h2><?php the_title(); ?></h2>
+                            <div class="details d-none d-lg-flex regular">
+                                <?php
+                                if($quartos){
+                                ?>
+                                    <div class="detail">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bed-blue.svg"
+                                        alt="indicador de quartos">
+                                        <p class="regular"><?php echo $quartos; ?></p>
                                     </div>
-                                    <?php
-                                    if($isLancamento){
-                                    ?>
-                                    <div class="lancamento col-3 p-0">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancamento-flag.svg"
-                                        alt="flag que indica lançamento">
+                                <?php
+                                }
+                                if($metragem){
+                                ?>
+                                    <div class="detail">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home-blue.svg"
+                                        alt="indicador de metragem">
+                                        <p class="regular"><?php echo $metragem; ?></p>
                                     </div>
-                                    <?php
-                                    }
-                                    ?>
-                                </div>
+                                <?php
+                                }
+                                if($vagas){
+                                ?>
+                                    <div class="detail">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/car-blue.svg"
+                                        alt="indicador de vagas">
+                                        <p class="regular"><?php echo $vagas; ?></p>
+                                    </div>
+                                <?php
+                                }
+                                ?>
                             </div>
-                        </a>
+                            <h3 class="light"><?php echo $categoriaImovel[0]->name; ?></h3>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-sair-blue.svg"
+                            class="btn-img" />
+                        </div>
                     </div>
-                </div>
+                </a>
                 <?php
                     }
                 }
