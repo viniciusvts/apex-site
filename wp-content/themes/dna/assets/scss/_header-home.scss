@@ -25,28 +25,47 @@ header.header-home{
             h1, h2{
                 font-size: 25px;
                 text-transform: uppercase;
-                @media (min-width: $fullHdDesktops) {
-                    font-size: 50px;
+                @media (min-width: $desktops) {
+                    font-size: 40px;
                 }
+                @media (min-width: $fullHdDesktops) {
+                    font-size: 60px;
+                }
+            }
+            h1, h2, h3{
+                width: fit-content;
+                background-color: #002C40B2; // 70% opacidade
+                margin-bottom: 0;
+                padding: 0 5px;
             }
             h3{
                 font-size: 20px;
                 text-transform: uppercase;
-                margin-bottom: 20px;
+                line-height: 30px;
+                // margin-bottom: 20px;
                 @media (min-width: $desktops) {
-                    border: 1px solid $yellow1;
-                    width: fit-content;
-                    padding: 5px 15px;
-                    margin-left: 15px;
+                    font-weight: bold;
+                    color: $yellow1;
+                    line-height: 50px;
+                    // border: 1px solid $yellow1;
+                    // padding: 5px 15px;
+                    // margin-left: 15px;
                 }
             }
             .details{
+                width: fit-content;
+                background-color: #002C40B2; // 70% opacidade
+                margin-bottom: 20px;
+                padding: 5px;
+                @media (min-width: $desktops) {
+                    padding: 10px 5px;
+                }
                 .detail{
-                    margin-right: 20px;
+                    display: flex;
+                    margin-right: 10px;
                     img{
                         width: 30px;
                         height: 30px;
-                        margin: 0 auto 5px;
                         // o carro fica pequeno com largura igual
                         &[src$="car.svg"]{
                             width: 50px;
@@ -55,6 +74,7 @@ header.header-home{
                     p{
                         font-size: 14px;
                         text-align: center;
+                        margin: auto 10px;
                     }
                 }
             }

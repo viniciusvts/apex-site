@@ -40,7 +40,7 @@
                 <div class="container h-100">
                     <div class="row h-100">
                         <div class="h-content my-auto">
-                            <div class="row">
+                            <div class="d-grid">
                                 <h2 class="bold col-12 order-lg-2"><?php echo $imovel->post_title; ?></h2>
                                 <h3 class="thin col-12 order-lg-1"><?php echo $categoriaImovel[0]->name; ?></h3>
                             </div>
