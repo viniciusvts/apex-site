@@ -13,11 +13,11 @@ $blogPosts = get_posts(
             $permalink = get_permalink($blogPost->ID);
             $thumb = get_the_post_thumbnail($blogPost->ID,
                                 'post-thumbnail',
-                                array( 'class' => 'fundo w-100 h-100' )
+                                array( 'class' => 'fundo w-100' )
             );
             $categorias = get_the_category($blogPost->ID);
         ?>
-        <div class="d-flex <?php echo $colummClass; ?>">
+        <div class="<?php echo $colummClass; ?>">
             <a href="<?php echo $permalink; ?>">
                 <div class="post-col">
                     <?php echo $thumb; ?>

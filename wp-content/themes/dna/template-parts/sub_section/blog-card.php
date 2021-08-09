@@ -2,11 +2,11 @@
 $permalink = get_the_permalink();
 $thumb = get_the_post_thumbnail(get_the_ID(),
                     'post-thumbnail',
-                    array( 'class' => 'fundo w-100 h-100' )
+                    array( 'class' => 'fundo w-100' )
 );
 $categorias = get_the_category();
 ?>
-<div class="blog-card d-flex <?php echo strlen($thumb)?'':'no-thumb' ?>">
+<div class="blog-card <?php echo strlen($thumb)?'':'no-thumb' ?>">
     <a href="<?php echo $permalink; ?>">
         <div class="post-col">
             <?php echo $thumb; ?>
