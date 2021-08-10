@@ -28,7 +28,7 @@ include get_template_directory().'/template-parts/sub_section/obra-imoveis-singl
             ?>
             <div class="item">
                 <div class="external">
-                    <div class="internal" data-width="<?php echo $obraAndamentoTotal; ?>%"></div>
+                    <div class="internal total" data-width="<?php echo $obraAndamentoTotal; ?>%"></div>
                 </div>
                 <p>Andamento total <span data-value="<?php echo $obraAndamentoTotal; ?>">0</span>%</p>
             </div>

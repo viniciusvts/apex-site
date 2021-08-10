@@ -50,6 +50,9 @@
                 height: 100%;
                 background-color: $blue3;
                 transition: all 1s;
+                &.total{
+                    background-color: $blue1;
+                }
             }
         }
         p{
