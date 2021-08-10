@@ -180,9 +180,6 @@ section.modal-galeria{
         @media (min-width: $tablets) {
             width: 200px;
         }
-        @media (min-width: $desktops) {
-            width: 400px;
-        }
         &:first-child{
             margin-left: auto;
             text-align: right;
@@ -190,5 +187,12 @@ section.modal-galeria{
         &:last-child{
             margin-right: auto;
         }
+    }
+}
+section.modal-bg-white{
+    z-index: 99999; // nav está com 999, outros modais com 9999
+    .intern{
+        color: $blue1;
+        background-color: white;
     }
 }
