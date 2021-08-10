@@ -101,15 +101,6 @@
             &:not(:last-child){
                 margin-bottom: 20px;
             }
-            &.green{
-                background-color: #4AD23C;
-            }
-            &.red{
-                background-color: #ED3E3F;
-            }
-            &.yellow{
-                background-color: $yellow1;
-            }
         }
     }
     .ligamos-para-vc{

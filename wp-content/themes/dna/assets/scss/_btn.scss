@@ -1,3 +1,20 @@
+.btn{
+    &.green{
+        background-color: #4AD23C;
+    }
+    &.red{
+        background-color: #ED3E3F;
+    }
+    &.yellow{
+        background-color: $yellow1;
+    }
+    &.blue{
+        background-color: $blue2;
+    }
+    &.cian{
+        background-color: $blue3;
+    }
+}
 .btn-y{
     color: white;
     background-color: $yellow1;
