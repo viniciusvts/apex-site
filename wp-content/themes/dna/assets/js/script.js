@@ -19,6 +19,7 @@
         initFormBuscar();
         initGaleriaImoveisSingle();
         initModalImg();
+        initModalImgGaleria();
         initModalSimulador();
         initObraImoveisValues();
         initModalObraFotos();
@@ -397,6 +398,64 @@
         // adiciona o evento para esconder o form de busca
         modalImg.addEventListener('click', (evt)=>{
             if(evt.target == modalImg) return modalImg.classList.remove('active');
+        });
+    }
+    /**
+     * Busca todas as imagens com data-galeria-name data-galeria-index data-galeria-src
+     * e adiciona o evento de click que abrirá o modal
+     * o objetivo é mostrar a imagem em tela cheia com controles para outras imagens
+     * @author Vinicius de Santana
+     */
+    function initModalImgGaleria(){
+        const divsImgs = querySelectorAll('img[data-galeria-name][data-galeria-index][data-galeria-src]');
+        const modalImg = querySelector('#modal-galeria');
+        const internalImg = querySelector('#modal-galeria img');
+        const navs = querySelector('#modal-galeria .navs');
+        if(divsImgs.length == 0) return console.warn('Não há img para o modal-galeria');
+        if(!modalImg) return console.warn('Foi encontrada img mas não o modal-galeria, adicione-o a página');
+        // copia as informações e exibe o modal
+        divsImgs.forEach((item)=>{
+            item.addEventListener('click', ()=>{
+                internalImg.src = item.dataset.galeriaSrc;
+                internalImg.dataset.index = item.dataset.galeriaIndex;
+                internalImg.dataset.name = item.dataset.galeriaName;
+                modalImg.classList.add('active');
+            });
+        });
+        // adiciona o evento para esconder
+        modalImg.addEventListener('click', (evt)=>{
+            if(evt.target == modalImg) return modalImg.classList.remove('active');
+        });
+        // lógica dos botões
+        navs.addEventListener('click', (evt)=>{
+            const galeriaIndex = Number(internalImg.dataset.index);
+            const galeriaName = internalImg.dataset.name;
+            if(evt.target.id == 'modal-galeria-prev'){ // se anterior
+                const prevIndex = galeriaIndex - 1;
+                var prevImg = querySelector('[data-galeria-name="'+galeriaName+'"]'+
+                            '[data-galeria-index="'+prevIndex+'"]');
+                if(!prevImg){
+                    // se não existe o anterior tenho de retorna o último dos itens
+                    const allItens = querySelectorAll('[data-galeria-name="'+galeriaName+'"]'+
+                            '[data-galeria-index]');
+                    prevImg = allItens[allItens.length - 1];
+                }
+                internalImg.src = prevImg.dataset.galeriaSrc;
+                internalImg.dataset.index = prevImg.dataset.galeriaIndex;
+                internalImg.dataset.name = prevImg.dataset.galeriaName;
+            } else if(evt.target.id == 'modal-galeria-next'){ // se próximo
+                const nextIndex = galeriaIndex + 1;
+                var nextImg = querySelector('[data-galeria-name="'+galeriaName+'"]'+
+                            '[data-galeria-index="'+nextIndex+'"]');
+                if(!nextImg){
+                    // se não existe o próximo, reinicia o index
+                    nextImg = querySelector('[data-galeria-name="'+galeriaName+'"]'+
+                            '[data-galeria-index="1"]');
+                }
+                internalImg.src = nextImg.dataset.galeriaSrc;
+                internalImg.dataset.name = nextImg.dataset.galeriaName;
+                internalImg.dataset.index = nextImg.dataset.galeriaIndex;
+            }
         });
     }
     function initObraImoveisValues(){

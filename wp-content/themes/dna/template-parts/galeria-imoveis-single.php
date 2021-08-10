@@ -2,6 +2,10 @@
 $videos = get_field('videos');
 $perspectiva = get_field('perspectiva');
 $planta = get_field('planta');
+/** contador para galeria, será utilizado no atributo data-galeria-index */
+$countGaleria = 0;
+/** nome para galeria, será utilizado no atributo data-galeria-name */
+$nomeGaleria = 'galeriaImoveis';
 ?>
 <section class="galeria-imoveis-single">
     <div class="row">
@@ -49,8 +53,11 @@ $planta = get_field('planta');
         ?>
         <div class="col-md-6 col-lg-4 item perspectiva">
             <img src="<?php echo $pers['sizes']['medium_large']; ?>"
-            alt="<?php echo $pers['alt']; ?>"
-            data-modalImg="<?php echo $pers['url']; ?>">
+            data-galeria-name="<?php echo $nomeGaleria; ?>"
+            data-galeria-index="<?php echo ++$countGaleria; ?>"
+            data-galeria-src="<?php echo $pers['url']; ?>"
+            class="cursor-pointer"
+            alt="<?php echo $pers['alt']; ?>">
         </div>
         <?php
             }
@@ -60,8 +67,11 @@ $planta = get_field('planta');
         ?>
         <div class="col-md-6 col-lg-4 item planta">
             <img src="<?php echo $plan['sizes']['medium_large']; ?>"
-            alt="<?php echo $plan['alt']; ?>"
-            data-modalImg="<?php echo $plan['url']; ?>">
+            data-galeria-name="<?php echo $nomeGaleria; ?>"
+            data-galeria-index="<?php echo ++$countGaleria; ?>"
+            data-galeria-src="<?php echo $plan['url']; ?>"
+            class="cursor-pointer"
+            alt="<?php echo $plan['alt']; ?>">
         </div>
         <?php
             }
