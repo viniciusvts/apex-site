@@ -1,0 +1,69 @@
+// estiliza content-faq.php
+.content-faq{
+    background-image: url(../img/bg-rodape.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px 50px;
+    color: white;
+    @media (min-width: $desktops) {
+        padding: 70px 140px 100px;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    hr{
+        color: $yellow1;
+        width: 100px;
+        height: 2px;
+        margin-bottom: 30px;
+    }
+}
+.perg-resp{
+    background: white;
+    color: $blue1;
+    .pergunta{
+        background-color: $blue2;
+        color: white;
+        border: solid 1px white;
+        padding: 10px 20px;
+        p{
+            position: relative;
+            margin-bottom: 0;
+            cursor: pointer;
+            &::after{
+                content: '-';
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    .resposta{
+        max-height: 0;
+        border: solid 1px white;
+        padding: 0 20px;
+        overflow: hidden;
+        transition: max-height ease-out 1s;
+        *:first-child{
+            padding-top: 20px;
+        }
+        *:last-child{
+            padding-bottom: 20px;
+        }
+    }
+    // se ativo
+    
+    &.active{
+        .pergunta{
+            p{
+                &::after{
+                    content: '+';
+                }
+            }
+        }
+        .resposta{
+            max-height: 1000px;
+        }
+    }
+}

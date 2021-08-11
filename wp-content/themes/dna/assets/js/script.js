@@ -25,6 +25,7 @@
         initModalObraFotos();
         initModalDepoimentos();
         initPopups();
+        initPergResps();
     }
 
     /** O evento de carga é disparado quando toda a página é carregada,
@@ -625,6 +626,25 @@
         // adiciona o evento para esconder o form de busca
         popupAttOnline.addEventListener('click', (evt)=>{
             if(evt.target == popupAttOnline) return popupAttOnline.classList.remove('active');
+        });
+    }
+    /**
+     * Inicia o perguntas e respostas
+     * @author Vinicius de Santana
+     */
+    function initPergResps(){
+        const perguntas = querySelectorAll('.perg-resp .pergunta p');
+        if(perguntas.length == 0) return console.warn('Não há divs com perguntas');
+        // adiciona evento de clique as perguntas
+        perguntas.forEach((item)=>{
+            item.addEventListener('click', (evt)=>{
+                const idTarget = evt.target.dataset.target;
+                /** @type HTMLElement */
+                const divTarget = querySelector('#' + idTarget);
+                divTarget.classList.contains('active') ?
+                    divTarget.classList.remove('active') :
+                    divTarget.classList.add('active');
+            });
         });
     }
 })(window, document, console, x=>document.querySelector(x), x=>document.querySelectorAll(x));
