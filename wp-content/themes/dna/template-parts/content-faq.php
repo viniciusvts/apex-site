@@ -8,9 +8,8 @@ $pergResps = get_field('per');
         <div class="row">
             <div class="col-12">
                 <?php
-                echo $titulo ? '<h2>' . $titulo . '</h2>' : '';
+                echo $titulo ? '<h2>' . $titulo . '</h2><hr>' : '';
                 ?>
-                <hr>
             </div>
             <div class="col-12">
                 <?php
