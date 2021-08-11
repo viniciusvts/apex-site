@@ -45,10 +45,10 @@
         padding: 0 20px;
         overflow: hidden;
         transition: max-height ease-out 1s;
-        *:first-child{
+        > *:first-child{
             padding-top: 20px;
         }
-        *:last-child{
+        > *:last-child{
             padding-bottom: 20px;
         }
     }
