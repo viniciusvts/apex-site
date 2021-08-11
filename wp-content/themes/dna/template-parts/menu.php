@@ -33,7 +33,7 @@
         array(
             'container' => false,
             'theme_location' => 'main',
-            'depth' => 1,
+            'depth' => 2,
             'menu_id' => 'main-menu',
             'menu_class' => 'main-menu list-unstyled p-0 m-0 col-10 col-lg-7 order-2 order-lg-1',
         )

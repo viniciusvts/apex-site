@@ -70,6 +70,34 @@ nav.top-menu{
                 color: white;
                 text-decoration: none;
             }
+            ul.sub-menu{
+                list-style: none;
+                position: absolute;
+                background-color: $blue1;
+                max-height: 0px;
+                padding: 0 10px;
+                overflow: hidden;
+                transition: max-height .3s;
+                right: 0;
+                margin-top: 10px;
+                margin-right: 50px;
+                @media (min-width: $tablets) {
+                    margin-right: 20px;
+                }
+                @media (min-width: $desktops) {
+                    right: unset;
+                    margin-right: 0px;
+                }
+                > *:first-child{
+                    padding-top: 10px;
+                }
+                > *:last-child{
+                    padding-bottom: 10px;
+                }
+                &.active{
+                    max-height: 200px;
+                }
+            }
         }
     }
     .hambmenu{
