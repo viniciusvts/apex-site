@@ -203,7 +203,7 @@
                 return false;
             }
         }else if( pageAtual == 5){
-            querySelector(id + ' form').submit();
+            querySelector(id + ' [type="submit"]').click();
         }
         return true;
     }

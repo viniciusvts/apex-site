@@ -89,6 +89,8 @@ $termsCity = get_terms([
                     <div class="g-recaptcha mx-auto"
                         data-sitekey="6Lepfa0bAAAAAOqIu6RdY3S0xE9EkyEEmUdltXgK"></div>
                 </fieldset>
+                <!-- butão fica escondido, será ativado pelo javascript click() -->
+                <button type="submit" class="d-none">hidden</button>
             </form>
         </div>
     </div>
