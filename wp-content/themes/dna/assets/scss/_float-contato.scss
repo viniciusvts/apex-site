@@ -10,8 +10,11 @@
         padding: 20px 0;
     }
     img{
-        height: 30px;
-        @media (min-width: $desktops) {
+        height: 19px;
+        @media (min-width: $tablets) {
+            height: 30px;
+        }
+        @media (min-width: $largeDesktops) {
             height: 40px;
         }
     }
