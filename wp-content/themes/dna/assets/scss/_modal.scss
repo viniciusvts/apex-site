@@ -17,12 +17,18 @@ img[data-modalImg]{
         content: 'x';
         cursor: pointer;
         position: absolute;
+        width: 30px;
+        height: 30px;
         top: 50px;
         right: 50px;
         font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: $blue1;
+        border-radius: 50%;
+        background-color: white;
         @media (min-width: $desktops) {
             right: 100px;
-            font-size: 50px;
         }
     }
     &.active{
@@ -173,19 +179,42 @@ section.modal-buscar{
 }
 section.modal-galeria{
     span{
-        width: 100px;
+        width: fit-content;
+        position: relative;
+        color: $blue1;
+        background-color: white;
+        border: 1px solid $blue1;
         font-size: 50px;
-        margin: 20px;
+        line-height: 50px;
+        margin: 10px 0 0;
+        padding: 0 20px;
         cursor: pointer;
-        @media (min-width: $tablets) {
-            width: 200px;
+        // cria uma div interna para efeito
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: $blue1-bg;
+            transition: .2s ease all;
+        }
+        // se hover a div interna toma 100%
+        &:hover::after{
+            width: 100%;
         }
         &:first-child{
             margin-left: auto;
             text-align: right;
+            &::after {
+                right: 0;
+            }
         }
         &:last-child{
             margin-right: auto;
+            &::after {
+                left: 0;
+            }
         }
     }
 }
