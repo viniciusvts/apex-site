@@ -23,7 +23,7 @@ $blogPosts = get_posts(
                     <?php echo $thumb; ?>
                     <div class="intern">
                         <h3><?php echo $blogPost->post_title; ?></h3>
-                        <p class="category"><?php echo $categorias[0]->name; ?></p>
+                        <p class="category">Leia mais</p>
                     </div>
                 </div>
             </a>

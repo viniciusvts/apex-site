@@ -22,13 +22,7 @@ $categorias = get_the_category();
             ?>
             <div class="intern">
                 <h3><?php the_title(); ?></h3>
-                <?php
-                if($categorias[0]->name){
-                ?>
-                <p class="category"><?php echo $categorias[0]->name; ?></p>
-                <?php
-                }
-                ?>
+                <p class="category">Leia mais</p>
             </div>
         </div>
     </a>
