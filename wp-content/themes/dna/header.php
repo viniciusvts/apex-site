@@ -15,5 +15,6 @@
     get_template_part('template-parts/rd', 'pop-whats');
     get_template_part('template-parts/rd', 'pop-email');
     get_template_part('template-parts/rd', 'pop-attonline');
+    get_template_part('template-parts/rd', 'pop-client');
     ?>
     

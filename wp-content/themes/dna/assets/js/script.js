@@ -651,6 +651,21 @@
         popupAttOnline.addEventListener('click', (evt)=>{
             if(evt.target == popupAttOnline) return popupAttOnline.classList.remove('active');
         });
+        //  popup client
+        const divsQueChamamPopupClients = querySelectorAll('[data-popup="pop-client"]');
+        const popupClient = querySelector('#pop-client');
+        if(divsQueChamamPopupClients.length == 0) return console.warn('Não há div chamando o popupClient');
+        if(!popupClient) return console.warn('Foi encontrado divs mas não o popupClient, adicione-o a página');
+        // adiciona evento para exibir o formulário de busca
+        divsQueChamamPopupClients.forEach((item)=>{
+            item.addEventListener('click', ()=>{
+                popupClient.classList.add('active');
+            });
+        });
+        // adiciona o evento para esconder o form de busca
+        popupClient.addEventListener('click', (evt)=>{
+            if(evt.target == popupClient) return popupClient.classList.remove('active');
+        });
     }
     /**
      * Inicia o perguntas e respostas

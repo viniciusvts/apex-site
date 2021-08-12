@@ -1,8 +1,7 @@
 <section class="float-contato">
-    <div class="container">
         <div class="row">
             <!-- item -->
-            <div class="col-3">
+            <div class="col">
                 <a href="#_" data-modalSimula>
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
@@ -18,7 +17,7 @@
                 </a>
             </div>
             <!-- item -->
-            <div class="col-3">
+            <div class="col">
                 <a href="#_" data-popup="pop-email">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
@@ -34,7 +33,7 @@
                 </a>
             </div>
             <!-- item -->
-            <div class="col-3">
+            <div class="col">
                 <a href="#_" data-popup="pop-attonline">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
@@ -50,7 +49,23 @@
                 </a>
             </div>
             <!-- item -->
-            <div class="col-3">
+            <div class="col">
+                <a href="#_" data-popup="pop-client">
+                    <div class="row mx-auto">
+                        <div class="col-lg-3 ml-auto d-flex">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home-filled.svg"
+                            class="m-auto"
+                            alt="logo twitter">
+                        </div>
+                        <div class="d-none d-lg-block col-md-6 mr-auto">
+                            <p class="top">Atendimento</p>
+                            <p class="bot">Sou cliente</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- item -->
+            <div class="col">
                 <a href="#_" data-popup="pop-whats">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
@@ -66,5 +81,4 @@
                 </a>
             </div>
         </div>
-    </div>
 </section>

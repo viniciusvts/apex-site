@@ -18,14 +18,20 @@
     p{
         text-transform: uppercase;
         &.top{
-            font-size: 15px;
+            font-size: 12px;
             margin-top: auto;
             margin-bottom: 0;
+            @media (min-width: $fullHdDesktops) {
+                font-size: 15px;
+            }
         }
         &.bot{
-            font-size: 20px;
+            font-size: 17px;
             font-weight: bold;
             margin-bottom: auto;
+            @media (min-width: $fullHdDesktops) {
+                font-size: 20px;
+            }
         }
     }
 }
