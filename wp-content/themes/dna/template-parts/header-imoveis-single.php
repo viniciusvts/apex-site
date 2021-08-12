@@ -43,8 +43,8 @@
                     <div class="row h-100">
                         <div class="h-content my-auto">
                             <div class="d-grid">
-                                <h1 class="bold col-12 order-lg-2"><?php echo the_title(); ?></h1>
-                                <h3 class="thin col-12 order-lg-1"><?php echo $categoriaImovel[0]->name; ?></h3>
+                                <h3 class="thin col-12"><?php echo $categoriaImovel[0]->name; ?></h3>
+                                <h1 class="bold col-12"><?php echo the_title(); ?></h1>
                             </div>
                             <div class="details d-flex regular">
                                 <?php
