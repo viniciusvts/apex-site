@@ -105,6 +105,7 @@
             }
             h3{
                 width: fit-content;
+                height: fit-content;
                 color: $yellow1;
                 background-color: $blue2;
                 font-size: 20px;
@@ -154,7 +155,7 @@
         .owl-dots{
             position: relative;
             display: flex;
-            bottom: 10px;
+            top: 10px;
         }
         .owl-dot{
             background-color: #00000066!important;

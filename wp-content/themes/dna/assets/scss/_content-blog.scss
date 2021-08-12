@@ -64,6 +64,18 @@
     article{
         max-width: 100%;
         word-break: break-word;
+        p{
+            @media (min-width: $desktops) {
+                font-size: 18px;
+            }
+        }
+        img{
+            margin-bottom: 20px;
+        }
+        // quando a mídia tem legenda
+        .wp-caption{
+            margin-bottom: 20px;
+        }
     }
 }
 // estilos para content-contato

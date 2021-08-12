@@ -6,8 +6,9 @@ nav.top-menu{
     height: 100px;
     z-index: 999;
     transition: all 1s;
+    background: linear-gradient(#002333ad, transparent);//#00233366;
     &.lightbg{
-        background-color: #002333ad;//#00233366;
+        background: #002333ad;//#00233366;
         // .right{
         //     background-color: $blue1;
         // }
