@@ -48,9 +48,14 @@
             evt.stopPropagation()
             // se existe a classe active a remove
             // se não adiciona
-            mainMenu.classList.contains('active') ?
-                mainMenu.classList.remove('active') :
+            if(mainMenu.classList.contains('active')){
+                mainMenu.classList.remove('active')
+                menuItemChildrens.forEach((item)=>{
+                    item.classList.remove('active');
+                });
+            } else{
                 mainMenu.classList.add('active');
+            }
         });
         // ativa os submenus
         if(menuItemHasChildren.length == 0) return console.warn('Não há divs com menuItemHasChildren');
