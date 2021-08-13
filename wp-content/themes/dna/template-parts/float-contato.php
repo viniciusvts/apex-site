@@ -9,9 +9,9 @@
                             class="m-auto"
                             alt="logo twitter">
                         </div>
-                        <div class="d-none d-lg-block col-md-6 mr-auto">
+                        <div class="d-none d-lg-block col-md-8 mr-auto">
                             <p class="top">Faça uma</p>
-                            <p class="bot">Simulação</p>
+                            <p class="bot">Pré-simulação</p>
                         </div>
                     </div>
                 </a>
@@ -25,7 +25,7 @@
                             class="m-auto"
                             alt="logo twitter">
                         </div>
-                        <div class="d-none d-lg-block col-md-6 mr-auto">
+                        <div class="d-none d-lg-block col-md-8 mr-auto">
                             <p class="top">Atendimento</p>
                             <p class="bot">por email</p>
                         </div>
@@ -41,7 +41,7 @@
                             class="m-auto"
                             alt="logo twitter">
                         </div>
-                        <div class="d-none d-lg-block col-md-6 mr-auto">
+                        <div class="d-none d-lg-block col-md-8 mr-auto">
                             <p class="top">Atendimento</p>
                             <p class="bot">online</p>
                         </div>
@@ -57,7 +57,7 @@
                             class="m-auto"
                             alt="logo twitter">
                         </div>
-                        <div class="d-none d-lg-block col-md-6 mr-auto">
+                        <div class="d-none d-lg-block col-md-8 mr-auto">
                             <p class="top">Atendimento</p>
                             <p class="bot">Sou cliente</p>
                         </div>
@@ -73,7 +73,7 @@
                             class="m-auto shakeit"
                             alt="logo twitter">
                         </div>
-                        <div class="d-none d-lg-block col-md-6 mr-auto">
+                        <div class="d-none d-lg-block col-md-8 mr-auto">
                             <p class="top">Atendimento</p>
                             <p class="bot">Whatsapp</p>
                         </div>

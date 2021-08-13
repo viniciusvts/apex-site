@@ -10,8 +10,8 @@ $termsCity = get_terms([
 <div class="container">
     <div class="title row">
         <div class="col-12">
-            <h2>Faça uma simulação</h2>
-            <p>Tenha uma previsão de como pagar seu imóvel</p>
+            <h2>Faça uma pré-simulação</h2>
+            <p>Em breve, um de nosso consultores irá entrar em contato.</p>
             <hr>
         </div>
     </div>
