@@ -23,9 +23,11 @@ $obraFotos = get_field('andamento_da_obra_fotos');
                             <?php
                             foreach ($obraFoto['fotos'] as $foto) {
                             ?>
-                            <img src="<?php echo $foto['sizes']['medium_large']; ?>"
-                            alt="<?php echo $foto['alt']; ?>"
-                            data-modalImg="<?php echo $foto['url']; ?>">
+                            <div class="item">
+                                <img src="<?php echo $foto['sizes']['medium_large']; ?>"
+                                alt="<?php echo $foto['alt']; ?>"
+                                data-modalImg="<?php echo $foto['url']; ?>">
+                            </div>
                             <?php
                             }
                             ?>

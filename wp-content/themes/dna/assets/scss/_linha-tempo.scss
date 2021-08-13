@@ -21,13 +21,11 @@
                 margin: 0 20px 0 auto;
             }
         }
-        h2{
+        .lg-fixed{
             color: white;
-            font-size: 40px;
             text-align: center;
             align-self: center;
             @media (min-width: $desktops) {
-                text-align: right;
                 align-self: inherit;
                 position: sticky;
                 top: 200px;
@@ -38,6 +36,9 @@
             }
             @media (min-width: $fullHdDesktops) {
                 top: 400px;
+            }
+            h2{
+                font-size: 40px;
             }
         }
     }

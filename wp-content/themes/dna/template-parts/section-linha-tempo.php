@@ -6,7 +6,15 @@ $linhaTempo = get_field('li_tmp');
         <div class="col-lg-4 left d-flex">
             <div class="row mxAuto-mlLgAuto">
                 <div class="col-lg-12 ml-auto d-flex d-lg-block">
-                    <h2>Linha do tempo</h2>
+                    <div class="lg-fixed">
+                        <h2>Linha do tempo</h2>
+                        <p>Role para conhecer nossa história</p>
+                        <div class="d-flex">
+                            <img class="mx-auto up-down"
+                            src="<?php echo get_template_directory_uri(); ?>/assets/img/fast-forward.svg"
+                            alt="role para baixo">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

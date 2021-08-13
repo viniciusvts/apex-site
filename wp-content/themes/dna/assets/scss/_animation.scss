@@ -1,3 +1,4 @@
+// sacode a cada 10s o item
 @keyframes shake{
     0%{
         transform: translate3d(-1px, 0, 0);
@@ -18,4 +19,20 @@
 .shakeit{
     animation: shake 10s linear infinite;
     perspective: 1000px;
+}
+// balança para cima e para baixo
+// usar em setas para indicar continuidade
+@keyframes up-down{
+    0%, 10%, 30%, 50%, 70%, 90%{
+        transform: translateY(0);
+    }
+    20%, 40%{
+        transform: translateY(-10px);
+    }
+    60%, 80%{
+        transform: translateY(-5px);
+    }
+}
+.up-down{
+    animation: up-down 1.5s linear infinite;
 }

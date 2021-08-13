@@ -20,7 +20,7 @@ $endereco = get_field('endereco');
                     ?>
                     <div class="item">
                         <?php echo file_get_contents($iconPath); ?> 
-                        <p><?php echo $safeStr; ?></p>
+                        <p><?php echo $item; ?></p>
                     </div>
                     <?php
                     }

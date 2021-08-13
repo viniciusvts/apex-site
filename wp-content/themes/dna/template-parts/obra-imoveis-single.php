@@ -106,9 +106,11 @@ include get_template_directory().'/template-parts/sub_section/obra-imoveis-singl
                         <?php
                         foreach ($obraFoto['fotos'] as $foto) {
                         ?>
-                        <img src="<?php echo $foto['sizes']['medium_large']; ?>"
-                        alt="<?php echo $foto['alt']; ?>"
-                        data-modalImg="<?php echo $foto['url']; ?>">
+                        <div class="item">
+                            <img src="<?php echo $foto['sizes']['medium_large']; ?>"
+                            alt="<?php echo $foto['alt']; ?>"
+                            data-modalImg="<?php echo $foto['url']; ?>">
+                        </div>
                         <?php
                         }
                         ?>

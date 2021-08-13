@@ -19,17 +19,17 @@ $nomeGaleria = 'galeriaImoveis';
                 <?php
                 if($perspectiva){
                 ?>
-                <li data-target="perspectiva">Perspectiva</li>
+                <li data-target="perspectiva">Perspectivas</li>
                 <?php
                 }
                 if($planta){
                 ?>
-                <li data-target="planta">Planta</li>
+                <li data-target="planta">Plantas</li>
                 <?php
                 }
                 if($videos){
                 ?>
-                <li data-target="videos">Videos</li>
+                <li data-target="videos">Vídeos</li>
                 <?php
                 }
                 ?>
