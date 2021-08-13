@@ -6,12 +6,11 @@ nav.top-menu{
     height: 100px;
     z-index: 999;
     transition: all 1s;
-    background: linear-gradient(#002333ad, transparent);//#00233366;
     &.lightbg{
         background: #002333ad;//#00233366;
-        // .right{
-        //     background-color: $blue1;
-        // }
+        .right{
+            background:transparent;
+        }
     }
     .logo{
         width: 83px;
@@ -27,8 +26,12 @@ nav.top-menu{
         }
     }
     .right{
+        background: #002333ad;//#00233366;
+        // background: linear-gradient(#002333ad, transparent);//#00233366;
+        transition: all 1s;
         @media (min-width: $desktops) {
             margin-left: auto;
+            border-bottom-left-radius: 20px;
         }
         a{
             text-decoration: none;
