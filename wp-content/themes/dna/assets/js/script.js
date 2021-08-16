@@ -304,7 +304,7 @@
         });
     }
     /**
-     * Máscara para apenas numeros para ser usada em inputs html
+     * Máscara remove todos os caracteres que não sejam numeros
      * @param {KeyboardEvent} evt - O evento será entregue aqui
      * @example <caption>Executa a mascara quando evento keyup é lançado.</caption>
      * document.querySelector('#number').addEventListener('keyup',execOnlyNumbersMask);
@@ -317,7 +317,7 @@
         evt.target.value = v;
     }
     /**
-     * Máscara para exibir número digitado com m² para ser usada em inputs html
+     * Máscara para exibir número digitado com m²,
      * @param {KeyboardEvent} evt - O evento será entregue aqui
      * @example <caption>Executa a mascara quando evento keyup é lançado.</caption>
      * document.querySelector('#metrosQuad').addEventListener('keyup',execMetrosQuadMask);
