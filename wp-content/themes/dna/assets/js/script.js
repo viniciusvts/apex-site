@@ -290,6 +290,58 @@
         dinheiros.forEach((item)=>{
             item.addEventListener('keyup',execMascaraDinheiroBR);
         });
+        const numbers = querySelectorAll('.onlyNumberMask');
+        numbers.forEach((item)=>{
+            item.addEventListener('keyup',execOnlyNumbersMask);
+        });
+        const texts = querySelectorAll('.onlyTextMask');
+        texts.forEach((item)=>{
+            item.addEventListener('keyup',execOnlyText);
+        });
+        const metroQuad = querySelectorAll('.metroQuadMask');
+        metroQuad.forEach((item)=>{
+            item.addEventListener('keyup',execMetrosQuadMask);
+        });
+    }
+    /**
+     * Máscara para apenas numeros para ser usada em inputs html
+     * @param {KeyboardEvent} evt - O evento será entregue aqui
+     * @example <caption>Executa a mascara quando evento keyup é lançado.</caption>
+     * document.querySelector('#number').addEventListener('keyup',execOnlyNumbersMask);
+     * @author Vinicius de Santana <vinicius.vts@gmail.com>
+     * @license CC BY-NC
+     */
+    function execOnlyNumbersMask(evt){
+        let v = evt.target.value;
+        v=v.replace(/\D/g,"");             //Remove tudo o que não é dígito
+        evt.target.value = v;
+    }
+    /**
+     * Máscara para exibir número digitado com m² para ser usada em inputs html
+     * @param {KeyboardEvent} evt - O evento será entregue aqui
+     * @example <caption>Executa a mascara quando evento keyup é lançado.</caption>
+     * document.querySelector('#metrosQuad').addEventListener('keyup',execMetrosQuadMask);
+     * @author Vinicius de Santana <vinicius.vts@gmail.com>
+     * @license CC BY-NC
+     */
+    function execMetrosQuadMask(evt){
+        let v = evt.target.value;
+        v=v.replace(/\D/g,"");             //Remove tudo o que não é dígito
+        v=v.replace(/(\d+)/g,"$1 m²"); //R$ (grupo1),(grupo2)
+        evt.target.value = v;
+    }
+    /**
+     * Mascara para ser usada em inputs html, remove todos os digitos
+     * @param {KeyboardEvent} evt - O evento será entregue aqui
+     * @example <caption>Executa a mascara quando evento keyup é lançado.</caption>
+     * document.querySelector('#onlyText').addEventListener('keyup',execOnlyText);
+     * @author Vinicius de Santana <vinicius.vts@gmail.com>
+     * @license CC BY-NC
+     */
+    function execOnlyText (evt) {
+        let v = evt.target.value;
+        v=v.replace(/\d/g,""); //Remove tudo o que é dígito
+        evt.target.value = v;
     }
     /**
      * Mascara de Telefone para ser usada em inputs html
