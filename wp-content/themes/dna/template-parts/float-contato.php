@@ -1,4 +1,5 @@
 <section class="float-contato">
+    <div class="container">
         <div class="row">
             <!-- item -->
             <div class="col">
@@ -65,7 +66,7 @@
                 </a>
             </div>
             <!-- item -->
-            <div class="col">
+            <!-- <div class="col">
                 <a href="#_" data-popup="pop-whats">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
@@ -79,6 +80,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> -->
         </div>
+    </div>
 </section>
