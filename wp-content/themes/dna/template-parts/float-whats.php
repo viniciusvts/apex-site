@@ -1,7 +1,7 @@
 <section class="whatsapp shakeit">
-    <a href="https://api.whatsapp.com/send?phone=551123841502&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+DNA+de+Vendas"
+    <a href="#_"
     id="chat_whatsapp"
-    target="_blank">
+    data-popup="pop-whats">
         <div class="icone">
             <svg xmlns="http://www.w3.org/2000/svg" width="38.464" height="38.777" viewBox="0 0 38.464 38.777">
                 <g id="whatsapp_1_" data-name="whatsapp (1)" transform="translate(-1.69)">
