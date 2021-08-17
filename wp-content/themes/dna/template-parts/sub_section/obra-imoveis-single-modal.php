@@ -1,6 +1,10 @@
 <?php
 // ATENÇÂO para um elemento exibir esse modal adicione data-show="modalObraFotos"
 $obraFotos = get_field('andamento_da_obra_fotos');
+/** contador para galeria, será utilizado no atributo data-galeria-index */
+$countGaleria = 0;
+/** nome para galeria, será utilizado no atributo data-galeria-name */
+$nomeGaleria = 'obra-imoveis';
 ?>
 <section class="ssw-modal modal-obrafotos" id="modal-obrafotos">
     <div class=" obra-imoveis-single container intern">
@@ -25,8 +29,11 @@ $obraFotos = get_field('andamento_da_obra_fotos');
                             ?>
                             <div class="item">
                                 <img src="<?php echo $foto['sizes']['medium_large']; ?>"
+                                class="cursor-pointer"
                                 alt="<?php echo $foto['alt']; ?>"
-                                data-modalImg="<?php echo $foto['url']; ?>">
+                                data-galeria-name="<?php echo $nomeGaleria; ?>"
+                                data-galeria-index="<?php echo ++$countGaleria; ?>"
+                                data-galeria-src="<?php echo $foto['url']; ?>">>
                             </div>
                             <?php
                             }
