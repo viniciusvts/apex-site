@@ -178,6 +178,22 @@ section.modal-buscar{
     }
 }
 section.modal-galeria{
+    .intern{
+        img.loading{
+            display: none;
+        }
+        img:not(.loading){
+            display: block;
+        }
+        &.loading{
+            img.loading{
+                display: block;
+            }
+            img:not(.loading){
+                display: none;
+            }
+        }
+    }
     span{
         width: fit-content;
         position: relative;

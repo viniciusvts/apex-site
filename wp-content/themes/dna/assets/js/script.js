@@ -488,6 +488,7 @@
     function initModalImgGaleria(){
         const divsImgs = querySelectorAll('img[data-galeria-name][data-galeria-index][data-galeria-src]');
         const modalImg = querySelector('#modal-galeria');
+        const internModal = querySelector('#modal-galeria .intern');
         const internalImg = querySelector('#modal-galeria img');
         const navs = querySelector('#modal-galeria .navs');
         if(divsImgs.length == 0) return console.warn('Não há img para o modal-galeria');
@@ -536,6 +537,23 @@
                 internalImg.dataset.index = nextImg.dataset.galeriaIndex;
             }
         });
+        // adicionar eventos que irão mostrar um loading enquanto a imagem carrega
+        // primeiro evento de quando uma imagem carrega:
+        internalImg.addEventListener('load', ()=>{
+            internModal.classList.remove('loading');
+        });
+        /**
+         * evento para quando o src for mudado
+         * @link https://developer.mozilla.org/pt-BR/docs/Web/API/MutationObserver#example_usage
+         */
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+                if(mutation.attributeName === 'src'){
+                    internModal.classList.add('loading');
+                }
+            });
+        });
+        observer.observe(internalImg, {attributes : true});
     }
     function initObraImoveisValues(){
         const estadosDaObraGraphic = querySelectorAll('#estadosDaObra .internal');
