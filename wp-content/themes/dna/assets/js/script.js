@@ -43,7 +43,6 @@
         /** @type HTMLElement */
         const mainMenu = querySelector('#top-menu');
         const menuItemHasChildren = querySelectorAll('.main-menu .menu-item-has-children');
-        const menuItemChildrens = querySelectorAll('.main-menu .sub-menu');
         // hamb menu
         querySelector('#hambmenu').addEventListener('click', (evt)=>{
             evt.stopPropagation()
@@ -51,7 +50,7 @@
             // se não adiciona
             if(mainMenu.classList.contains('active')){
                 mainMenu.classList.remove('active')
-                menuItemChildrens.forEach((item)=>{
+                menuItemHasChildren.forEach((item)=>{
                     item.classList.remove('active');
                 });
             } else{
@@ -60,22 +59,19 @@
         });
         // ativa os submenus
         if(menuItemHasChildren.length == 0) return console.warn('Não há divs com menuItemHasChildren');
-        if(menuItemChildrens.length == 0) return console.warn('Não há divs com menuItemChildrens');
         // adiciona evento de clique ao menuItemHasChildren
         menuItemHasChildren.forEach((item)=>{
             item.addEventListener('click', (evt)=>{
                 evt.stopPropagation()
-                /** @type HTMLElement */
-                const submenu = item.querySelector('.sub-menu');
-                submenu.classList.contains('active') ?
-                    submenu.classList.remove('active') :
-                    submenu.classList.add('active');
+                item.classList.contains('active') ?
+                    item.classList.remove('active') :
+                    item.classList.add('active');
             });
         });
         // para colapsar os menus quando clicar fora
         document.addEventListener('click', (evt)=>{
             mainMenu.classList.remove('active');
-            menuItemChildrens.forEach((item)=>{
+            menuItemHasChildren.forEach((item)=>{
                 item.classList.remove('active');
             });
         });

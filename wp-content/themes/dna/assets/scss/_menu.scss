@@ -74,6 +74,22 @@ nav.top-menu{
                 color: white;
                 text-decoration: none;
             }
+            // menu-item que tem sub-menu
+            &.menu-item-has-children{
+                > a::after{
+                    content: '\02C5';
+                    margin-left: 5px;
+                }
+                // quando os subitens do menu devem estar visíveis
+                &.active{
+                    > a::after{
+                        content: '\02C4';
+                    }
+                    ul.sub-menu{
+                        max-height: 200px;
+                    }
+                }
+            }
             ul.sub-menu{
                 list-style: none;
                 background-color: $blue2;
@@ -96,9 +112,6 @@ nav.top-menu{
                 li{
                     margin: 0;
                 }
-                &.active{
-                    max-height: 200px;
-                }
             }
         }
     }
@@ -116,7 +129,7 @@ nav.top-menu{
     }
     &.active{
         .main-menu{
-            max-height: 350px;
+            max-height: 450px;
             @media (min-width: $desktops) {
                 max-width: 100%;
             }
