@@ -116,7 +116,7 @@ include get_template_directory().'/template-parts/sub_section/obra-imoveis-singl
                             alt="<?php echo $foto['alt']; ?>"
                             data-galeria-name="<?php echo $nomeGaleria; ?>"
                             data-galeria-index="<?php echo ++$countGaleria; ?>"
-                            data-galeria-src="<?php echo $foto['url']; ?>">
+                            data-galeria-src="<?php echo $foto['url']; ?>" />
                         </div>
                         <?php
                         }
