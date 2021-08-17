@@ -63,4 +63,30 @@
             }
         }
     }
+    .bottom-buttons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        > *{
+            width: 100%;
+            margin: 20px 10px 0;
+            @media (min-width: $tablets) {
+                width: auto;
+                margin: 40px 10px 0;
+            }
+        }
+        // > *{
+        //     margin: 40px auto 0;
+        // }
+        // &.has-materiais{
+        //     > *:first-child{
+        //         @media (min-width: $desktops) {
+        //             margin: 40px 10px 0 auto;
+        //         }
+        //     }
+        //     > *:last-child{
+        //         margin: 40px auto 0 10px;
+        //     }
+        // }
+    }
 }

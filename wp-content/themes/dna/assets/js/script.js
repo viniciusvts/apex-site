@@ -20,6 +20,7 @@
         initGaleriaImoveisSingle();
         initModalImg();
         initModalImgGaleria();
+        initModalBaixarMaterialEmp();
         initModalSimulador();
         initObraImoveisValues();
         initModalObraFotos();
@@ -581,6 +582,26 @@
                     }
                 }
             });
+        });
+    }
+    /**
+     * Inicia o modal que exibe os materiais dos empreendimentos
+     * @author Vinicius de Santana
+     */
+    function initModalBaixarMaterialEmp(){
+        const dataModal = querySelectorAll('[data-modal="baixar-materiais"]');
+        const modalOpen = querySelector('#baixar-materiais');
+        if(dataModal.length == 0) return console.warn('Não há elemento chamando modalEmpreedimentos');
+        if(!modalOpen) return console.warn('Foi encontrad elemento mas não o modalEmpreedimentos, adicione-o a página');
+        // adiciona evento
+        dataModal.forEach((item)=>{
+            item.addEventListener('click', ()=>{
+                modalOpen.classList.add('active');
+            });
+        });
+        // adiciona o evento para esconder o form de busca
+        modalOpen.addEventListener('click', (evt)=>{
+            if(evt.target == modalOpen) return modalOpen.classList.remove('active');
         });
     }
     /**

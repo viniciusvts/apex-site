@@ -78,11 +78,22 @@ $nomeGaleria = 'galeriaImoveis';
         }
         ?>
     </div>
-    <div class="row">
-        <div class="col">
-            <a href="#fale-com-consultor" class="btn btn-y d-none d-lg-block mx-auto mt-5 w-25">
-                Fale com um consultor
-            </a>
-        </div>
+    <div class="bottom-buttons <?php echo is_array(get_field('materiais')) ? 'has-materiais' : ''; ?>">
+        <?php
+        // verifica se o empreendimento tem materiais para baixar
+        if(is_array(get_field('materiais'))){
+        ?>
+        <a href="#_" class="btn btn-cloud" data-modal="baixar-materiais">
+            Arquivos do empreendimento
+            <img class="mx-2 my-auto"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/cloud-download.svg"
+            alt="cloud download">
+        </a>
+        <?php
+        }
+        ?>
+        <a href="#fale-com-consultor" class="btn btn-y">
+            Fale com um consultor
+        </a>
     </div>
 </section>

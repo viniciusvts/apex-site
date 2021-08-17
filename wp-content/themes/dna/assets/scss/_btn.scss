@@ -39,3 +39,15 @@
         color: white;
     }
 }
+.btn-cloud{
+    color: white;
+    background-color: $blue3;
+    font-weight: 200;
+    padding: .5rem 2rem;
+    transition: all .3s;
+    text-transform: uppercase;
+    &:hover{
+        transform: scale(1.05);
+        color: white;
+    }
+}

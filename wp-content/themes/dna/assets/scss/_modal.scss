@@ -218,10 +218,35 @@ section.modal-galeria{
         }
     }
 }
-section.modal-bg-white{
-    z-index: 99999; // nav está com 999, outros modais com 9999
+section.modal-baixar-materiais{
     .intern{
+        max-width: 90vw;
+        max-height: 90vh;
         color: $blue1;
         background-color: white;
+        padding: 30px 20px;
+        overflow-y: auto;
+        ul.down-list{
+            list-style: none;
+            li{
+                font-size: 15px;
+                text-align: center;
+                padding: 10px 0;
+                margin: 10px 0;
+                @media (min-width: $desktops) {
+                    font-size: 20px;
+                    text-align: left;
+                }
+                &:not(:last-child){
+                    border-bottom: 1px #00000022 solid;
+                }
+                img.img-download{
+                    transition: all .3s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
     }
 }
