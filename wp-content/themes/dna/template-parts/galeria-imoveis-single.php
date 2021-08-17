@@ -39,15 +39,6 @@ $nomeGaleria = 'galeriaImoveis';
     </div>
     <div class="row galeria">
         <?php
-        if($videos){
-            foreach ($videos as $video) {
-        ?>
-        <div class="col-md-6 col-lg-4 item videos">
-            <?php echo $video['iframe']; ?>
-        </div>
-        <?php
-            }
-        }
         if($perspectiva){
             foreach ($perspectiva as $pers) {
         ?>
@@ -72,6 +63,15 @@ $nomeGaleria = 'galeriaImoveis';
             data-galeria-src="<?php echo $plan['url']; ?>"
             class="cursor-pointer"
             alt="<?php echo $plan['alt']; ?>">
+        </div>
+        <?php
+            }
+        }
+        if($videos){
+            foreach ($videos as $video) {
+        ?>
+        <div class="col-md-6 col-lg-4 item videos">
+            <?php echo $video['iframe']; ?>
         </div>
         <?php
             }
