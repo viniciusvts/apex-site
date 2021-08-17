@@ -17,7 +17,9 @@ $materiais = get_field('materiais');
                     </a>
                 </b>
                 <span class="col-lg-6"><?php echo $item['description']; ?></span>
-                <a href="<?php echo $item['url']; ?>" class="col-lg-2" download="Apex - <?php echo $item['title']; ?>">
+                <a href="<?php echo $item['url']; ?>"
+                class="col-lg-2 text-center"
+                download="Apex - <?php echo $item['title']; ?>">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cloud-download-blue.svg"
                     class="img-download"
                     alt="cloud download">
