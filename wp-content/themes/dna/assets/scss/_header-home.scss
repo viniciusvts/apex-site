@@ -7,6 +7,7 @@ header.header-home{
     .owl-item{height: 100%;}
     .h-content{
         height: fit-content;
+        height: -moz-fit-content;
     }
     .carrossel1{
         background-color: #1B1D24;
@@ -33,6 +34,7 @@ header.header-home{
             }
             h1, h2, h3{
                 width: fit-content;
+                width: -moz-fit-content;
                 background-color: $blue1-bg; // 70% opacidade
                 margin-bottom: 0;
                 padding: 0 5px;
@@ -53,6 +55,7 @@ header.header-home{
             }
             .details{
                 width: fit-content;
+                width: -moz-fit-content;
                 background-color: #002C40B2; // 70% opacidade
                 margin-bottom: 20px;
                 padding: 5px;

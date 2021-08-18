@@ -58,6 +58,7 @@ nav.top-menu{
             white-space: nowrap;
             @media (min-width: $desktops) {
                 height: fit-content;
+                height: -moz-fit-content;
                 margin: auto 10px;
             }
             &.current-menu-item{

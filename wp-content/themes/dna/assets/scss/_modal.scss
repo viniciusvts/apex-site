@@ -196,6 +196,7 @@ section.modal-galeria{
     }
     span{
         width: fit-content;
+        width: -moz-fit-content;
         position: relative;
         color: $blue1;
         background-color: white;

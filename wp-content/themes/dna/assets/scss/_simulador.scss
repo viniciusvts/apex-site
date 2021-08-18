@@ -117,10 +117,12 @@ section.simulador{
             width: 30px;
             @media (min-width: $tablets) {
                 width: fit-content;
+                width: -moz-fit-content;
             }
         }
         .g-recaptcha{
             width: fit-content;
+            width: -moz-fit-content;
             margin-top: 20px;
             @media (min-width: $tablets) {
                 margin-top: 30px;

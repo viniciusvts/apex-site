@@ -48,6 +48,7 @@
     .owl-item{height: 100%;}
     .h-content{
         height: fit-content;
+        height: -moz-fit-content;
     }
     .carrosselimoveis{
         background-color: black;
@@ -74,6 +75,7 @@
             }
             .isLancamento{
                 width: fit-content;
+                width: -moz-fit-content;
                 position: absolute;
                 color: white;
                 top: 40px;
@@ -105,7 +107,9 @@
             }
             h3{
                 width: fit-content;
+                width: -moz-fit-content;
                 height: fit-content;
+                height: -moz-fit-content;
                 color: $yellow1;
                 background-color: $blue2;
                 font-size: 20px;
@@ -113,6 +117,7 @@
                 padding: 5px 15px;
                 @media (min-width: $desktops) {
                     width: fit-content;
+                    width: -moz-fit-content;
                     padding: 5px 15px;
                 }
             }
