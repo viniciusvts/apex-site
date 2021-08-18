@@ -9,14 +9,15 @@ $materiais = get_field('materiais');
             <?php
             foreach ($materiais as $material) {
                 $item = $material['material'];
+                $hasDescription = !empty($item['description']);
             ?>
             <li class="row">
-                <b class="col-lg-4">
+                <b class="col-lg-<?php echo $hasDescription ? '4' : '10'; ?>">
                     <a href="<?php echo $item['url']; ?>" download="Apex - <?php echo $item['title']; ?>">
                         <?php echo $item['title']; ?>
                     </a>
                 </b>
-                <span class="col-lg-6"><?php echo $item['description']; ?></span>
+                <span class="<?php echo $hasDescription ? 'col-lg-6' : 'd-none'; ?>"><?php echo $item['description']; ?></span>
                 <a href="<?php echo $item['url']; ?>"
                 class="col-lg-2 text-center"
                 download="Apex - <?php echo $item['title']; ?>">
