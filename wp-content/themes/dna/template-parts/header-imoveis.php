@@ -88,6 +88,15 @@
             </div>
             <!-- /carrossel imoveis slide -->
         </div>
-    </div>
+    </div><?php
+                $args = array(
+                    'screen_reader_text' => ' ',
+                    'mid_size' => 3,
+                    'prev_next' => true,
+                    'prev_text' => __('<'),
+                    'next_text' => __('>'),
+                );
+                the_posts_pagination($args);
+                ?>
 </header>
 <!-- /Carrossel #1 -->

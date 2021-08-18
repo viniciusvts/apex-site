@@ -5,28 +5,6 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    .pagination{
-        display: flex;
-        margin-top: 30px;
-        @media (min-width: $desktops) {
-            margin-top: 30px;
-        }
-        .nav-links{
-            margin: 0 auto;
-            font-family: Lato, sans-serif;
-            .page-numbers{
-                color: black;
-                font-size: 16px;
-                text-align: center;
-                padding: 8px 15px;
-                transition: all .3s;
-                &.current, &:hover{
-                    color: white;
-                    background-color: $blue3;
-                }
-            }
-        }
-    }
 }
 // estilos para content-blog-single.php, content-page.php
 .blog-single{
