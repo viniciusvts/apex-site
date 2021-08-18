@@ -28,8 +28,16 @@ $termsCity = get_terms([
     </div>
     <div class="row form">
         <div class="col-11 col-md-8 col-lg-5 mx-auto">
+            <?php
+                $formName = 'simulacao';
+                /** get slug of page/post */
+                $slugCurrent = get_queried_object()->post_name;
+                $nameOfFormSimulador = empty($slugCurrent) ?
+                    $formName :
+                    $slugCurrent . '-' . $formName ;
+            ?>
             <form action="<?php echo bloginfo( "url" ) ?>/wp-json/dna_theme/v1/simulador"
-            method="post" name="form-simulador" id="form-simulador">
+            method="post" name="<?php echo $nameOfFormSimulador; ?>" id="<?php echo $nameOfFormSimulador; ?>">
                 <!-- itens trafic são preenchidos no js -->
                 <input type="hidden" name="traffic_source">
                 <input type="hidden" name="traffic_medium">
