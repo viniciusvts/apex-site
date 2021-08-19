@@ -78,13 +78,13 @@ nav.top-menu{
             // menu-item que tem sub-menu
             &.menu-item-has-children{
                 > a::after{
-                    content: '\02C5';
+                    content: '\25BE';
                     margin-left: 5px;
                 }
                 // quando os subitens do menu devem estar visíveis
                 &.active{
                     > a::after{
-                        content: '\02C4';
+                        content: '\25B4';
                     }
                     ul.sub-menu{
                         max-height: 200px;
