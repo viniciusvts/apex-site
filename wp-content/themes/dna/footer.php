@@ -1,6 +1,6 @@
         <?php
         get_template_part('template-parts/float', 'contato');
-        get_template_part('template-parts/float', 'whats');
+        // get_template_part('template-parts/float', 'whats');
         get_template_part('template-parts/section', 'simulador-modal');
         get_template_part('template-parts/rd', 'pop-whats');
         get_template_part('template-parts/rd', 'pop-email');
