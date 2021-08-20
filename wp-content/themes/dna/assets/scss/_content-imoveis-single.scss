@@ -65,6 +65,9 @@
                     float: right;
                     margin-right: -15px;
                 }
+                &.disabled{
+                    visibility: hidden;
+                }
                 svg{
                     width: 15px;
                 }

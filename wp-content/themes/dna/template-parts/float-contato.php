@@ -11,8 +11,8 @@
                             alt="logo twitter">
                         </div>
                         <div class="d-none d-lg-block col-md-8 mr-auto">
-                            <p class="top">Faça uma</p>
-                            <p class="bot">Pré-simulação</p>
+                            <p class="top">Solicite uma</p>
+                            <p class="bot">simulação</p>
                         </div>
                     </div>
                 </a>

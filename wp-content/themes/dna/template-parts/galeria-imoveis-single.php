@@ -84,7 +84,7 @@ $nomeGaleria = 'galeriaImoveis';
         if(is_array(get_field('materiais'))){
         ?>
         <a href="#_" class="btn btn-cloud" data-modal="baixar-materiais">
-            Arquivos do empreendimento
+            baixe o book do empreendimento
             <img class="mx-2 my-auto"
             src="<?php echo get_template_directory_uri(); ?>/assets/img/cloud-download.svg"
             alt="cloud download">
