@@ -17,24 +17,28 @@
                     $categoriaImovel = get_the_terms(get_the_ID(), 'categoria-imovel');
                     // verifica se é lançamento
                     $isLancamento = false;
-                    foreach ($categoriaImovel as $value) {
-                        if($value->slug == 'lancamento'){
-                            $isLancamento = true;
-                            break;
+                    if(is_array($categoriaImovel)){
+                        foreach ($categoriaImovel as $value) {
+                            if($value->slug == 'lancamento'){
+                                $isLancamento = true;
+                                break;
+                            }
                         }
                     }
             ?>
             <div class="item h-100">
                 <?php
                 // verifica se é lançamento
-                foreach ($categoriaImovel as $value) {
-                    if($value->slug == 'lancamento'){
-                ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancamento-flag.svg"
-                alt="flag que indica lançamento"
-                class="isLancamento">
-                <?php
-                        break;
+                if(is_array($categoriaImovel)){
+                    foreach ($categoriaImovel as $value) {
+                        if($value->slug == 'lancamento'){
+                    ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancamento-flag.svg"
+                    alt="flag que indica lançamento"
+                    class="isLancamento">
+                    <?php
+                            break;
+                        }
                     }
                 }
                 echo $thumb;
