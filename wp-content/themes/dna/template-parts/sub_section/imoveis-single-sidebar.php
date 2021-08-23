@@ -12,7 +12,15 @@
         <div class="intern">
             <h3>Ligamos para você</h3>
             <p>Envie seu contato para nossos corretores</p>
-            <?php echo do_shortcode('[contact-form-7 id="16316" title="Ligamos para vc"]'); ?>
+            <?php
+                $formName = 'ligamos-para-vc';
+                /** get slug of page/post */
+                $slugCurrent = get_queried_object()->post_name;
+                $formId = empty($slugCurrent) ?
+                    $formName :
+                    $slugCurrent . '-' . $formName ;
+                echo do_shortcode('[contact-form-7 id="16316" title="Ligamos para vc" html_name="' . $formId . '"]');
+            ?>
         </div>
     </div>
 </div>
