@@ -1,3 +1,4 @@
+<!-- Atenção: layout utilizando _float-whats.scss -->
 <section class="whatsapp shakeit">
     <a href="#_"
     id="chat_whatsapp"
