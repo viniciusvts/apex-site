@@ -1,4 +1,4 @@
-// originalmente layout da seção float-whats.php
+// originalmente layout da seção float-whats.php e float-whats2.php
 .whatsapp {
     background-color: #08c65b;
     right: -137px;
@@ -48,4 +48,17 @@
 
 .whatsapp .texto a:hover {
     text-decoration: none
+}
+// float-whats2.php
+.whatsapp2{
+    background-color: #08c65b;
+    border-radius: 50%;
+    position: fixed;
+    right: 2%;
+    bottom: 100px;
+    z-index: 10;
+    svg{
+        width: 70px;
+        height: auto;
+    }
 }

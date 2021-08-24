@@ -1,5 +1,5 @@
 <!-- Atenção: layout utilizando _float-whats.scss -->
-<section class="whatsapp shakeit">
+<section class="whatsapp2 shakeit">
     <a href="#_"
     id="chat_whatsapp"
     data-popup="att-whats">
@@ -10,9 +10,6 @@
                     <path id="Caminho_101" data-name="Caminho 101" d="M123.6,120.858l-3.725-1.07a1.388,1.388,0,0,0-1.374.362l-.911.928a1.357,1.357,0,0,1-1.475.311,19.886,19.886,0,0,1-6.416-5.658,1.357,1.357,0,0,1,.107-1.5l.8-1.029a1.388,1.388,0,0,0,.171-1.411l-1.567-3.545a1.389,1.389,0,0,0-2.169-.5,6.266,6.266,0,0,0-2.423,3.7c-.264,2.61.855,5.9,5.088,9.851,4.89,4.564,8.806,5.167,11.356,4.549a6.265,6.265,0,0,0,3.331-2.9A1.389,1.389,0,0,0,123.6,120.858Z" transform="translate(-93.349 -97.455)" fill="#fcfcfc"/>
                 </g>
             </svg>
-        </div>
-        <div class="texto">
-            <span> Falar com um <b>Consultor</b></span>
         </div>
     </a>
 </section>

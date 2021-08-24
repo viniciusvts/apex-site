@@ -19,7 +19,7 @@
             </div>
             <!-- item -->
             <div class="col">
-                <a href="#_" data-popup="pop-email">
+                <a href="#_" data-popup="att-email">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/envelope.svg"
@@ -35,7 +35,7 @@
             </div>
             <!-- item -->
             <div class="col">
-                <a href="#_" data-popup="pop-attonline">
+                <a href="#_" data-popup="att-online">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/support.svg"
@@ -51,7 +51,7 @@
             </div>
             <!-- item -->
             <div class="col">
-                <a href="#_" data-popup="pop-client">
+                <a href="#_" data-popup="att-client">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home-filled.svg"
@@ -67,7 +67,7 @@
             </div>
             <!-- item -->
             <!-- <div class="col">
-                <a href="#_" data-popup="pop-whats">
+                <a href="#_" data-popup="att-whats">
                     <div class="row mx-auto">
                         <div class="col-lg-3 ml-auto d-flex">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/whatsapp.svg"

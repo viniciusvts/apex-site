@@ -25,7 +25,8 @@
         initObraImoveisValues();
         initModalObraFotos();
         initModalDepoimentos();
-        initPopups();
+        // initPopups();
+        initModals();
         initPergResps();
     }
 
@@ -696,6 +697,7 @@
     }
     /**
      * Inicia o modal dos depoimentos
+     * @deprecated use initModals()
      * @author Vinicius de Santana
      */
     function initPopups(){
@@ -758,6 +760,45 @@
         popupClient.addEventListener('click', (evt)=>{
             if(evt.target == popupClient) return popupClient.classList.remove('active');
         });
+    }
+    /**
+     * Inicia os modais dos depoimentos
+     * @author Vinicius de Santana
+     */
+    function initModals(){
+        const divsQueChamamModal = querySelectorAll('[data-popup]');
+        if(divsQueChamamModal.length == 0){
+            console.warn('Não há div chamando quaisquer modais');
+        } else{
+            // adiciona o evento de click
+            divsQueChamamModal.forEach((item)=>{
+                item.addEventListener('click', ()=>{
+                    const target = querySelector('#' + item.dataset.popup);
+                    if(target){
+                        target.classList.add('active');
+                    } else{
+                        alert('O recurso não foi encontrado, contate o administrador do sistema');
+                    }
+                });
+            });
+            // retorna uma lista com os ids
+            const idsTarget = Array.from(divsQueChamamModal).map((value)=>{
+                return value.dataset.popup;
+            });
+            // filtra os ids para ids únicos
+            const uniqueIdsTarget = new Set(idsTarget);
+            // de posse dos ids, adiciona o evento para esconder para cada item
+            uniqueIdsTarget.forEach((value)=>{
+                const targetElement = querySelector('#' + value);
+                if(targetElement){
+                    targetElement.addEventListener('click', (evt)=>{
+                        if(evt.target == targetElement) targetElement.classList.remove('active');
+                    });
+                } else{
+                    console.warn('Há div chamando o modal ' +value+' mas este não foi encontrado');
+                }
+            });
+        }
     }
     /**
      * Inicia o perguntas e respostas

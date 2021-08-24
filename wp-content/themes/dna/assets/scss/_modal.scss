@@ -268,3 +268,75 @@ section.modal-baixar-materiais{
         }
     }
 }
+
+section.modal-form-att{
+    .intern{
+        max-width: 95vw;
+        max-height: 90vh;
+        padding: 30px 0;
+        overflow-y: auto;
+        background-image: none;
+        background-color: #fff;//$blue1;
+        color: $blue1;
+        @media (min-width: $desktops) {
+            padding: 30px 30px 60px;
+        }
+        .title{
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                color: $yellow1;
+                text-transform: uppercase;
+                @media (min-width: $tablets) {
+                    font-size: 40px;
+                }
+            }
+            p{
+                color: $blue1;
+                font-size: 20px;
+                text-align: center;
+                @media (min-width: $tablets) {
+                    font-size: 30px;
+                }
+            }
+            hr{
+                color: $yellow1;
+                width: 150px;
+                height: 2px;
+                margin: 30px auto;
+                // @media (min-width: $desktops) {
+                //     margin-bottom: 110px;
+                // }
+                @media (min-width: $desktops) {
+                    margin-bottom: 40px;
+                }
+            }
+            
+        }
+        .form{
+            label{
+                color: $blue1;
+                width: 100%;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            input, select{
+                color: $blue1;
+                background-color: #f1f2f7;
+                width: 100%;
+                padding: 20px 25px;
+                border: 1px solid #e3e8f0;
+            }
+            [type="checkbox"]{
+                width: auto;
+                margin-right: 10px;
+            }
+            [type="submit"]:not([disabled]){
+                color: white;
+                background-color: #ffb200;
+            }
+        }
+    }
+}
