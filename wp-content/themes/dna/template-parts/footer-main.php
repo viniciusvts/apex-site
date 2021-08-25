@@ -17,17 +17,25 @@
             </div>
             <div class="col-10 col-lg-5 mx-auto mb-5">
                 <h2>Links Úteis</h2>
-                <?php
-                wp_nav_menu(
-                    array(
-                        'container' => false,
-                        'theme_location' => 'footer-links',
-                        'depth' => 1,
-                        'menu_id' => 'footer-links',
-                        'menu_class' => 'list-unstyled p-0 m-0',
-                    )
-                );
-                ?>
+                <div class="list-unstyled p-0 m-0">
+                    <ul>
+                        <?php
+                        $blogPosts = get_posts(
+                            array(
+                                'posts_per_page'=>'6',
+                            )
+                        );
+                        foreach ($blogPosts as $key => $blogPost) {
+                            $permalink = get_permalink($blogPost->ID);
+                        ?>
+                        <li>
+                            <a href="<?php echo $permalink; ?>"><?php echo $blogPost->post_title; ?></a>
+                        </li>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
             </div>
             <div class="col-10 col-lg-4 mx-auto mb-5">
                 <h2>Contato</h2>
