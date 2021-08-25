@@ -78,11 +78,10 @@
                 border-radius: 50%;
                 @media (min-width: $desktops) {
                     width: 110px;
-                    height: 140px;
+                    height: auto;
                     margin-top: -60px;
                     border-radius: 0;
                     margin-left: -120px;
-                    object-fit: cover;
                 }
                 @media (min-width: $largeDesktops) {
                     margin-left: -140px;
