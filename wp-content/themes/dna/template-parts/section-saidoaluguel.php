@@ -13,14 +13,12 @@
         </div>
         <div class="col-12 col-lg-6 right">
             <h2 class="text-left bold italic d-none d-lg-block">Saia do aluguel com a Apex</h2>
-            <p class="mb-5">É uma iniciativa do Governo Federal que oferece
-                condições atrativas para o financiamento de moradias 
-                nas áreas urbanas para famílias de baixa renda. 
-                Em parceria com estados, municípios, empresas e 
-                entidades sem fins lucrativos, o programa vem 
-                mudando a vida de milhares de famílias brasileiras. 
-                É oportunidade para quem precisa e mais 
-                desenvolvimento para o Brasil.
+            <p class="mb-5">O Programa Casa Verde e Amarela é uma iniciativa do Governo 
+                Federal que oferece condições atrativas para o financiamento de 
+                moradias nas áreas urbanas para famílias de baixa renda. 
+                Em parceria com estados, municípios, empresas e entidades sem fins 
+                lucrativos, o Programa vem mudando a vida de milhares de famílias 
+                brasileiras. É oportunidade para quem precisa e mais desenvolvimento para o Brasil.
             </p>
             <div class="row mb-4">
                 <div class="col-2 d-flex">
@@ -41,7 +39,7 @@
                     class="my-auto">
                 </div>
                 <div class="col-10">
-                    <p class="mb-0">Você pode financiar a compra de imóvel novo em área urbana 
+                    <p class="mb-0">Você pode financiar a compra de imóvel novo pelo Casa Verde e Amarela em área urbana 
                         ou ainda a construção e reforma de moradias em área urbana e rural.
                     </p>
                 </div>
