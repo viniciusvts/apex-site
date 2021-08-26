@@ -27,6 +27,7 @@
         initModalDepoimentos();
         // initPopups();
         initModals();
+        initZenviaChat();
         initPergResps();
     }
 
@@ -797,6 +798,23 @@
                 } else{
                     console.warn('Há div chamando o modal ' +value+' mas este não foi encontrado');
                 }
+            });
+        }
+    }
+    /**
+     * Inicia as funções relativas ao chat da zenvia
+     * @author Vinicius de Santana
+     */
+    function initZenviaChat(){
+        /** botões que vão abrir/fechar o chat zenvia */
+        const divsToToggleChat = querySelectorAll('[data-toggle="zenviaChat"]');
+        if(divsToToggleChat.length == 0){
+            console.warn('Não há divs para toggle chat zenvia');
+        } else{
+            divsToToggleChat.forEach((div)=>{
+                div.addEventListener('click', ()=>{
+                    window.chat.toggle();
+                });
             });
         }
     }
