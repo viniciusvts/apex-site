@@ -8,6 +8,7 @@
     </head>
     <body>
     <?php
+    wp_body_open();
     get_template_part('template-parts/' . 'menu');
     get_template_part('template-parts/modal', 'buscar');
     ?>
