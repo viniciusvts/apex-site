@@ -814,6 +814,8 @@
             divsToToggleChat.forEach((div)=>{
                 div.addEventListener('click', ()=>{
                     window.chat.toggle();
+                    window.ga('create', 'UA-121493783-6', 'auto');
+                    window.ga('send', 'event', 'conversao', 'clique', 'chat_zenvia');
                 });
             });
         }
