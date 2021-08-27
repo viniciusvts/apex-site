@@ -25,14 +25,16 @@
             <div class="item h-100">
                 <?php
                 // verifica se é lançamento
-                foreach ($categoriaImovel as $value) {
-                    if($value->slug == 'lancamento'){
-                ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancamento-flag.svg"
-                alt="flag que indica lançamento"
-                class="isLancamento">
-                <?php
-                        break;
+                if(is_array($categoriaImovel)){
+                    foreach ($categoriaImovel as $value) {
+                        if($value->slug == 'lancamento'){
+                    ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lancamento-flag.svg"
+                    alt="flag que indica lançamento"
+                    class="isLancamento">
+                    <?php
+                            break;
+                        }
                     }
                 }
                 echo $thumb;
