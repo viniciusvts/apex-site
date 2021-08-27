@@ -13,13 +13,13 @@
             <div class="col d-flex mb-4">
                 <div class="line"></div>
                 <ul class="cat-list">
-                    <li data-target="lancamento">
+                    <li class="active" data-target="lancamento">
                         Lançamento
                     </li>
                     <li data-target="pronto-para-morar">
                         Pronto para morar
                     </li>
-                    <li class="active" data-target="all">
+                    <li data-target="all">
                         Todos os imóveis
                     </li>
                 </ul>
@@ -27,7 +27,7 @@
         </div>
         <!-- /filtro -->
         <!-- carrosseis imoveis slide -->
-        <div class="row carImoSlide active" id="all">
+        <div class="row carImoSlide" id="all">
             <div class="col">
                 
                 <!-- carrossel imoveis slide -->
@@ -122,7 +122,7 @@
             </div>
         </div>
         <!-- lançamento -->
-        <div class="row carImoSlide" id="lancamento">
+        <div class="row carImoSlide active" id="lancamento">
             <div class="col">
                 
                 <!-- carrossel imoveis slide -->
