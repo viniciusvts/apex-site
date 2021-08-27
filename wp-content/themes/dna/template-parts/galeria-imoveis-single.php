@@ -19,7 +19,7 @@ $nomeGaleria = 'galeriaImoveis';
                 <?php
                 if($perspectiva){
                 ?>
-                <li data-target="perspectiva">Perspectivas</li>
+                <li class="active" data-target="perspectiva">Perspectivas</li>
                 <?php
                 }
                 if($planta){
@@ -33,7 +33,7 @@ $nomeGaleria = 'galeriaImoveis';
                 <?php
                 }
                 ?>
-                <li class="active" data-target="all">Ver todos</li>
+                <li data-target="all">Ver todos</li>
             </ul>
         </div>
     </div>
@@ -56,7 +56,7 @@ $nomeGaleria = 'galeriaImoveis';
         if($planta){
             foreach ($planta as $plan) {
         ?>
-        <div class="col-md-6 col-lg-4 item planta">
+        <div class="col-md-6 col-lg-4 item planta disabled">
             <img src="<?php echo $plan['sizes']['medium_large']; ?>"
             data-galeria-name="<?php echo $nomeGaleria; ?>"
             data-galeria-index="<?php echo ++$countGaleria; ?>"
@@ -70,7 +70,7 @@ $nomeGaleria = 'galeriaImoveis';
         if($videos){
             foreach ($videos as $video) {
         ?>
-        <div class="col-md-6 col-lg-4 item videos">
+        <div class="col-md-6 col-lg-4 item videos disabled">
             <?php echo $video['iframe']; ?>
         </div>
         <?php
