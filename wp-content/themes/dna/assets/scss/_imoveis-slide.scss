@@ -183,11 +183,24 @@
             position: absolute;
             top: 50%;
             right: 0;
+            @media (min-width: $desktops) {
+                right: -35px;
+            }
+            @media (min-width: $largeDesktops) {
+                right: -50px;
+            }
             button {
                 &.owl-prev, &.owl-next{
                     display: block;
                     background-color: white;
                     padding: 10px!important;
+                }
+                &.disabled{
+                    // visibility: hidden;
+                    cursor: auto;
+                    svg{
+                        opacity: 30%;
+                    }
                 }
                 &:focus {
                     outline: none;
@@ -249,11 +262,19 @@
     }
 }
 // quando imoveis slide é header
-header.imoveis-slide .item{
-    img.fundo{
-        height: 70%!important;
+header.imoveis-slide{
+    .item{
+        img.fundo{
+            height: 70%!important;
+        }
+        .text-content{
+            height: 30%!important;
+        }
     }
-    .text-content{
-        height: 30%!important;
+    .carrosselimoveis{
+        .owl-nav{
+            // no reader a navegação fica dentro não a esquerda do carrossel
+            right: 0!important;
+        }
     }
 }
