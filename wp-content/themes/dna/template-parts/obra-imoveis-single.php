@@ -1,13 +1,6 @@
 <?php
 $obraAndamento = get_field('andamento_da_obra');
 $obraFotos = get_field('andamento_da_obra_fotos');
-// andamento geral
-$obraAndamentoTotal = 0;
-foreach ($obraAndamento as $value) {
-    $obraAndamentoTotal = $obraAndamentoTotal + intval($value);
-}
-// pega a média
-$obraAndamentoTotal = $obraAndamentoTotal / count($obraAndamento);
 /** contador para galeria, será utilizado no atributo data-galeria-index */
 $countGaleria = 0;
 /** nome para galeria, será utilizado no atributo data-galeria-name */
@@ -28,13 +21,13 @@ include get_template_directory().'/template-parts/sub_section/obra-imoveis-singl
         <div id="estadosDaObra"
         class="col-11 mx-auto <?php echo $obraFotos ? 'col-lg-5' : 'col-lg-12'; ?>">
             <?php
-            if($obraAndamentoTotal){
+            if($obraAndamento['andamentoTotal']){
             ?>
             <div class="item">
                 <div class="external">
-                    <div class="internal total" data-width="<?php echo $obraAndamentoTotal; ?>%"></div>
+                    <div class="internal total" data-width="<?php echo $obraAndamento['andamentoTotal']; ?>%"></div>
                 </div>
-                <p>Andamento total <span data-value="<?php echo $obraAndamentoTotal; ?>">0</span>%</p>
+                <p>Andamento total <span data-value="<?php echo $obraAndamento['andamentoTotal']; ?>">0</span>%</p>
             </div>
             <?php
             }
