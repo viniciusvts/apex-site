@@ -7,6 +7,13 @@
  * @author Vinicius de Santana
  */
 function add_css_and_js() {
+  //remove jquery padrão do wp
+  wp_deregister_script( 'jquery' );
+  // renmove os dashicons
+  if (!current_user_can( 'update_core' )){
+    wp_deregister_style('dashicons');
+  }
+  
   //scripts: wp_enqueue_script( $nome, $origem, $dependencia, $versao, $rodape );
 
   $jsInternalPath = get_template_directory() . "/"."assets/js/";
