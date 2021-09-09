@@ -1,0 +1,14 @@
+// originalmente layout da seção logo-img
+// o logo sobreposto ao header
+section.logoimg{
+    border-top: 6px solid $yellow1;
+    .col{
+        margin-bottom: -10%;
+    }
+    img{
+        max-width: 100%;
+        position: relative;
+        top: -50%;
+        border-radius: 6px;
+    }
+}

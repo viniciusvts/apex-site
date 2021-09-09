@@ -1,6 +1,9 @@
 <?php
 get_header();
 get_template_part('template-parts/header', 'imoveis-single');
+if(get_field('logo_emp')){
+    get_template_part('template-parts/logo', 'img');
+}
 get_template_part('template-parts/content', 'imoveis-single');
 // verifica se o empreendimento tem materiais para baixar
 if(is_array(get_field('materiais'))){
