@@ -169,7 +169,7 @@ $(document).ready(function(){
                 nav:true,
             },
             992:{
-                items:8,
+                items:6,
                 nav:true,
             }
         }
