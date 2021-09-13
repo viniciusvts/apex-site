@@ -17,7 +17,7 @@
             <h2 class="bold italic d-none d-lg-block mt-5">
                 MILHARES DE FAMÍLIAS JÁ REALIZARAM SEUS SONHOS
             </h2>
-            <p>A Apex  Engenharia cresceu e se desenvolveu junto com o desejo
+            <p>A Apex cresceu e se desenvolveu junto com o desejo
                 dos habitantes da Capital de fazer de Brasília uma cidade perfeita
                 para morar.
             </p>
