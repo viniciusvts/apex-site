@@ -7,7 +7,7 @@
     </div>
     <div class="row">
         <div class="col-11 col-md-7 col-lg-4 mx-auto formext">
-            <p class="preform">Preencha os dados para que um dos nossos corretores possa entrar em contato</p>
+            <p class="preform">Preencha os dados para que um dos nossos consultores possa entrar em contato</p>
             <?php
                 $formName = 'fale-com-um-consultor';
                 /** get slug of page/post */

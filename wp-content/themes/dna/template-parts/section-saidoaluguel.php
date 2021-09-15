@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-10">
                     <p class="mb-0">O Programa do Governo Federal oferece condições de pagamento e 
-                        taxas de juros de acordo com a renda da sua família
+                        taxas de juros de acordo com a renda da sua família.
                     </p>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     class="my-auto">
                 </div>
                 <div class="col-10">
-                    <p class="mb-0">Você pode financiar a compra de imóvel novo pelo Casa Verde e Amarela em área urbana 
+                    <p class="mb-0">Você pode financiar a compra do imóvel novo pelo Casa Verde e Amarela em área urbana 
                         ou ainda a construção e reforma de moradias em área urbana e rural.
                     </p>
                 </div>
@@ -51,8 +51,8 @@
                     class="my-auto">
                 </div>
                 <div class="col-10">
-                    <p class="mb-0">Ainda assim se sua renda pessoal não for suficiente, você 
-                        pode somá-la ao salário de seus familiares, amigos, namorado(a), e etc.
+                    <p class="mb-0">Ainda assim, se a sua renda pessoal não for suficiente, você
+                        pode somá-la ao salário dos seus familiares, amigos(as), companheiro(a) etc.
                     </p>
                 </div>
             </div>
