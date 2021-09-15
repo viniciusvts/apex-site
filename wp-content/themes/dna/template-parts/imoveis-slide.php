@@ -70,7 +70,7 @@
                             ?>
                             <div class="text-content row m-0">
                                 <h2><?php echo $imovel->post_title; ?></h2>
-                                <div class="details d-none d-lg-flex regular">
+                                <div class="details d-flex regular">
                                     <?php
                                     if($quartos){
                                     ?>
@@ -172,7 +172,7 @@
                         ?>
                         <div class="text-content row m-0">
                             <h2><?php echo $imovel->post_title; ?></h2>
-                            <div class="details d-none d-lg-flex regular">
+                            <div class="details d-flex regular">
                                 <?php
                                 if($quartos){
                                 ?>
@@ -274,7 +274,7 @@
                         ?>
                         <div class="text-content row m-0">
                             <h2><?php echo $imovel->post_title; ?></h2>
-                            <div class="details d-none d-lg-flex regular">
+                            <div class="details d-flex regular">
                                 <?php
                                 if($quartos){
                                 ?>

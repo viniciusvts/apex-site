@@ -123,9 +123,7 @@
             }
             .details{
                 padding: 0;
-                @media (min-width: $desktops) {
-                    margin-bottom: 15px;
-                }
+                margin-bottom: 15px;
                 .detail{
                     display: flex;
                     &:not(:last-child){
